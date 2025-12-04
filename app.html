@@ -1,0 +1,1913 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>ＤＢＤ　ＢＩＮＧＯ企画</title>
+  <style>
+    :root {
+      --bg-color: #f5f5f5;
+      --bg-elevated: #ffffff;
+      --text-color: #222222;
+      --accent: #007acc;
+      --accent-soft: rgba(0, 122, 204, 0.35);
+      --border-color: #dddddd;
+      --card-radius: 12px;
+      --shadow-soft: 0 4px 12px rgba(0, 0, 0, 0.08);
+      --hit-color: #ffcc00;
+      --free-color: #00b894;
+    }
+
+    .theme-light {
+      --bg-color: #f5f5f5;
+      --bg-elevated: #ffffff;
+      --text-color: #222222;
+      --accent: #007acc;
+      --accent-soft: rgba(0, 122, 204, 0.35);
+      --border-color: #dddddd;
+      --shadow-soft: 0 4px 12px rgba(0, 0, 0, 0.08);
+      --hit-color: #ffcc00;
+      --free-color: #00b894;
+    }
+
+    .theme-cute {
+      --bg-color: #fff7fb;
+      --bg-elevated: #ffffff;
+      --text-color: #333333;
+      --accent: #ff6fb5;
+      --accent-soft: rgba(255, 111, 181, 0.4);
+      --border-color: #ffd1ea;
+      --shadow-soft: 0 4px 12px rgba(255, 111, 181, 0.25);
+      --hit-color: #ffb347;
+      --free-color: #7bdff2;
+    }
+
+    .theme-green {
+      --bg-color: #f6fff5;
+      --bg-elevated: #ffffff;
+      --text-color: #244422;
+      --accent: #4caf50;
+      --accent-soft: rgba(76, 175, 80, 0.4);
+      --border-color: #cde8c8;
+      --shadow-soft: 0 4px 12px rgba(76, 175, 80, 0.25);
+      --hit-color: #ffb347;
+      --free-color: #81c784;
+    }
+
+    .theme-dark {
+      --bg-color: #121212;
+      --bg-elevated: #1e1e1e;
+      --text-color: #f2f2f2;
+      --accent: #90caf9;
+      --accent-soft: rgba(144, 202, 249, 0.4);
+      --border-color: #333333;
+      --shadow-soft: 0 6px 16px rgba(0, 0, 0, 0.8);
+      --hit-color: #ffeb3b;
+      --free-color: #4caf50;
+    }
+
+    .theme-dbd {
+      --bg-color: #050608;
+      --bg-elevated: #15151a;
+      --text-color: #f5f5f5;
+      --accent: #ff5252;
+      --accent-soft: rgba(255, 82, 82, 0.5);
+      --border-color: #2b2b33;
+      --shadow-soft: 0 8px 22px rgba(0, 0, 0, 0.9);
+      --hit-color: #ffca28;
+      --free-color: #c62828;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      background: var(--bg-color);
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+
+    .app {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      background: var(--bg-color);
+      color: var(--text-color);
+    }
+
+    /* Header */
+
+    .app-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 8px 16px;
+      background: linear-gradient(to right, rgba(0, 0, 0, 0.3), transparent, rgba(0, 0, 0, 0.3));
+      border-bottom: 1px solid var(--border-color);
+      color: var(--text-color);
+    }
+
+    .header-center {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      flex: 1;
+    }
+
+    .header-icon {
+      width: 40px;
+      height: 40px;
+      border-radius: 999px;
+      overflow: hidden;
+      background: var(--bg-elevated);
+      box-shadow: var(--shadow-soft);
+      flex-shrink: 0;
+    }
+
+    .header-icon img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    .header-title {
+      font-size: 22px;
+      font-weight: 600;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
+      white-space: nowrap;
+      color: var(--text-color);
+    }
+
+    .header-right {
+      min-width: 220px;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      gap: 6px;
+      font-size: 12px;
+      color: var(--text-color);
+    }
+
+    /* Layout */
+
+    .app-main {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      padding: 12px;
+    }
+
+    .single-column {
+      flex: 1;
+      max-width: 1100px;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      min-width: 0;
+    }
+
+    .card {
+      background: var(--bg-elevated);
+      border-radius: var(--card-radius);
+      box-shadow: var(--shadow-soft);
+      padding: 12px;
+      border: 1px solid var(--border-color);
+      color: var(--text-color);
+    }
+
+    .card-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 8px;
+    }
+
+    .card-title {
+      font-size: 14px;
+      font-weight: 600;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      color: var(--text-color);
+    }
+
+    .small-label {
+      font-size: 11px;
+      opacity: 0.85;
+      color: var(--text-color);
+    }
+
+    /* Bingo board + Roulette view */
+
+    .bingo-board-wrapper {
+      width: 480px;
+      height: 480px;
+      margin: 0 auto;
+      position: relative;
+    }
+
+    .bingo-board-view,
+    .roulette-view {
+      position: absolute;
+      inset: 0;
+    }
+
+    .bingo-board-view {
+      display: block;
+    }
+
+    .roulette-view {
+      display: none;
+      border-radius: 12px;
+      overflow: hidden;
+    }
+
+    .roulette-view.visible {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .bingo-board {
+      display: grid;
+      gap: 4px;
+      width: 100%;
+      height: 100%;
+    }
+
+    .bingo-cell {
+      position: relative;
+      background: rgba(0, 0, 0, 0.1);
+      border-radius: 6px;
+      overflow: hidden;
+      border: 1px solid rgba(255, 255, 255, 0.04);
+      cursor: pointer;
+      display: flex;
+    }
+
+    .theme-dark .bingo-cell,
+    .theme-dbd .bingo-cell {
+      background: rgba(255, 255, 255, 0.03);
+      border-color: rgba(255, 255, 255, 0.06);
+    }
+
+    .bingo-cell-inner {
+      display: flex;
+      flex-direction: column;
+      align-items: stretch;
+      justify-content: center;
+      width: 100%;
+      height: 100%;
+      padding: 2px;
+    }
+
+    .bingo-cell-image-wrapper {
+      width: 100%;
+      height: 100%;
+      border-radius: 4px;
+      overflow: hidden;
+      background: rgba(0, 0, 0, 0.25);
+    }
+
+    .bingo-cell-image-wrapper img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      transition: filter 0.2s ease;
+    }
+
+    /* 撃破したマスの画像：モノクロ＆暗め */
+    .bingo-cell.hit .bingo-cell-image-wrapper img {
+      filter: grayscale(100%) brightness(0.4);
+    }
+
+    .bingo-cell.free {
+      background: var(--free-color);
+      color: #ffffff;
+      font-weight: 700;
+      font-size: 18px;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .bingo-cell.free .bingo-cell-inner {
+      align-items: center;
+      justify-content: center;
+    }
+
+    .bingo-cell.hit {
+      box-shadow: 0 0 10px rgba(255, 204, 0, 0.9);
+      border-color: var(--hit-color);
+    }
+
+    .bingo-cell-hit-overlay {
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(circle at 50% 50%, rgba(255, 255, 255, 0.28), transparent);
+      pointer-events: none;
+    }
+
+    .bingo-cell-hit-mark {
+      position: absolute;
+      inset: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      pointer-events: none;
+    }
+
+    .bingo-cell-hit-mark img {
+      width: 70%;
+      height: 70%;
+      object-fit: contain;
+    }
+
+    .bingo-cell.finisher {
+      animation: finisher-pulse 1s ease-in-out infinite;
+      box-shadow: 0 0 16px rgba(255, 255, 255, 0.6);
+      border-color: #ffffff;
+    }
+
+    @keyframes finisher-pulse {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.04); }
+    }
+
+    /* 新規配置されたマス：2回光るようなイメージのポップ演出 */
+    .bingo-cell.placed {
+      animation: placed-pop 0.9s ease-out;
+    }
+
+    @keyframes placed-pop {
+      0%   { transform: scale(1); box-shadow: none; }
+      20%  { transform: scale(1.06); box-shadow: 0 0 18px rgba(255,255,255,0.9); }
+      40%  { transform: scale(1); box-shadow: none; }
+      60%  { transform: scale(1.06); box-shadow: 0 0 18px rgba(255,255,255,0.9); }
+      80%  { transform: scale(1); box-shadow: none; }
+      100% { transform: scale(1); box-shadow: none; }
+    }
+
+    .bingo-status {
+      display: flex;
+      justify-content: flex-end;
+      gap: 12px;
+      font-size: 11px;
+      margin-top: 6px;
+      opacity: 0.9;
+      color: var(--text-color);
+    }
+
+    .bingo-status span {
+      padding: 2px 6px;
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.06);
+    }
+
+    .theme-light .bingo-status span,
+    .theme-cute .bingo-status span,
+    .theme-green .bingo-status span {
+      background: rgba(0, 0, 0, 0.04);
+    }
+
+    .bingo-message {
+      text-align: center;
+      font-size: 16px;
+      font-weight: 700;
+      margin-top: 4px;
+      color: var(--accent);
+      opacity: 0;
+      transform: translateY(4px);
+      transition: opacity 0.25s ease, transform 0.25s ease;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+    }
+
+    .bingo-message.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .bingo-controls-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      font-size: 11px;
+      margin-bottom: 6px;
+      align-items: center;
+      color: var(--text-color);
+    }
+
+    .bingo-controls-row .spacer {
+      flex: 1;
+    }
+
+    /* ルーレット画面 */
+
+    .roulette-view-inner {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background:
+        radial-gradient(circle at 50% 0%, rgba(255,255,255,0.06), transparent 60%),
+        radial-gradient(circle at 0% 100%, rgba(255,0,0,0.16), transparent 60%),
+        radial-gradient(circle at 100% 100%, rgba(0,120,255,0.16), transparent 60%),
+        #050608;
+    }
+
+    .theme-light .roulette-view-inner,
+    .theme-cute .roulette-view-inner,
+    .theme-green .roulette-view-inner {
+      background:
+        radial-gradient(circle at 50% 0%, rgba(255,255,255,0.3), transparent 60%),
+        radial-gradient(circle at 0% 100%, rgba(255,0,0,0.18), transparent 60%),
+        radial-gradient(circle at 100% 100%, rgba(0,120,255,0.18), transparent 60%),
+        #111111;
+    }
+
+    .roulette-border {
+      position: absolute;
+      inset: 14px;
+      border-radius: 18px;
+      border: 2px solid rgba(255,255,255,0.35);
+      box-shadow:
+        0 0 16px rgba(0,0,0,0.9),
+        0 0 24px rgba(255,255,255,0.15);
+      pointer-events: none;
+    }
+
+    .roulette-killer {
+      position: relative;
+      z-index: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      color: #ffffff;
+      text-align: center;
+    }
+
+    .roulette-killer-image-wrap {
+      width: 260px;
+      height: 260px;
+      border-radius: 18px;
+      overflow: hidden;
+      background: rgba(0,0,0,0.75);
+      box-shadow: 0 0 30px rgba(0,0,0,0.9);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      animation: roulette-pulse 1.2s ease-in-out infinite;
+    }
+
+    .roulette-killer-image-wrap img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+
+    .roulette-killer-name {
+      font-size: 20px;
+      font-weight: 700;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      text-shadow: 0 2px 4px rgba(0,0,0,0.8);
+    }
+
+    .roulette-label {
+      font-size: 12px;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      opacity: 0.85;
+    }
+
+    @keyframes roulette-pulse {
+      0%, 100% { transform: scale(1); box-shadow: 0 0 26px rgba(0,0,0,0.9); }
+      50%      { transform: scale(1.04); box-shadow: 0 0 40px rgba(0,0,0,1); }
+    }
+
+    /* Perk 4枠（表示＆操作） */
+
+    .perk-preview-grid {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 8px;
+    }
+
+    .perk-slot-preview {
+      border-radius: 8px;
+      padding: 6px;
+      background: linear-gradient(to bottom right, rgba(255, 255, 255, 0.04), rgba(0, 0, 0, 0.3));
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 4px;
+      min-height: 96px;
+      color: var(--text-color);
+    }
+
+    .theme-light .perk-slot-preview,
+    .theme-cute .perk-slot-preview,
+    .theme-green .perk-slot-preview {
+      background: linear-gradient(to bottom right, rgba(255,255,255,0.95), rgba(0,0,0,0.05));
+      border-color: rgba(0,0,0,0.05);
+    }
+
+    .perk-slot-preview img {
+      width: 46px;
+      height: 46px;
+      object-fit: contain;
+      border-radius: 6px;
+      background: rgba(0, 0, 0, 0.3);
+    }
+
+    .theme-light .perk-slot-preview img,
+    .theme-cute .perk-slot-preview img,
+    .theme-green .perk-slot-preview img {
+      background: rgba(0, 0, 0, 0.08);
+    }
+
+    .perk-slot-fixed {
+      font-size: 11px;
+    }
+
+    .perk-slot-select {
+      width: 100%;
+      font-size: 11px;
+    }
+
+    .perk-card-controls {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin-top: 10px;
+      margin-bottom: 4px;
+      flex-wrap: wrap;
+    }
+
+    .perk-card-controls .spacer {
+      flex: 1;
+    }
+
+    .perk-search-input {
+      min-width: 220px;
+      flex: 0 0 auto;
+    }
+
+    /* Buttons, inputs */
+
+    button {
+      border-radius: 999px;
+      border: none;
+      padding: 10px 20px;
+      font-size: 14px;
+      cursor: pointer;
+      background: var(--accent);
+      color: #ffffff;
+      min-height: 50px;
+      min-width: 140px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 4px;
+      letter-spacing: 0.05em;
+    }
+
+    button.secondary {
+      background: transparent;
+      color: var(--text-color);
+      border: 1px solid var(--border-color);
+    }
+
+    button.danger {
+      background: #d81b60;
+    }
+
+    button:disabled {
+      opacity: 0.4;
+      cursor: default;
+    }
+
+    select,
+    input[type="checkbox"] {
+      cursor: pointer;
+    }
+
+    select,
+    input[type="text"],
+    input[type="file"],
+    input[type="range"] {
+      min-height: 32px;
+      border-radius: 999px;
+      border: 1px solid var(--border-color);
+      background: rgba(0, 0, 0, 0.05);
+      color: var(--text-color);
+      padding: 4px 10px;
+      font-size: 11px;
+    }
+
+    select option {
+      background: var(--bg-elevated);
+      color: var(--text-color);
+    }
+
+    input[type="file"] {
+      padding: 3px 8px;
+    }
+
+    input[type="range"] {
+      padding: 0;
+    }
+
+    .theme-cute select,
+    .theme-cute input,
+    .theme-cute button.secondary,
+    .theme-green select,
+    .theme-green input,
+    .theme-green button.secondary {
+      background: rgba(255, 255, 255, 0.95);
+      border-color: var(--border-color);
+      color: var(--text-color);
+    }
+
+    .theme-dark select,
+    .theme-dark input,
+    .theme-dark button.secondary,
+    .theme-dbd select,
+    .theme-dbd input,
+    .theme-dbd button.secondary {
+      background: rgba(255, 255, 255, 0.06);
+      border-color: rgba(255, 255, 255, 0.3);
+      color: var(--text-color);
+    }
+
+    .theme-dark input::placeholder,
+    .theme-dbd input::placeholder {
+      color: rgba(255, 255, 255, 0.6);
+    }
+
+    /* Modal & settings */
+
+    .modal-backdrop {
+      position: fixed;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.5);
+      display: none;
+      align-items: center;
+      justify-content: center;
+      z-index: 10;
+      color: var(--text-color);
+    }
+
+    .modal-backdrop.visible {
+      display: flex;
+    }
+
+    .modal {
+      background: var(--bg-elevated);
+      border-radius: 12px;
+      padding: 14px;
+      min-width: 260px;
+      max-width: 360px;
+      box-shadow: var(--shadow-soft);
+      border: 1px solid var(--border-color);
+      color: var(--text-color);
+    }
+
+    .modal-footer {
+      display: flex;
+      justify-content: flex-end;
+      gap: 6px;
+      margin-top: 10px;
+    }
+
+    .settings-row {
+      display: flex;
+      gap: 8px;
+      align-items: center;
+      flex-wrap: wrap;
+      color: var(--text-color);
+    }
+
+    .settings-row > div {
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+    }
+
+    .settings-row .inline {
+      flex-direction: row;
+      align-items: center;
+      gap: 8px;
+    }
+
+    /* Confetti */
+
+    #confettiContainer {
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      overflow: hidden;
+      z-index: 9;
+    }
+
+    .confetti-piece {
+      position: absolute;
+      width: 7px;
+      height: 14px;
+      background: var(--accent);
+      opacity: 0.95;
+      animation: confetti-fall 2s linear forwards;
+    }
+
+    @keyframes confetti-fall {
+      0% {
+        transform: translate3d(0, -100vh, 0) rotate(0deg);
+      }
+      100% {
+        transform: translate3d(0, 100vh, 0) rotate(360deg);
+        opacity: 0;
+      }
+    }
+
+    /* Startup overlay */
+
+    .startup-overlay {
+      position: fixed;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.85);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 20;
+      color: #ffffff;
+    }
+
+    .startup-inner {
+      max-width: 420px;
+      width: 90%;
+      background: #1e1e1e;
+      padding: 20px;
+      border-radius: 16px;
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.8);
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      text-align: center;
+      color: #ffffff;
+    }
+
+    .startup-title {
+      font-size: 18px;
+      font-weight: 600;
+      margin-bottom: 12px;
+    }
+
+    .startup-desc {
+      font-size: 13px;
+      opacity: 0.85;
+      margin-bottom: 14px;
+    }
+
+    .startup-inner input[type="file"] {
+      width: 100%;
+      background: rgba(255, 255, 255, 0.06);
+      color: #ffffff;
+      border-color: rgba(255, 255, 255, 0.25);
+    }
+
+    .startup-note {
+      font-size: 11px;
+      opacity: 0.7;
+      margin-top: 10px;
+    }
+
+  </style>
+</head>
+<body>
+  <div id="app" class="app theme-light">
+    <header class="app-header">
+      <div style="width:200px;"></div>
+      <div class="header-center">
+        <div class="header-icon">
+          <img src="icon1.png" alt="icon1">
+        </div>
+        <div class="header-title">ＤＢＤ　ＢＩＮＧＯ企画</div>
+        <div class="header-icon">
+          <img src="icon2.png" alt="icon2">
+        </div>
+      </div>
+      <div class="header-right">
+        <span>Theme</span>
+        <select id="themeSelect">
+          <option value="light">Light</option>
+          <option value="cute">Cute</option>
+          <option value="green">Green</option>
+          <option value="dark">Dark</option>
+          <option value="dbd">DBD</option>
+        </select>
+      </div>
+    </header>
+
+    <!-- 起動時のimgフォルダ読み込みオーバーレイ -->
+    <div id="startupOverlay" class="startup-overlay">
+      <div class="startup-inner">
+        <div class="startup-title">imgフォルダを選択してください</div>
+        <div class="startup-desc">
+          <div>・<code>img/killers/*.png</code> キラー画像</div>
+          <div>・<code>img/perks/*.png</code> パーク画像</div>
+          <div style="margin-top:4px;">を含む <strong>img フォルダ</strong> を選択します。</div>
+        </div>
+        <input type="file" id="startupImgFilesInput" webkitdirectory multiple accept="image/*">
+        <div class="startup-note">
+          ※ フォルダ構成を同じにして再読み込みすると、ビンゴ表の配置も復元できます。
+        </div>
+      </div>
+    </div>
+
+    <div id="confettiContainer"></div>
+
+    <main class="app-main">
+      <section class="single-column">
+        <!-- Bingo -->
+        <div class="card">
+          <div class="card-header">
+            <div class="card-title">Bingo Board</div>
+          </div>
+
+          <div class="bingo-controls-row">
+            <label>サイズ:
+              <select id="bingoSizeSelect">
+                <option value="5">5×5</option>
+                <option value="6">6×6</option>
+              </select>
+            </label>
+            <label>
+              <input type="checkbox" id="freeCellCheckbox" checked>
+              FREEマスあり
+            </label>
+            <div class="spacer"></div>
+            <button class="secondary" id="resetBingoButton">ビンゴカードをリセット</button>
+          </div>
+
+          <div class="bingo-board-wrapper">
+            <div id="bingoBoardView" class="bingo-board-view">
+              <div id="bingoBoard" class="bingo-board"></div>
+            </div>
+
+            <!-- ルーレット用フルサイズ画面 -->
+            <div id="rouletteView" class="roulette-view">
+              <div class="roulette-view-inner">
+                <div class="roulette-border"></div>
+                <div class="roulette-killer">
+                  <div class="roulette-label">KILLER ROULETTE</div>
+                  <div class="roulette-killer-image-wrap">
+                    <img id="rouletteKillerImage" src="" alt="">
+                  </div>
+                  <div id="rouletteKillerName" class="roulette-killer-name">READY...</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- キラールーレット スタート/ストップボタンのみ -->
+          <div style="margin-top:10px; display:flex; justify-content:center;">
+            <button id="killerRouletteToggleButton">スタート</button>
+          </div>
+
+          <div class="bingo-status">
+            <span id="bingoCountLabel">Bingo: 0</span>
+            <span id="reachCountLabel">Reach: 0</span>
+          </div>
+          <div class="bingo-message" id="bingoMessage"></div>
+        </div>
+
+        <!-- パーク4枠（表示＆操作統合） -->
+        <div class="card">
+          <div class="card-header">
+            <div class="card-title">Current Perks (4)</div>
+          </div>
+
+          <!-- 4枠：画像＋固定チェック＋セレクト（表示兼選択） -->
+          <div id="perkPreview" class="perk-preview-grid"></div>
+
+          <!-- ルーレット操作＋検索 -->
+          <div class="perk-card-controls">
+            <button id="perkRouletteToggleButton">スタート</button>
+            <div class="spacer"></div>
+            <input
+              type="text"
+              id="perkSearchInput"
+              class="perk-search-input"
+              placeholder="パーク名で絞り込み">
+          </div>
+        </div>
+
+        <!-- サウンド設定 -->
+        <div class="card">
+          <div class="card-header">
+            <div class="card-title">Sound Settings</div>
+          </div>
+          <div class="settings-row">
+            <div class="inline">
+              <label class="small-label">
+                <input type="checkbox" id="soundEnableCheckbox" checked>
+                SE ON
+              </label>
+              <div>
+                <span class="small-label">Volume</span>
+                <input type="range" id="soundVolumeRange" min="0" max="1" step="0.05" value="0.8">
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- セル編集モーダル -->
+    <div id="cellEditModalBackdrop" class="modal-backdrop">
+      <div class="modal">
+        <div class="card-title" style="margin-bottom:6px;">セル編集</div>
+        <select id="cellEditKillerSelect" style="width:100%; margin-bottom:4px;">
+          <option value="">（空にする）</option>
+        </select>
+        <div class="modal-footer">
+          <button class="secondary" id="cellEditCancelButton">キャンセル</button>
+          <button id="cellEditSaveButton">保存</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- ビンゴリセット確認モーダル -->
+    <div id="bingoResetModalBackdrop" class="modal-backdrop">
+      <div class="modal">
+        <div class="card-title" style="margin-bottom:8px;">ビンゴカードをリセット</div>
+        <div class="small-label">
+          すべてのマスを初期化します。FREEマス以外の情報は消去されます。
+        </div>
+        <div class="modal-footer">
+          <button class="secondary" id="bingoResetCancelButton">キャンセル</button>
+          <button class="danger" id="bingoResetConfirmButton">リセットする</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- 効果音 -->
+    <audio id="seHit" src="se/hit.mp3"></audio>
+    <audio id="seReach" src="se/reach.mp3"></audio>
+    <audio id="seBingo" src="se/bingo.mp3"></audio>
+    <audio id="seRouletteStart" src="se/roulette_start.mp3"></audio>
+    <audio id="seRouletteStop" src="se/roulette_stop.mp3"></audio>
+    <audio id="sePlacement" src="se/placement.mp3"></audio>
+  </div>
+
+  <script>
+    /***************************
+     * 設定
+     ***************************/
+    const HIT_MARK_IMAGE = 'img/hit_effect.png'; // 撃破エフェクト画像
+
+    /***************************
+     * 共通データ（初期サンプル）
+     ***************************/
+    let killers = [
+      { id: 'trapper', name: 'トラッパー', img: 'img/killers/trapper.png' },
+      { id: 'wraith', name: 'レイス', img: 'img/killers/wraith.png' },
+      { id: 'hillbilly', name: 'ヒルビリー', img: 'img/killers/hillbilly.png' },
+      { id: 'nurse', name: 'ナース', img: 'img/killers/nurse.png' },
+      { id: 'shape', name: 'シェイプ', img: 'img/killers/shape.png' }
+    ];
+
+    let perks = [
+      { id: 'perk1', name: 'セルフケア', img: 'img/perks/perk1.png' },
+      { id: 'perk2', name: '絆', img: 'img/perks/perk2.png' },
+      { id: 'perk3', name: '全力疾走', img: 'img/perks/perk3.png' },
+      { id: 'perk4', name: 'デッド・ハード', img: 'img/perks/perk4.png' },
+      { id: 'perk5', name: '決死の一撃', img: 'img/perks/perk5.png' }
+    ];
+
+    /***************************
+     * 状態管理
+     ***************************/
+    let bingoSize = 5;
+    let bingoFreeEnabled = true;
+    let bingoCells = [];
+
+    let killerRouletteTimer = null;
+    let killerRoulettePool = [];
+    let killerRouletteCurrent = null;
+
+    let perkRouletteTimer = null;
+    let perkSlots = [
+      { perkId: null, locked: false },
+      { perkId: null, locked: false },
+      { perkId: null, locked: false },
+      { perkId: null, locked: false }
+    ];
+
+    let theme = 'light';
+
+    let editingCellIndex = null;
+    let soundEnabled = true;
+    let soundVolume = 0.8;
+    let bingoMessageTimeout = null;
+    let perkSearchQuery = '';
+
+    /***************************
+     * localStorage
+     ***************************/
+    const STORAGE_KEYS = {
+      BINGO_SETTINGS: 'dbdBingoSettings_v1',
+      BINGO_BOARD: 'dbdBingoBoard_v1',
+      PERK_SLOTS: 'dbdPerkSlots_v1',
+      THEME: 'dbdTheme_v1'
+    };
+
+    function saveBingoSettings() {
+      const settings = { size: bingoSize, freeEnabled: bingoFreeEnabled };
+      localStorage.setItem(STORAGE_KEYS.BINGO_SETTINGS, JSON.stringify(settings));
+    }
+
+    function saveBingoBoard() {
+      localStorage.setItem(STORAGE_KEYS.BINGO_BOARD, JSON.stringify(bingoCells));
+    }
+
+    function savePerkSlots() {
+      localStorage.setItem(STORAGE_KEYS.PERK_SLOTS, JSON.stringify(perkSlots));
+    }
+
+    function saveTheme() {
+      localStorage.setItem(STORAGE_KEYS.THEME, theme);
+    }
+
+    function loadFromStorage() {
+      try {
+        const s = localStorage.getItem(STORAGE_KEYS.BINGO_SETTINGS);
+        if (s) {
+          const parsed = JSON.parse(s);
+          if (parsed.size === 5 || parsed.size === 6) bingoSize = parsed.size;
+          if (typeof parsed.freeEnabled === 'boolean') bingoFreeEnabled = parsed.freeEnabled;
+        }
+      } catch (e) {}
+
+      try {
+        const boardStr = localStorage.getItem(STORAGE_KEYS.BINGO_BOARD);
+        if (boardStr) {
+          const parsed = JSON.parse(boardStr);
+          if (Array.isArray(parsed)) {
+            bingoCells = parsed;
+          }
+        }
+      } catch (e) {}
+
+      try {
+        const perksStr = localStorage.getItem(STORAGE_KEYS.PERK_SLOTS);
+        if (perksStr) {
+          const parsed = JSON.parse(perksStr);
+          if (Array.isArray(parsed) && parsed.length === 4) {
+            perkSlots = parsed;
+          }
+        }
+      } catch (e) {}
+
+      const t = localStorage.getItem(STORAGE_KEYS.THEME);
+      if (t === 'light' || t === 'cute' || t === 'green' || t === 'dark' || t === 'dbd') {
+        theme = t;
+      }
+    }
+
+    /***************************
+     * 効果音＆花吹雪
+     ***************************/
+    function playSE(id) {
+      if (!soundEnabled) return;
+      const audio = document.getElementById(id);
+      if (!audio) return;
+      audio.currentTime = 0;
+      audio.volume = soundVolume;
+      audio.play().catch(() => {});
+    }
+
+    function startRouletteLoop() {
+      if (!soundEnabled) return;
+      const audio = document.getElementById('seRouletteStart');
+      if (!audio) return;
+      audio.loop = true;
+      audio.volume = soundVolume;
+      audio.currentTime = 0;
+      audio.play().catch(() => {});
+    }
+
+    function stopRouletteLoop() {
+      const audio = document.getElementById('seRouletteStart');
+      if (!audio) return;
+      audio.pause();
+      audio.currentTime = 0;
+      audio.loop = false;
+    }
+
+    function triggerConfetti() {
+      const container = document.getElementById('confettiContainer');
+      container.innerHTML = '';
+      const colors = ['#ffeb3b', '#ff9800', '#f44336', '#8bc34a', '#03a9f4', '#e91e63', '#7c4dff', '#ff6fb5'];
+
+      const pieces = 200;
+      for (let i = 0; i < pieces; i++) {
+        const div = document.createElement('div');
+        div.className = 'confetti-piece';
+        const left = Math.random() * 100;
+        const delay = Math.random() * 0.5;
+        const duration = 1.6 + Math.random() * 0.8;
+        const color = colors[Math.floor(Math.random() * colors.length)];
+        div.style.left = left + '%';
+        div.style.animationDelay = delay + 's';
+        div.style.animationDuration = duration + 's';
+        div.style.backgroundColor = color;
+        container.appendChild(div);
+      }
+
+      setTimeout(() => {
+        container.innerHTML = '';
+      }, 2500);
+    }
+
+    function showBingoMessage(text) {
+      const msgEl = document.getElementById('bingoMessage');
+      if (!msgEl) return;
+      msgEl.textContent = text;
+      msgEl.classList.add('visible');
+      if (bingoMessageTimeout) clearTimeout(bingoMessageTimeout);
+      bingoMessageTimeout = setTimeout(() => {
+        msgEl.classList.remove('visible');
+      }, 1300);
+    }
+
+    /***************************
+     * Bingo 初期化 & ステータス
+     ***************************/
+    function initEmptyBoard() {
+      bingoCells = [];
+      for (let r = 0; r < bingoSize; r++) {
+        const row = [];
+        for (let c = 0; c < bingoSize; c++) {
+          row.push({ type: 'empty', killerId: null, hit: false });
+        }
+        bingoCells.push(row);
+      }
+
+      if (bingoFreeEnabled) {
+        const mid = Math.floor(bingoSize / 2);
+        if (bingoCells[mid] && bingoCells[mid][mid]) {
+          bingoCells[mid][mid].type = 'free';
+          bingoCells[mid][mid].killerId = null;
+          bingoCells[mid][mid].hit = true;
+        }
+      }
+      saveBingoBoard();
+    }
+
+    function computeBingoStatusAndFinishers() {
+      const size = bingoSize;
+      let bingoCount = 0;
+      let reachCount = 0;
+      const finisherKeys = new Set();
+      const key = (r, c) => `${r},${c}`;
+
+      // 行
+      for (let r = 0; r < size; r++) {
+        let hits = 0;
+        for (let c = 0; c < size; c++) {
+          if (bingoCells[r][c].hit) hits++;
+        }
+        if (hits === size) {
+          bingoCount++;
+        } else if (hits === size - 1) {
+          reachCount++;
+          for (let c = 0; c < size; c++) {
+            if (!bingoCells[r][c].hit) {
+              finisherKeys.add(key(r, c));
+            }
+          }
+        }
+      }
+
+      // 列
+      for (let c = 0; c < size; c++) {
+        let hits = 0;
+        for (let r = 0; r < size; r++) {
+          if (bingoCells[r][c].hit) hits++;
+        }
+        if (hits === size) {
+          bingoCount++;
+        } else if (hits === size - 1) {
+          reachCount++;
+          for (let r = 0; r < size; r++) {
+            if (!bingoCells[r][c].hit) {
+              finisherKeys.add(key(r, c));
+            }
+          }
+        }
+      }
+
+      // 斜め1
+      {
+        let hits = 0;
+        for (let i = 0; i < size; i++) {
+          if (bingoCells[i][i].hit) hits++;
+        }
+        if (hits === size) {
+          bingoCount++;
+        } else if (hits === size - 1) {
+          reachCount++;
+          for (let i = 0; i < size; i++) {
+            if (!bingoCells[i][i].hit) {
+              finisherKeys.add(key(i, i));
+            }
+          }
+        }
+      }
+
+      // 斜め2
+      {
+        let hits = 0;
+        for (let i = 0; i < size; i++) {
+          if (bingoCells[i][size - 1 - i].hit) hits++;
+        }
+        if (hits === size) {
+          bingoCount++;
+        } else if (hits === size - 1) {
+          reachCount++;
+          for (let i = 0; i < size; i++) {
+            if (!bingoCells[i][size - 1 - i].hit) {
+              finisherKeys.add(key(i, size - 1 - i));
+            }
+          }
+        }
+      }
+
+      return { bingoCount, reachCount, finisherKeys };
+    }
+
+    function renderBingoBoard() {
+      const boardEl = document.getElementById('bingoBoard');
+      boardEl.innerHTML = '';
+      boardEl.style.gridTemplateColumns = `repeat(${bingoSize}, 1fr)`;
+      boardEl.style.gridTemplateRows = `repeat(${bingoSize}, 1fr)`;
+
+      const status = computeBingoStatusAndFinishers();
+      const { bingoCount, reachCount, finisherKeys } = status;
+
+      const editSelect = document.getElementById('cellEditKillerSelect');
+      if (editSelect) {
+        editSelect.innerHTML = '<option value="">（空にする）</option>';
+        killers.forEach(k => {
+          const opt = document.createElement('option');
+          opt.value = k.id;
+          opt.textContent = k.name;
+          editSelect.appendChild(opt);
+        });
+      }
+
+      for (let r = 0; r < bingoSize; r++) {
+        for (let c = 0; c < bingoSize; c++) {
+          const cell = bingoCells[r][c];
+          const div = document.createElement('div');
+          div.className = 'bingo-cell';
+          div.dataset.row = r;
+          div.dataset.col = c;
+
+          const key = `${r},${c}`;
+          if (finisherKeys.has(key) && !cell.hit && cell.type !== 'free') {
+            div.classList.add('finisher');
+          }
+
+          if (cell.type === 'free') {
+            div.classList.add('free');
+            const inner = document.createElement('div');
+            inner.className = 'bingo-cell-inner';
+            inner.textContent = 'FREE';
+            div.appendChild(inner);
+          } else {
+            const inner = document.createElement('div');
+            inner.className = 'bingo-cell-inner';
+
+            if (cell.type === 'killer' && cell.killerId) {
+              const killer = killers.find(k => k.id === cell.killerId);
+              if (killer) {
+                const imgWrap = document.createElement('div');
+                imgWrap.className = 'bingo-cell-image-wrapper';
+
+                const img = document.createElement('img');
+                img.src = killer.img;
+                img.alt = killer.name;
+                imgWrap.appendChild(img);
+                inner.appendChild(imgWrap);
+              }
+            }
+
+            div.appendChild(inner);
+          }
+
+          if (cell.hit) {
+            div.classList.add('hit');
+            const overlay = document.createElement('div');
+            overlay.className = 'bingo-cell-hit-overlay';
+            div.appendChild(overlay);
+
+            if (HIT_MARK_IMAGE) {
+              const hitMark = document.createElement('div');
+              hitMark.className = 'bingo-cell-hit-mark';
+              const img = document.createElement('img');
+              img.src = HIT_MARK_IMAGE;
+              img.alt = 'hit';
+              hitMark.appendChild(img);
+              div.appendChild(hitMark);
+            }
+          }
+
+          div.addEventListener('click', onBingoCellClick);
+          div.addEventListener('contextmenu', onBingoCellRightClick);
+
+          boardEl.appendChild(div);
+        }
+      }
+
+      document.getElementById('bingoCountLabel').textContent = `Bingo: ${bingoCount}`;
+      document.getElementById('reachCountLabel').textContent = `Reach: ${reachCount}`;
+
+      updateKillerRoulettePool();
+    }
+
+    function onBingoCellClick(e) {
+      e.preventDefault();
+      const row = parseInt(this.dataset.row, 10);
+      const col = parseInt(this.dataset.col, 10);
+      const cell = bingoCells[row][col];
+
+      if (cell.type === 'free') return;
+
+      const beforeStatus = computeBingoStatusAndFinishers();
+      const prevHit = cell.hit;
+
+      cell.hit = !cell.hit;
+      saveBingoBoard();
+
+      const afterStatus = computeBingoStatusAndFinishers();
+      renderBingoBoard();
+
+      if (!prevHit && cell.hit) {
+        if (afterStatus.bingoCount > beforeStatus.bingoCount) {
+          playSE('seBingo');
+          triggerConfetti();
+          showBingoMessage('BINGO!');
+        } else if (afterStatus.reachCount > beforeStatus.reachCount) {
+          playSE('seReach');
+          showBingoMessage('REACH!');
+        } else {
+          playSE('seHit');
+        }
+      }
+    }
+
+    function onBingoCellRightClick(e) {
+      e.preventDefault();
+      const row = parseInt(this.dataset.row, 10);
+      const col = parseInt(this.dataset.col, 10);
+      const cell = bingoCells[row][col];
+
+      if (cell.type === 'free') return;
+
+      editingCellIndex = { row, col };
+      const backdrop = document.getElementById('cellEditModalBackdrop');
+      const select = document.getElementById('cellEditKillerSelect');
+      if (cell.type === 'killer' && cell.killerId) {
+        select.value = cell.killerId;
+      } else {
+        select.value = '';
+      }
+      backdrop.classList.add('visible');
+    }
+
+    function closeCellEditModal() {
+      document.getElementById('cellEditModalBackdrop').classList.remove('visible');
+      editingCellIndex = null;
+    }
+
+    function saveCellEdit() {
+      if (!editingCellIndex) return;
+      const { row, col } = editingCellIndex;
+      const cell = bingoCells[row][col];
+      const select = document.getElementById('cellEditKillerSelect');
+      const value = select.value;
+
+      if (!value) {
+        cell.type = 'empty';
+        cell.killerId = null;
+        cell.hit = false;
+      } else {
+        cell.type = 'killer';
+        cell.killerId = value;
+        cell.hit = false;
+      }
+
+      saveBingoBoard();
+      renderBingoBoard();
+      closeCellEditModal();
+    }
+
+    /***************************
+     * ビンゴリセット
+     ***************************/
+    function openBingoResetModal() {
+      document.getElementById('bingoResetModalBackdrop').classList.add('visible');
+    }
+
+    function closeBingoResetModal() {
+      document.getElementById('bingoResetModalBackdrop').classList.remove('visible');
+    }
+
+    function confirmBingoReset() {
+      initEmptyBoard();
+      renderBingoBoard();
+      saveBingoSettings();
+      closeBingoResetModal();
+    }
+
+    /***************************
+     * ビュー切り替え（ビンゴ表 <-> ルーレット）
+     ***************************/
+    function showBoardView() {
+      document.getElementById('bingoBoardView').style.display = 'block';
+      document.getElementById('rouletteView').classList.remove('visible');
+    }
+
+    function showRouletteView() {
+      document.getElementById('bingoBoardView').style.display = 'none';
+      document.getElementById('rouletteView').classList.add('visible');
+    }
+
+    /***************************
+     * キラールーレット（フル画面）
+     ***************************/
+    function updateKillerRoulettePool() {
+      const usedIds = new Set();
+      bingoCells.forEach(row => {
+        row.forEach(cell => {
+          if (cell.type === 'killer' && cell.killerId) {
+            usedIds.add(cell.killerId);
+          }
+        });
+      });
+
+      killerRoulettePool = killers.filter(k => !usedIds.has(k.id));
+    }
+
+    function getEmptyCells() {
+      const empty = [];
+      for (let r = 0; r < bingoSize; r++) {
+        for (let c = 0; c < bingoSize; c++) {
+          const cell = bingoCells[r][c];
+          if (cell.type === 'empty') {
+            empty.push({ row: r, col: c });
+          }
+        }
+      }
+      return empty;
+    }
+
+    function highlightNewPlacement(row, col) {
+      const selector = `.bingo-cell[data-row="${row}"][data-col="${col}"]`;
+      const cellEl = document.querySelector(selector);
+      if (!cellEl) return;
+      cellEl.classList.add('placed');
+      setTimeout(() => {
+        cellEl.classList.remove('placed');
+      }, 900);
+    }
+
+    // 空きマスにランダム配置
+    function placeKillerOnBingoRandom(killerId) {
+      // すでに配置済みなら何もしない
+      for (let r = 0; r < bingoSize; r++) {
+        for (let c = 0; c < bingoSize; c++) {
+          const cell = bingoCells[r][c];
+          if (cell.type === 'killer' && cell.killerId === killerId) {
+            return;
+          }
+        }
+      }
+
+      const emptyCells = getEmptyCells();
+      if (emptyCells.length === 0) {
+        alert('ビンゴカードがすべて埋まっています。');
+        return;
+      }
+
+      const chosen = emptyCells[Math.floor(Math.random() * emptyCells.length)];
+      const cell = bingoCells[chosen.row][chosen.col];
+      cell.type = 'killer';
+      cell.killerId = killerId;
+      cell.hit = false;
+
+      saveBingoBoard();
+      renderBingoBoard();
+      highlightNewPlacement(chosen.row, chosen.col);
+
+      const hasEmpty = bingoCells.some(row =>
+        row.some(cell => cell.type === 'empty')
+      );
+    }
+
+    function killerRouletteStart() {
+      if (killerRouletteTimer) return;
+
+      updateKillerRoulettePool();
+      const emptyCells = getEmptyCells();
+      if (killerRoulettePool.length === 0 || emptyCells.length === 0) {
+        alert('抽選可能なキラーまたは空きマスがありません。');
+        return;
+      }
+
+      showRouletteView();
+
+      const imgEl = document.getElementById('rouletteKillerImage');
+      const nameEl = document.getElementById('rouletteKillerName');
+
+      killerRouletteTimer = setInterval(() => {
+        if (!killerRoulettePool.length) return;
+        const idx = Math.floor(Math.random() * killerRoulettePool.length);
+        const k = killerRoulettePool[idx];
+        killerRouletteCurrent = k;
+
+        if (imgEl) {
+          imgEl.src = k.img;
+          imgEl.alt = k.name;
+        }
+        if (nameEl) {
+          nameEl.textContent = k.name;
+        }
+      }, 80);
+
+      startRouletteLoop();
+      document.getElementById('killerRouletteToggleButton').textContent = 'ストップ';
+    }
+
+    function killerRouletteStop() {
+      if (!killerRouletteTimer) return;
+      clearInterval(killerRouletteTimer);
+      killerRouletteTimer = null;
+
+      stopRouletteLoop();
+      playSE('seRouletteStop');
+
+      const button = document.getElementById('killerRouletteToggleButton');
+      button.textContent = 'スタート';
+
+      if (killerRouletteCurrent) {
+        // ★ここを変更：静止時間を延長（1200ms）し、そのタイミングでマス配置＋SE
+        setTimeout(() => {
+          showBoardView();
+          placeKillerOnBingoRandom(killerRouletteCurrent.id);
+          playSE('sePlacement'); // マス配置時の効果音
+        }, 1200);
+      } else {
+        // 念のため何も選ばれていない場合はそのまま戻す
+        setTimeout(() => {
+          showBoardView();
+        }, 300);
+      }
+    }
+
+    function toggleKillerRoulette() {
+      if (killerRouletteTimer) {
+        killerRouletteStop();
+      } else {
+        killerRouletteStart();
+      }
+    }
+
+    /***************************
+     * パークUI（表示＋操作統合）
+     ***************************/
+    function renderPerkUI() {
+      const container = document.getElementById('perkPreview');
+      container.innerHTML = '';
+
+      const q = perkSearchQuery.trim().toLowerCase();
+
+      perkSlots.forEach((slot, index) => {
+        const slotDiv = document.createElement('div');
+        slotDiv.className = 'perk-slot-preview';
+
+        const img = document.createElement('img');
+        if (slot.perkId) {
+          const perk = perks.find(p => p.id === slot.perkId);
+          if (perk) {
+            img.src = perk.img;
+            img.alt = perk.name;
+          }
+        }
+        slotDiv.appendChild(img);
+
+        const fixedLabel = document.createElement('label');
+        fixedLabel.className = 'perk-slot-fixed';
+        fixedLabel.innerHTML = `<input type="checkbox" data-perk-slot-lock="${index}"> 固定`;
+        slotDiv.appendChild(fixedLabel);
+
+        const select = document.createElement('select');
+        select.className = 'perk-slot-select';
+        select.dataset.perkSlotSelect = index;
+
+        const emptyOpt = document.createElement('option');
+        emptyOpt.value = '';
+        emptyOpt.textContent = '（未設定）';
+        select.appendChild(emptyOpt);
+
+        let perkList;
+        if (!q) {
+          perkList = perks.slice();
+        } else {
+          perkList = perks.filter(p =>
+            p.name.toLowerCase().includes(q) ||
+            p.id.toLowerCase().includes(q)
+          );
+        }
+
+        if (slot.perkId) {
+          const currentPerk = perks.find(p => p.id === slot.perkId);
+          if (currentPerk && !perkList.some(p => p.id === currentPerk.id)) {
+            perkList.unshift(currentPerk);
+          }
+        }
+
+        perkList.forEach(p => {
+          const opt = document.createElement('option');
+          opt.value = p.id;
+          opt.textContent = p.name;
+          select.appendChild(opt);
+        });
+
+        select.value = slot.perkId || '';
+
+        slotDiv.appendChild(select);
+        container.appendChild(slotDiv);
+      });
+
+      // 固定チェック
+      perkSlots.forEach((slot, index) => {
+        const checkbox = document.querySelector(`input[data-perk-slot-lock="${index}"]`);
+        if (checkbox) {
+          checkbox.checked = slot.locked;
+          checkbox.addEventListener('change', () => {
+            slot.locked = checkbox.checked;
+            savePerkSlots();
+          });
+        }
+      });
+
+      // セレクト変更
+      const selects = document.querySelectorAll('select[data-perk-slot-select]');
+      selects.forEach(sel => {
+        sel.addEventListener('change', () => {
+          const idx = parseInt(sel.dataset.perkSlotSelect, 10);
+          const val = sel.value;
+          if (!val) {
+            perkSlots[idx].perkId = null;
+          } else {
+            perkSlots[idx].perkId = val;
+          }
+          savePerkSlots();
+          renderPerkUI();
+        });
+      });
+    }
+
+    function perkRouletteStart() {
+      if (perkRouletteTimer) return;
+
+      if (!perks.length) {
+        alert('パークが定義されていません。');
+        return;
+      }
+
+      perkRouletteTimer = setInterval(() => {
+        perkSlots.forEach((slot) => {
+          if (slot.locked) return;
+          const randomPerk = perks[Math.floor(Math.random() * perks.length)];
+          slot.perkId = randomPerk.id;
+        });
+        savePerkSlots();
+        renderPerkUI();
+      }, 100);
+
+      startRouletteLoop();
+      document.getElementById('perkRouletteToggleButton').textContent = 'ストップ';
+    }
+
+    function perkRouletteStop() {
+      if (!perkRouletteTimer) return;
+      clearInterval(perkRouletteTimer);
+      perkRouletteTimer = null;
+
+      stopRouletteLoop();
+      playSE('seRouletteStop');
+
+      document.getElementById('perkRouletteToggleButton').textContent = 'スタート';
+
+      renderPerkUI();
+    }
+
+    function togglePerkRoulette() {
+      if (perkRouletteTimer) {
+        perkRouletteStop();
+      } else {
+        perkRouletteStart();
+      }
+    }
+
+    /***************************
+     * テーマ
+     ***************************/
+    function applyTheme() {
+      const appEl = document.getElementById('app');
+      appEl.classList.remove('theme-light', 'theme-cute', 'theme-green', 'theme-dark', 'theme-dbd');
+      if (theme === 'cute') {
+        appEl.classList.add('theme-cute');
+      } else if (theme === 'green') {
+        appEl.classList.add('theme-green');
+      } else if (theme === 'dark') {
+        appEl.classList.add('theme-dark');
+      } else if (theme === 'dbd') {
+        appEl.classList.add('theme-dbd');
+      } else {
+        appEl.classList.add('theme-light');
+      }
+    }
+
+    /***************************
+     * 画像読み込み（imgフォルダ一括）
+     ***************************/
+    function handleImgFiles(files) {
+      const list = Array.from(files).filter(f => f.type.startsWith('image/'));
+      if (!list.length) return;
+
+      const newKillers = [];
+      const newPerks = [];
+
+      list.forEach((file) => {
+        const path = file.webkitRelativePath || file.name;
+        const base = file.name.replace(/\.[^.]+$/, '');
+        const objUrl = URL.createObjectURL(file);
+
+        if (path.includes('/killers/') || path.includes('\\killers\\')) {
+          newKillers.push({
+            id: base,
+            name: base,
+            img: objUrl
+          });
+        } else if (path.includes('/perks/') || path.includes('\\perks\\')) {
+          newPerks.push({
+            id: base,
+            name: base,
+            img: objUrl
+          });
+        }
+      });
+
+      if (newKillers.length) {
+        killers = newKillers;
+        renderBingoBoard();
+      }
+      if (newPerks.length) {
+        perks = newPerks;
+        renderPerkUI();
+      }
+    }
+
+    /***************************
+     * 初期化
+     ***************************/
+    document.addEventListener('DOMContentLoaded', () => {
+      loadFromStorage();
+
+      const sizeSelect = document.getElementById('bingoSizeSelect');
+      const freeCheckbox = document.getElementById('freeCellCheckbox');
+
+      sizeSelect.value = String(bingoSize);
+      freeCheckbox.checked = bingoFreeEnabled;
+
+      function updateFreeAvailability() {
+        if (bingoSize === 6) {
+          freeCheckbox.checked = false;
+          freeCheckbox.disabled = true;
+          bingoFreeEnabled = false;
+        } else {
+          freeCheckbox.disabled = false;
+        }
+      }
+      updateFreeAvailability();
+
+      sizeSelect.addEventListener('change', () => {
+        const newSize = parseInt(sizeSelect.value, 10);
+        if (newSize === 5 || newSize === 6) {
+          bingoSize = newSize;
+          updateFreeAvailability();
+          bingoFreeEnabled = freeCheckbox.checked;
+          saveBingoSettings();
+          initEmptyBoard();
+          renderBingoBoard();
+        }
+      });
+
+      freeCheckbox.addEventListener('change', () => {
+        bingoFreeEnabled = freeCheckbox.checked;
+        saveBingoSettings();
+        initEmptyBoard();
+        renderBingoBoard();
+      });
+
+      if (!Array.isArray(bingoCells) || bingoCells.length === 0 || bingoCells.length !== bingoSize) {
+        initEmptyBoard();
+      } else {
+        if (bingoCells.length !== bingoSize || bingoCells.some(row => row.length !== bingoSize)) {
+          initEmptyBoard();
+        }
+      }
+      renderBingoBoard();
+
+      // ビュー初期状態
+      showBoardView();
+
+      // リセットモーダル
+      document.getElementById('resetBingoButton').addEventListener('click', openBingoResetModal);
+      document.getElementById('bingoResetCancelButton').addEventListener('click', closeBingoResetModal);
+      document.getElementById('bingoResetConfirmButton').addEventListener('click', confirmBingoReset);
+      document.getElementById('bingoResetModalBackdrop').addEventListener('click', (e) => {
+        if (e.target.id === 'bingoResetModalBackdrop') {
+          closeBingoResetModal();
+        }
+      });
+
+      // キラールーレットボタン
+      document.getElementById('killerRouletteToggleButton').addEventListener('click', toggleKillerRoulette);
+      updateKillerRoulettePool();
+
+      // パークUI
+      renderPerkUI();
+      document.getElementById('perkRouletteToggleButton').addEventListener('click', togglePerkRoulette);
+
+      // パーク検索
+      const perkSearchInput = document.getElementById('perkSearchInput');
+      perkSearchInput.addEventListener('input', () => {
+        perkSearchQuery = perkSearchInput.value || '';
+        renderPerkUI();
+      });
+
+      // テーマ
+      const themeSelect = document.getElementById('themeSelect');
+      themeSelect.value = theme;
+      applyTheme();
+      themeSelect.addEventListener('change', () => {
+        theme = themeSelect.value;
+        applyTheme();
+        saveTheme();
+      });
+
+      // セル編集モーダル
+      document.getElementById('cellEditCancelButton').addEventListener('click', closeCellEditModal);
+      document.getElementById('cellEditSaveButton').addEventListener('click', saveCellEdit);
+      document.getElementById('cellEditModalBackdrop').addEventListener('click', (e) => {
+        if (e.target.id === 'cellEditModalBackdrop') {
+          closeCellEditModal();
+        }
+      });
+
+      // サウンド設定
+      const soundCheckbox = document.getElementById('soundEnableCheckbox');
+      const volumeRange = document.getElementById('soundVolumeRange');
+      soundCheckbox.addEventListener('change', () => {
+        soundEnabled = soundCheckbox.checked;
+        if (!soundEnabled) stopRouletteLoop();
+      });
+      volumeRange.addEventListener('input', () => {
+        soundVolume = parseFloat(volumeRange.value || '0.8');
+      });
+
+      // 起動時 imgフォルダ選択
+      const startupInput = document.getElementById('startupImgFilesInput');
+      const startupOverlay = document.getElementById('startupOverlay');
+      startupInput.addEventListener('change', (e) => {
+        handleImgFiles(e.target.files);
+        startupOverlay.style.display = 'none';
+      });
+    });
+  </script>
+</body>
+</html>
