@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>恐竜詳細 | JWA非公式Wiki</title>
+
+  <link rel="stylesheet" href="css/base.css" />
+  <link rel="stylesheet" href="css/creatures.css" />
+
+  <!-- このページ専用のレイアウト微調整 -->
+  <style>
+    .detail-layout {
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+    }
+
+    @media (min-width: 960px) {
+      .detail-layout {
+        flex-direction: row;
+        align-items: flex-start;
+      }
+      .detail-main {
+        flex: 3;
+      }
+      .detail-aside {
+        flex: 2;
+      }
+    }
+
+    .detail-section {
+      margin-top: 16px;
+    }
+
+    .detail-section-title {
+      font-size: 0.9rem;
+      font-weight: 600;
+      margin-bottom: 8px;
+      color: rgba(220, 240, 255, 0.9);
+    }
+
+    .detail-section-inner {
+      background: radial-gradient(
+        circle at top left,
+        rgba(120, 200, 255, 0.18),
+        rgba(5, 15, 35, 0.95)
+      );
+      border-radius: 20px;
+      border: 1px solid rgba(120, 200, 255, 0.28);
+      padding: 14px 18px;
+      box-shadow: 0 12px 35px rgba(0, 0, 0, 0.55);
+      font-size: 0.8rem;
+      line-height: 1.6;
+      color: rgba(225, 235, 255, 0.92);
+    }
+
+    .detail-section--secondary .detail-section-inner {
+      background: rgba(5, 12, 30, 0.92);
+      border-color: rgba(255, 255, 255, 0.07);
+    }
+
+    .creature-hero {
+      display: flex;
+      gap: 16px;
+      align-items: center;
+    }
+
+    .creature-hero-thumb img {
+      width: 96px;
+      height: 96px;
+      border-radius: 14px;
+      object-fit: cover;
+    }
+
+    .creature-hero-names-main {
+      font-size: 1.1rem;
+      font-weight: 600;
+    }
+
+    .creature-hero-names-sub {
+      font-size: 0.8rem;
+      opacity: 0.85;
+    }
+
+    .stat-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      margin-top: 6px;
+    }
+
+    .stat-chip {
+      padding: 4px 8px;
+      border-radius: 999px;
+      border: 1px solid rgba(255,255,255,0.16);
+      font-size: 0.75rem;
+      background: rgba(0,0,0,0.4);
+    }
+
+    .ability-list {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    .ability-list-item {
+      display: flex;
+      gap: 8px;
+      align-items: center;
+      padding: 6px 8px;
+      border-radius: 12px;
+      background: rgba(0,0,0,0.35);
+    }
+
+    .ability-list-thumb img {
+      width: 40px;
+      height: 40px;
+      border-radius: 16%;
+      object-fit: cover;
+    }
+
+    .ability-list-link {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      text-decoration: none;
+      color: inherit;
+      width: 100%;
+    }
+
+    .ability-list-name-ja {
+      font-size: 0.85rem;
+    }
+
+    .ability-list-name-en {
+      font-size: 0.7rem;
+      opacity: 0.8;
+    }
+
+    .ability-list-desc {
+      font-size: 0.7rem;
+      opacity: 0.9;
+      margin-top: 2px;
+    }
+
+    .fusion-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+    }
+
+    .fusion-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      padding: 4px 10px;
+      border-radius: 999px;
+      border: 1px solid rgba(255,255,255,0.16);
+      font-size: 0.75rem;
+      background: rgba(0,0,0,0.4);
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .fusion-pill-label {
+      font-size: 0.68rem;
+      opacity: 0.8;
+    }
+
+    .movies-list-item {
+      margin-bottom: 8px;
+      font-size: 0.78rem;
+    }
+
+    .movies-series {
+      font-weight: 600;
+    }
+
+    .movies-role {
+      opacity: 0.9;
+    }
+
+    .movies-notes {
+      opacity: 0.85;
+      font-size: 0.74rem;
+    }
+
+    .realworld-meta {
+      font-size: 0.8rem;
+      margin-bottom: 6px;
+    }
+
+    .realworld-meta span {
+      display: inline-block;
+      margin-right: 8px;
+    }
+
+    .classification-line {
+      font-size: 0.75rem;
+      opacity: 0.9;
+    }
+
+    .credibility-label {
+      font-size: 0.7rem;
+      padding: 2px 6px;
+      border-radius: 999px;
+      border: 1px solid rgba(255,255,255,0.25);
+      margin-left: 6px;
+    }
+  </style>
+</head>
+<body>
+  <div class="page page--inner">
+
+    <!-- ▼ 共通ヘッダー -->
+    <header class="site-header">
+      <div class="logo-area">
+        <img src="images/ui/logo_jwa_wiki.png" class="site-logo" alt="JWA非公式Wiki" />
+        <div>
+          <div class="site-title-main">JWA非公式Wiki</div>
+          <div class="site-title-sub">〜ジュラ会監修〜</div>
+        </div>
+      </div>
+    </header>
+
+    <!-- ▼ メイン -->
+    <main class="page-main">
+      <div class="page-inner">
+
+        <!-- ==== ページヘッド ==== -->
+        <section class="page-head">
+          <div class="page-top-nav">
+            <h1 class="page-title" id="creature-title-ja">恐竜詳細</h1>
+            <div style="display:flex; gap:6px;">
+              <a href="creatures.html" class="btn btn--outline btn--sm">恐竜図鑑へ</a>
+              <a href="index.html" class="btn btn--outline btn--sm">トップに戻る</a>
+            </div>
+          </div>
+
+          <p class="page-subtitle" id="creature-title-en">
+            Creature detail
+          </p>
+        </section>
+
+        <!-- ==== 詳細レイアウト ==== -->
+        <section class="page-content">
+          <div class="detail-layout">
+
+            <!-- 左カラム：ゲーム内情報 -->
+            <div class="detail-main">
+              <!-- 基本情報 -->
+              <section class="detail-section">
+                <h2 class="detail-section-title">ゲーム内情報</h2>
+                <div class="detail-section-inner">
+                  <div class="creature-hero">
+                    <div class="creature-hero-thumb">
+                      <img id="creature-icon" src="" alt="" />
+                    </div>
+                    <div>
+                      <div class="creature-hero-names-main" id="creature-name-ja">恐竜名</div>
+                      <div class="creature-hero-names-sub" id="creature-name-en">Creature Name</div>
+                      <!-- ▼ レア度・クラスのチップ表示 -->
+                      <div class="stat-row" id="creature-meta-chips"></div>
+                    </div>
+                  </div>
+
+                  <div class="stat-row" id="creature-stats"></div>
+
+                  <div style="margin-top:10px; font-size:0.8rem;" id="creature-desc-ja">
+                    説明文を読み込み中です…
+                  </div>
+                </div>
+              </section>
+
+              <!-- アビリティ -->
+              <section class="detail-section">
+                <h2 class="detail-section-title">アビリティ</h2>
+                <div class="detail-section-inner">
+                  <div id="creature-abilities" class="ability-list">
+                    <p style="font-size:0.8rem; opacity:0.8;">
+                      アビリティ情報を読み込み中です…
+                    </p>
+                  </div>
+                </div>
+              </section>
+
+              <!-- 融合情報 -->
+              <section class="detail-section detail-section--secondary">
+                <h3 class="detail-section-title">融合情報</h3>
+                <div class="detail-section-inner">
+                  <div id="creature-fusion">
+                    <p style="font-size:0.8rem; opacity:0.8;">
+                      融合情報を読み込み中です…
+                    </p>
+                  </div>
+                </div>
+              </section>
+            </div>
+
+            <!-- 右カラム：現実世界・映画情報 -->
+            <aside class="detail-aside">
+              <!-- 現実の恐竜情報 -->
+              <section class="detail-section">
+                <h2 class="detail-section-title">現実世界の情報</h2>
+                <div class="detail-section-inner">
+                  <div id="realworld-block">
+                    <p style="font-size:0.8rem; opacity:0.8;">
+                      現実世界の情報を読み込み中です…
+                    </p>
+                  </div>
+                </div>
+              </section>
+
+              <!-- 映画出演情報 -->
+              <section class="detail-section">
+                <h2 class="detail-section-title">映画出演情報</h2>
+                <div class="detail-section-inner">
+                  <div id="movies-block">
+                    <p style="font-size:0.8rem; opacity:0.8;">
+                      映画出演情報を読み込み中です…
+                    </p>
+                  </div>
+                </div>
+              </section>
+            </aside>
+
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <!-- ▼ 共通フッター -->
+    <footer class="site-footer">
+      非公式ファンサイトです。Jurassic World Alive の運営元とは関係ありません。
+    </footer>
+
+  </div>
+
+  <!-- ==== スクリプト：データ読み込み ==== -->
+  <script>
+    (function () {
+      const params = new URLSearchParams(window.location.search);
+      const creatureId = params.get("id");
+
+      const titleJaEl = document.getElementById("creature-title-ja");
+      const titleEnEl = document.getElementById("creature-title-en");
+      const nameJaEl  = document.getElementById("creature-name-ja");
+      const nameEnEl  = document.getElementById("creature-name-en");
+      const iconEl    = document.getElementById("creature-icon");
+      const statsEl   = document.getElementById("creature-stats");
+      const descJaEl  = document.getElementById("creature-desc-ja");
+      const metaChipsEl = document.getElementById("creature-meta-chips");
+
+      const abilListEl = document.getElementById("creature-abilities");
+      const fusionEl   = document.getElementById("creature-fusion");
+      const realBlock  = document.getElementById("realworld-block");
+      const moviesBlock= document.getElementById("movies-block");
+
+      if (!creatureId) {
+        titleJaEl.textContent = "クリーチャーIDが指定されていません。";
+        descJaEl.textContent  = "URL パラメータ ?id=◯◯ が必要です。";
+        return;
+      }
+
+      function nl2br(text) {
+        if (!text) return "";
+        const escaped = text
+          .replace(/&/g, "&amp;")
+          .replace(/</g, "&lt;")
+          .replace(/>/g, "&gt;");
+        return escaped.replace(/(\r\n|\n|\r)/g, "<br>");
+      }
+
+      async function loadDetail() {
+        try {
+          const [creRes, abilRes, realRes, movieRes] = await Promise.all([
+            fetch("data/creatures_master_ja.json"),
+            fetch("data/abilities_master_ja.json"),
+            fetch("data/creatures_real_world.json"),
+            fetch("data/movies_master.json")
+          ]);
+
+          if (!creRes.ok)  throw new Error("creatures_master_ja.json 読み込み失敗");
+          if (!abilRes.ok) throw new Error("abilities_master_ja.json 読み込み失敗");
+          if (!realRes.ok) throw new Error("creatures_real_world.json 読み込み失敗");
+          if (!movieRes.ok) throw new Error("movies_master.json 読み込み失敗");
+
+          const [creJson, abilJson, realJson, movieJson] = await Promise.all([
+            creRes.json(),
+            abilRes.json(),
+            realRes.json(),
+            movieRes.json()
+          ]);
+
+          const c = creJson[creatureId];
+          if (!c) {
+            titleJaEl.textContent = "クリーチャーが見つかりませんでした";
+            descJaEl.textContent  = "creatures_master_ja.json に該当IDが登録されていません。";
+            return;
+          }
+
+          // ▼ 基本情報（ゲーム内）
+          const nameJa = c.name_ja || c.name || c.id;
+          const nameEn = c.name || "";
+
+          titleJaEl.textContent = nameJa;
+          nameJaEl.textContent  = nameJa;
+          titleEnEl.textContent = nameEn ? `(${nameEn})` : "";
+          nameEnEl.textContent  = nameEn;
+
+          const iconPath = c.icon_file
+            ? c.icon_file.replace(/\\\\/g, "/").replace(/\\/g, "/")
+            : "images/creatures/creature_placeholder.png";
+          iconEl.src = iconPath;
+          iconEl.alt = nameJa || nameEn || "Creature";
+
+          // ▼ レア度・クラスチップ
+          (function () {
+            const classification = c.classification || {};
+            const rarity = classification.rarity || c.rarity || "";
+            const classVal = classification.class || "";
+
+            const rarityJaMap = {
+              Common:    "コモン",
+              Rare:      "レア",
+              Epic:      "エピック",
+              Legendary: "レジェンド",
+              Unique:    "ユニーク",
+              Apex:      "アペックス",
+              Omega:     "オメガ",
+            };
+            const rarityColorMap = {
+              Common:    "rarity--common",
+              Rare:      "rarity--rare",
+              Epic:      "rarity--epic",
+              Legendary: "rarity--legendary",
+              Unique:    "rarity--unique",
+              Apex:      "rarity--apex",
+              Omega:     "rarity--omega",
+            };
+
+            const chips = [];
+            if (rarity) {
+              chips.push(
+                `<span class="chip chip--rarity ${rarityColorMap[rarity] || ""}">${rarityJaMap[rarity] || rarity}</span>`
+              );
+            }
+            if (classVal) {
+              chips.push(
+                `<span class="chip chip--class">${classVal}</span>`
+              );
+            }
+            metaChipsEl.innerHTML = chips.join("");
+          })();
+
+          // ▼ ステータス
+          const s = c.stats || {};
+          const statChips = [];
+          if (s.health != null) statChips.push(`<span class="stat-chip">HP ${s.health}</span>`);
+          if (s.damage != null) statChips.push(`<span class="stat-chip">攻撃 ${s.damage}</span>`);
+          if (s.speed  != null) statChips.push(`<span class="stat-chip">速度 ${s.speed}</span>`);
+          if (s.armor  != null) statChips.push(`<span class="stat-chip">アーマー ${s.armor}%</span>`);
+          if (s.crit   != null) statChips.push(`<span class="stat-chip">クリ率 ${s.crit}%</span>`);
+          if (s.crit_damage != null) statChips.push(`<span class="stat-chip">クリダメ ${s.crit_damage}%</span>`);
+          statsEl.innerHTML = statChips.join("");
+
+          if (c.description_ja_raw) {
+            descJaEl.innerHTML = nl2br(c.description_ja_raw);
+          } else if (c.description) {
+            descJaEl.innerHTML = nl2br(c.description);
+          } else {
+            descJaEl.textContent = "説明文が未登録です。";
+          }
+
+          // ▼ アビリティ一覧
+          const abilArr = Array.isArray(c.abilities) ? c.abilities : [];
+          if (!abilArr.length) {
+            abilListEl.innerHTML = `
+              <p style="font-size:0.8rem; opacity:0.8;">
+                このクリーチャーに紐づくアビリティはまだ登録されていません。
+              </p>`;
+          } else {
+            const html = abilArr.map(a => {
+              const id = a.id;
+              const abilityMaster = abilJson[id];
+              const nameJa = a.name_ja || abilityMaster?.name_ja || a.name || abilityMaster?.name || id;
+              const nameEn = a.name   || abilityMaster?.name || "";
+              const iconPath = (abilityMaster && abilityMaster.icon_file)
+                ? abilityMaster.icon_file.replace(/\\\\/g, "/").replace(/\\/g, "/")
+                : "images/abilities/ability_placeholder.png";
+
+              let desc = "";
+              if (abilityMaster?.description_ja_raw) {
+                desc = abilityMaster.description_ja_raw.split(/[\r\n]+/).filter(Boolean)[0] || "";
+              } else if (abilityMaster?.description_raw) {
+                desc = abilityMaster.description_raw.split(/[\r\n]+/).filter(Boolean)[0] || "";
+              }
+
+              return `
+<div class="ability-list-item">
+  <a href="ability_detail.html?id=${encodeURIComponent(id)}" class="ability-list-link">
+    <div class="ability-list-thumb">
+      <img src="${iconPath}" alt="${nameJa}">
+    </div>
+    <div>
+      <div class="ability-list-name-ja">${nameJa}</div>
+      ${nameEn ? `<div class="ability-list-name-en">${nameEn}</div>` : ""}
+      ${desc ? `<div class="ability-list-desc">${desc}</div>` : ""}
+    </div>
+  </a>
+</div>`;
+            }).join("\n");
+
+            abilListEl.innerHTML = html;
+          }
+
+          // ▼ 融合情報
+          const fusion = c.fusion || {};
+          const ing = Array.isArray(fusion.ingredients) ? fusion.ingredients : [];
+          const to  = Array.isArray(fusion.fuse_to) ? fusion.fuse_to : [];
+
+          if (!ing.length && !to.length) {
+            fusionEl.innerHTML = `
+              <p style="font-size:0.8rem; opacity:0.8;">
+                このクリーチャーに関する融合情報はまだ登録されていません。
+              </p>`;
+          } else {
+            let html = "";
+
+            if (ing.length) {
+              html += `<div style="margin-bottom:6px;">
+                <div class="fusion-pill-label">このクリーチャーを作る素材</div>
+                <div class="fusion-list">`;
+              html += ing.map(f => {
+                const fnameJa = f.name_ja || f.name || f.id;
+                const href = `creature_detail.html?id=${encodeURIComponent(f.id)}`;
+                return `<a href="${href}" class="fusion-pill">
+                  <span>${fnameJa}</span>
+                </a>`;
+              }).join("\n");
+              html += `</div></div>`;
+            }
+
+            if (to.length) {
+              html += `<div>
+                <div class="fusion-pill-label">このクリーチャーから作れる上位種</div>
+                <div class="fusion-list">`;
+              html += to.map(f => {
+                const fnameJa = f.name_ja || f.name || f.id;
+                const href = `creature_detail.html?id=${encodeURIComponent(f.id)}`;
+                return `<a href="${href}" class="fusion-pill">
+                  <span>${fnameJa}</span>
+                </a>`;
+              }).join("\n");
+              html += `</div></div>`;
+            }
+
+            fusionEl.innerHTML = html;
+          }
+
+          // ▼ 現実世界の情報
+          const realInfo = realJson[creatureId] || {};
+          const realWorld = realInfo.real_world || {};
+          const cl = realInfo.classification || {};
+          const cred = realWorld.credibility || "";
+
+          const era    = realWorld.era    || "";
+          const region = realWorld.region || "";
+          const lenM   = realWorld.length_m;
+          const wtT    = realWorld.weight_t;
+          const chara  = realWorld.characteristics || "";
+          const notes  = realWorld.notes || "";
+
+          if (!era && !region && !chara && !notes && lenM == null && wtT == null) {
+            realBlock.innerHTML = `
+              <p style="font-size:0.8rem; opacity:0.8;">
+                このクリーチャーについての現実世界の情報は、まだマスターに登録されていません。
+              </p>`;
+          } else {
+            let html = "";
+
+            html += `<div class="realworld-meta">`;
+            if (era)    html += `<span>時代: ${era}</span>`;
+            if (region) html += `<span>生息地: ${region}</span>`;
+            if (lenM != null) html += `<span>体長: 約 ${lenM} m</span>`;
+            if (wtT  != null) html += `<span>体重: 約 ${wtT} t</span>`;
+            html += `</div>`;
+
+            if (chara) {
+              html += `<div style="margin-top:4px; font-size:0.8rem;">${chara}</div>`;
+            }
+            if (notes) {
+              html += `<div style="margin-top:4px; font-size:0.78rem; opacity:0.9;">${notes}</div>`;
+            }
+
+            const cls = [];
+            if (cl.kingdom) cls.push(`界: ${cl.kingdom}`);
+            if (cl.phylum)  cls.push(`門: ${cl.phylum}`);
+            if (cl.class)   cls.push(`綱: ${cl.class}`);
+            if (cl.order)   cls.push(`目: ${cl.order}`);
+            if (cl.family)  cls.push(`科: ${cl.family}`);
+
+            if (cls.length) {
+              html += `<div class="classification-line" style="margin-top:8px;">
+                分類: ${cls.join(" / ")}
+              </div>`;
+            }
+
+            if (cred) {
+              html += `<div style="margin-top:4px; font-size:0.75rem;">
+                情報の信頼度:
+                <span class="credibility-label">${cred}</span>
+              </div>`;
+            }
+
+            realBlock.innerHTML = html;
+          }
+
+          // ▼ 映画出演情報
+          const movieInfo = movieJson[creatureId];
+          const movieList = movieInfo?.movies || [];
+          if (!movieList.length) {
+            moviesBlock.innerHTML = `
+              <p style="font-size:0.8rem; opacity:0.8;">
+                このクリーチャーに対応する映画出演情報は、まだマスターに登録されていません。
+              </p>`;
+          } else {
+            const html = movieList.map(m => {
+              const series = m.series || "";
+              const role   = m.role   || "";
+              const notes  = m.notes  || "";
+              const cred   = m.credibility || "";
+
+              return `
+<div class="movies-list-item">
+  <div class="movies-series">${series}</div>
+  ${role ? `<div class="movies-role">役割: ${role}</div>` : ""}
+  ${notes ? `<div class="movies-notes">${notes}</div>` : ""}
+  ${cred ? `<div style="margin-top:2px; font-size:0.7rem; opacity:0.85;">情報の信頼度: ${cred}</div>` : ""}
+</div>`;
+            }).join("\n");
+
+            moviesBlock.innerHTML = html;
+          }
+
+        } catch (e) {
+          console.error(e);
+          const isFile = location.protocol === "file:";
+          if (isFile) {
+            descJaEl.innerHTML =
+              "データ読み込みに失敗しました。<br>" +
+              "このページが <code>file://</code> で開かれている可能性があります。<br>" +
+              "VSCode の Live Server や <code>python -m http.server</code> などで " +
+              "<code>http://</code> 経由で開いてください。";
+          } else {
+            descJaEl.textContent =
+              "データ読み込みに失敗しました。data/ 配下のファイルパスとファイル名を確認してください。";
+          }
+        }
+      }
+
+      loadDetail();
+    })();
+  </script>
+</body>
+</html>

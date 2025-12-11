@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>アビリティ詳細 | JWA非公式Wiki</title>
+
+  <link rel="stylesheet" href="css/base.css" />
+  <link rel="stylesheet" href="css/abilities.css" />
+
+  <!-- このページ専用のレイアウト微調整 -->
+  <style>
+    .detail-layout {
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+    }
+
+    @media (min-width: 960px) {
+      .detail-layout {
+        flex-direction: row;
+        align-items: flex-start;
+      }
+      .detail-main {
+        flex: 3;
+      }
+      .detail-aside {
+        flex: 2;
+      }
+    }
+
+    .detail-section {
+      margin-top: 16px;
+    }
+
+    .detail-section-title {
+      font-size: 0.9rem;
+      font-weight: 600;
+      margin-bottom: 8px;
+      color: rgba(220, 240, 255, 0.9);
+    }
+
+    .detail-section-inner {
+      background: radial-gradient(
+        circle at top left,
+        rgba(120, 200, 255, 0.18),
+        rgba(5, 15, 35, 0.95)
+      );
+      border-radius: 20px;
+      border: 1px solid rgba(120, 200, 255, 0.28);
+      padding: 14px 18px;
+      box-shadow: 0 12px 35px rgba(0, 0, 0, 0.55);
+      font-size: 0.8rem;
+      line-height: 1.6;
+      color: rgba(225, 235, 255, 0.92);
+    }
+
+    .detail-section--secondary .detail-section-inner {
+      background: rgba(5, 12, 30, 0.92);
+      border-color: rgba(255, 255, 255, 0.07);
+    }
+
+    .ability-detail-text--ja {
+      font-size: 0.8rem;
+      line-height: 1.7;
+    }
+
+    .ability-detail-text--ja br + br {
+      line-height: 1.2;
+    }
+
+    .card--ability-detail {
+      margin-bottom: 8px;
+    }
+
+    /* ★ アイコンサイズ＆レイアウト調整：見切れ防止＆重なり防止 */
+    .card--ability-detail .card-main {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .ability-icon--large {
+      width: 72px;
+      height: 72px;
+      max-width: 72px;
+      max-height: 72px;
+      flex-shrink: 0;
+    }
+
+    .ability-icon--large img {
+      width: 100%;
+      height: 100%;
+      border-radius: 20%;
+      object-fit: cover;
+      display: block;
+    }
+
+    .card--ability-detail .ability-info {
+      min-width: 0; /* テキストがアイコンの下に潜らないように */
+    }
+
+    .detail-aside .detail-section-inner {
+      padding: 10px 14px;
+    }
+
+    .creature-list-item {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      padding: 6px 8px;
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.02);
+      margin-bottom: 6px;
+    }
+
+    .creature-list-thumb img {
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+
+    .creature-list-link {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      text-decoration: none;
+      color: inherit;
+      width: 100%;
+    }
+
+    .creature-list-name-ja {
+      font-size: 0.8rem;
+    }
+
+    .creature-list-name-en {
+      font-size: 0.7rem;
+      opacity: 0.8;
+    }
+  </style>
+</head>
+<body>
+  <div class="page page--inner">
+
+    <!-- ▼ 共通ヘッダー -->
+    <header class="site-header">
+      <div class="logo-area">
+        <img src="images/ui/logo_jwa_wiki.png" class="site-logo" alt="JWA非公式Wiki" />
+        <div>
+          <div class="site-title-main">JWA非公式Wiki</div>
+          <div class="site-title-sub">〜ジュラ会監修〜</div>
+        </div>
+      </div>
+    </header>
+
+    <!-- ▼ メイン -->
+    <main class="page-main">
+      <div class="page-inner">
+
+        <!-- ==== ページヘッド ==== -->
+        <section class="page-head">
+          <div class="page-top-nav">
+            <h1 class="page-title" id="ability-title-ja">アビリティ名</h1>
+            <div style="display:flex; gap:6px;">
+              <a href="abilities.html" class="btn btn--outline btn--sm">アビリティ一覧へ</a>
+              <a href="index.html" class="btn btn--outline btn--sm">トップに戻る</a>
+            </div>
+          </div>
+
+          <p class="page-subtitle" id="ability-title-en">
+            Ability name (English)
+          </p>
+        </section>
+
+        <!-- ==== 詳細レイアウト ==== -->
+        <section class="page-content">
+          <div class="detail-layout">
+
+            <!-- 左カラム：基本情報 + 効果 -->
+            <div class="detail-main">
+              <article class="card card--ability card--ability-detail">
+                <div class="card-main">
+                  <div class="ability-icon ability-icon--large">
+                    <img id="ability-icon" src="" alt="" />
+                  </div>
+                  <div class="ability-info">
+                    <div class="ability-name-row">
+                      <h2 class="ability-name" id="ability-name-ja">アビリティ名</h2>
+                    </div>
+                    <p class="ability-name-sub" id="ability-name-en-sub"></p>
+
+                    <div class="ability-meta-row">
+                      <span class="chip" id="ability-trigger-chip">トリガー</span>
+                    </div>
+                  </div>
+                </div>
+              </article>
+
+              <!-- 効果（日本語） -->
+              <section class="detail-section">
+                <h2 class="detail-section-title">効果（日本語）</h2>
+                <div class="detail-section-inner">
+                  <div id="ability-desc-ja" class="ability-detail-text ability-detail-text--ja">
+                    説明文を読み込み中です…
+                  </div>
+                </div>
+              </section>
+            </div>
+
+            <!-- 右カラム：このアビリティを持つクリーチャー -->
+            <aside class="detail-aside">
+              <section class="detail-section">
+                <h2 class="detail-section-title">このアビリティを持つクリーチャー</h2>
+                <div class="detail-section-inner">
+                  <div id="ability-creature-list" class="creature-list">
+                    <p class="ability-submeta">
+                      対応するクリーチャーを読み込み中です…
+                    </p>
+                  </div>
+                </div>
+              </section>
+            </aside>
+
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <!-- ▼ 共通フッター -->
+    <footer class="site-footer">
+      非公式ファンサイトです。Jurassic World Alive の運営元とは関係ありません。
+    </footer>
+
+  </div>
+
+  <!-- ==== スクリプト：データ連携 ==== -->
+  <script>
+    (function () {
+      const params = new URLSearchParams(window.location.search);
+      const abilityId = params.get("id");
+
+      const titleJaEl   = document.getElementById("ability-title-ja");
+      const titleEnEl   = document.getElementById("ability-title-en");
+      const nameJaEl    = document.getElementById("ability-name-ja");
+      const nameEnSubEl = document.getElementById("ability-name-en-sub");
+      const iconEl      = document.getElementById("ability-icon");
+      const triggerChip = document.getElementById("ability-trigger-chip");
+      const descJaEl    = document.getElementById("ability-desc-ja");
+      const creatureListEl = document.getElementById("ability-creature-list");
+
+      if (!abilityId) {
+        titleJaEl.textContent = "アビリティIDが指定されていません。";
+        descJaEl.textContent  = "URL パラメータ ?id=◯◯ が必要です。";
+        return;
+      }
+
+      // 改行を <br> に変換
+      function nl2br(text) {
+        if (!text) return "";
+        const escaped = text
+          .replace(/&/g, "&amp;")
+          .replace(/</g, "&lt;")
+          .replace(/>/g, "&gt;");
+        return escaped.replace(/(\r\n|\n|\r)/g, "<br>");
+      }
+
+      async function loadAbilityAndCreatures() {
+        try {
+          // abilities_master_ja.json から対象アビリティを取得
+          const abilityRes = await fetch("data/abilities_master_ja.json");
+          if (!abilityRes.ok) throw new Error("abilities_master_ja.json 読み込み失敗");
+          const abilitiesJson = await abilityRes.json();
+
+          const ability = abilitiesJson[abilityId];
+          if (!ability) {
+            titleJaEl.textContent = "アビリティが見つかりませんでした";
+            descJaEl.textContent  = "abilities_master_ja.json に該当IDが登録されていません。";
+            return;
+          }
+
+          // 名前・トリガーなど基本情報
+          const nameJa   = ability.name_ja || ability.name || ability.id;
+          const nameEn   = ability.name || "";
+          const trigger  = ability.trigger || "";
+          const triggerJa = ability.trigger_ja || "";
+          const iconPath = ability.icon_file
+            ? ability.icon_file.replace(/\\\\/g, "/").replace(/\\/g, "/")
+            : "images/abilities/ability_placeholder.png";
+
+          titleJaEl.textContent = nameJa;
+          nameJaEl.textContent  = nameJa;
+          titleEnEl.textContent = nameEn ? `(${nameEn})` : "";
+          nameEnSubEl.textContent = nameEn;
+
+          iconEl.src = iconPath;
+          iconEl.alt = nameJa || nameEn || "Ability Icon";
+
+          triggerChip.textContent = triggerJa || trigger || "トリガー未登録";
+
+          // 説明文（日本語優先）
+          if (ability.description_ja_raw) {
+            descJaEl.innerHTML = nl2br(ability.description_ja_raw);
+          } else if (ability.description_raw) {
+            descJaEl.innerHTML = nl2br(ability.description_raw);
+          } else {
+            descJaEl.textContent = "説明文が未登録です。";
+          }
+
+          // ==== 所持クリーチャー（creatures_master_ja.json から逆引き） ====
+          try {
+            const creaturesRes = await fetch("data/creatures_master_ja.json");
+            if (!creaturesRes.ok) throw new Error("creatures_master_ja.json 読み込み失敗");
+            const creaturesJson = await creaturesRes.json();
+
+            const matched = [];
+            for (const key in creaturesJson) {
+              const c = creaturesJson[key];
+              if (!c) continue;
+
+              const abilArr = Array.isArray(c.abilities) ? c.abilities : [];
+              const hasAbility = abilArr.some(a => {
+                if (!a) return false;
+                // 新構成：オブジェクト配列 { id, name, name_ja, ... }
+                if (typeof a === "object" && "id" in a) {
+                  return a.id === abilityId;
+                }
+                // 念のため旧構成（文字列ID配列）にも対応
+                if (typeof a === "string") {
+                  return a === abilityId;
+                }
+                return false;
+              });
+
+              if (hasAbility) {
+                matched.push(c);
+              }
+            }
+
+            if (!matched.length) {
+              creatureListEl.innerHTML = `
+                <p class="ability-submeta">
+                  このアビリティを所持しているクリーチャーは、<br>
+                  現在の creatures_master_ja.json 上ではまだ登録されていません。
+                </p>`;
+            } else {
+              matched.sort((a, b) => {
+                const na = (a.name_ja || a.name || a.id || "").toLowerCase();
+                const nb = (b.name_ja || b.name || b.id || "").toLowerCase();
+                return na < nb ? -1 : na > nb ? 1 : 0;
+              });
+
+              const html = matched.map(c => {
+                const cnameJa = c.name_ja || c.name || c.id;
+                const cnameEn = c.name || "";
+                const icon = (c.icon_file || "")
+                  .replace(/\\\\/g, "/")
+                  .replace(/\\/g, "/") || "images/creatures/creature_placeholder.png";
+
+                return `
+<div class="creature-list-item">
+  <a href="creature_detail.html?id=${encodeURIComponent(c.id)}" class="creature-list-link">
+    <div class="creature-list-thumb">
+      <img src="${icon}" alt="${cnameJa}">
+    </div>
+    <div class="creature-list-text">
+      <div class="creature-list-name-ja">${cnameJa}</div>
+      ${cnameEn ? `<div class="creature-list-name-en">${cnameEn}</div>` : ""}
+    </div>
+  </a>
+</div>`;
+              }).join("\n");
+
+              creatureListEl.innerHTML = html;
+            }
+          } catch (ce) {
+            console.error(ce);
+            creatureListEl.innerHTML = `
+              <p class="ability-submeta">
+                クリーチャー情報の読み込みに失敗しました。<br>
+                data/creatures_master_ja.json のファイルパスや形式を確認してください。
+              </p>`;
+          }
+
+        } catch (e) {
+          console.error(e);
+          const isFile = location.protocol === "file:";
+          if (isFile) {
+            descJaEl.innerHTML =
+              "abilities_master_ja.json の読み込みに失敗しました。<br>" +
+              "このページが <code>file://</code> で開かれている可能性があります。<br>" +
+              "VSCode の Live Server や <code>python -m http.server</code> などで " +
+              "<code>http://</code> 経由で開いてください。";
+          } else {
+            descJaEl.textContent =
+              "abilities_master_ja.json の読み込みに失敗しました。パスとファイル名を確認してください。";
+          }
+        }
+      }
+
+      loadAbilityAndCreatures();
+    })();
+  </script>
+</body>
+</html>

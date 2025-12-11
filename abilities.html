@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>アビリティ一覧 | JWA非公式Wiki</title>
+
+  <link rel="stylesheet" href="css/base.css" />
+  <link rel="stylesheet" href="css/abilities.css" />
+</head>
+<body>
+  <div class="page page--inner">
+
+    <!-- ▼ 共通ヘッダー -->
+    <header class="site-header">
+      <div class="logo-area">
+        <img src="images/ui/logo_jwa_wiki.png" class="site-logo" alt="JWA非公式Wiki">
+        <div>
+          <div class="site-title-main">JWA非公式Wiki</div>
+          <div class="site-title-sub">〜ジュラ会監修〜</div>
+        </div>
+      </div>
+    </header>
+
+    <!-- ▼ メイン -->
+    <main class="page-main">
+      <div class="page-inner">
+
+        <!-- ==== ページヘッド ==== -->
+        <section class="page-head">
+          <div class="page-top-nav">
+            <h1 class="page-title">アビリティ一覧</h1>
+            <div style="display:flex; gap:6px;">
+              <a href="creatures.html" class="btn btn--outline btn--sm">恐竜図鑑へ</a>
+              <a href="index.html" class="btn btn--outline btn--sm">トップに戻る</a>
+            </div>
+          </div>
+
+          <p class="page-subtitle">
+            JWAに登場するアビリティを、タブと検索で絞り込んで閲覧できます。
+          </p>
+
+          <!-- タブ：トリガー種別による絞り込み -->
+          <div class="meta-tabs" id="trigger-tabs">
+            <button class="meta-tab meta-tab--active" data-trigger-filter="all">すべて</button>
+            <button class="meta-tab" data-trigger-filter="Regular">通常攻撃</button>
+            <button class="meta-tab" data-trigger-filter="Counter">カウンター</button>
+            <button class="meta-tab" data-trigger-filter="On Escape">逃走関連</button>
+ </button>
+          </div>
+        </section>
+
+        <!-- ==== フィルターUI ==== -->
+        <section class="page-filters" style="margin-bottom: 10px;">
+
+          <div style="display:flex; gap:6px; align-items:flex-end;">
+            <div style="flex:1;">
+              <input
+                id="filter-name"
+                type="search"
+                placeholder="アビリティ名で検索（日本語・英語どちらも可）"
+                style="
+                  width: 100%;
+                  padding: 8px 10px;
+                  border-radius: 999px;
+                  border: 1px solid rgba(255,255,255,0.25);
+                  background: rgba(0,0,0,0.6);
+                  color: #fff;
+                  font-size: 0.8rem;
+                  outline: none;
+                "
+              />
+            </div>
+
+            <button
+              id="filter-reset"
+              class="btn btn--outline btn--sm"
+              type="button"
+              style="margin-left:auto; margin-bottom:0;"
+            >
+              絞り込みをリセット
+            </button>
+          </div>
+        </section>
+
+        <!-- ==== 一覧本体 ==== -->
+        <section class="page-content">
+          <div class="grid grid--abilities" id="ability-grid">
+            <!-- JSで abilities_master_ja.json から自動生成 -->
+          </div>
+
+          <div id="ability-empty-message" style="display:none; font-size:0.8rem; color:rgba(200,210,238,0.8); margin-top:8px;">
+            条件に合致するアビリティが見つかりませんでした。
+          </div>
+        </section>
+
+      </div>
+    </main>
+
+    <!-- ▼ 共通フッター -->
+    <footer class="site-footer">
+      非公式ファンサイトです。Jurassic World Alive の運営元とは関係ありません。
+    </footer>
+  </div>
+
+  <!-- ==== abilities_master_ja.json 読み込み & フィルター ==== -->
+  <script>
+    (function () {
+      const grid = document.getElementById("ability-grid");
+      const emptyMsg = document.getElementById("ability-empty-message");
+
+      const nameInput = document.getElementById("filter-name");
+      const resetBtn  = document.getElementById("filter-reset");
+      const tabsWrap  = document.getElementById("trigger-tabs");
+      const tabs      = Array.from(tabsWrap.querySelectorAll(".meta-tab"));
+
+      let allAbilities = [];
+      let activeTriggerFilter = "all";
+
+      /* ======================
+         説明文（英語 → 要約）
+      ====================== */
+      function summarizeDescription(raw) {
+        if (!raw) return "説明テキスト未登録。";
+        const lines = raw.split(/[\r\n]+/).map(l => l.trim()).filter(Boolean);
+        const slice = lines.slice(0, 4).join(" ");
+        return slice.length > 180 ? slice.slice(0, 180) + "…" : slice;
+      }
+
+      /* ======================
+         説明文（日本語 raw → 1行要約）
+      ====================== */
+      function summarizeDescriptionJa(rawJa) {
+        if (!rawJa) return "";
+        // 改行や余計なスペースを潰して1文っぽく
+        let text = rawJa.replace(/[\r\n]+/g, " ");
+        text = text.replace(/\s+/g, " ").trim();
+        return text.length > 180 ? text.slice(0, 180) + "…" : text;
+      }
+
+      /* ======================
+         カード生成（☆ 日本語説明優先）
+      ====================== */
+      function renderAbilityCard(ability) {
+        const id        = ability.id;
+        const nameJa    = ability.name_ja || "";
+        const nameEn    = ability.name    || "";
+        const trigger   = ability.trigger || "";
+        const triggerJa = ability.trigger_ja || "";
+        const iconPath  = ability.icon_file
+          ? ability.icon_file.replace(/\\\\/g, "/").replace(/\\/g, "/")
+          : "images/abilities/ability_placeholder.png";
+
+        /* ⭐ 日本語の description_ja_raw → 無ければ英語 description_raw */
+        let desc = "";
+        if (ability.description_ja_raw) {
+          desc = summarizeDescriptionJa(ability.description_ja_raw);
+        } else {
+          desc = summarizeDescription(ability.description_raw || "");
+        }
+
+        const triggerClass =
+          trigger === "Counter"   ? "chip--trigger-counter" :
+          trigger === "On Escape" ? "chip--trigger-escape" :
+          trigger === "Passive"   ? "chip--trigger-passive" :
+                                    "chip--trigger-regular";
+
+        const displayName = nameJa || nameEn || id;
+        const subName = (nameJa && nameEn) ? nameEn : (!nameJa && nameEn ? "" : nameEn);
+
+        return `
+<article class="card card--ability">
+  <a href="ability_detail.html?id=${encodeURIComponent(id)}" style="text-decoration:none;color:inherit;">
+    <div class="card-main">
+      <div class="ability-icon">
+        <img src="${iconPath}" alt="${displayName}">
+      </div>
+      <div class="ability-info">
+        <div class="ability-name-row">
+          <h2 class="ability-name">${displayName}</h2>
+          <span class="chip ${triggerClass}">${triggerJa || trigger}</span>
+        </div>
+        ${subName ? `<p class="ability-name-sub">${subName}</p>` : ``}
+        <p class="ability-desc">${desc}</p>
+      </div>
+    </div>
+  </a>
+</article>`;
+      }
+
+      /* ======================
+         一覧の描画
+      ====================== */
+      function renderList(filtered) {
+        if (!filtered.length) {
+          grid.innerHTML = "";
+          emptyMsg.style.display = "block";
+          return;
+        }
+        emptyMsg.style.display = "none";
+        grid.innerHTML = filtered.map(renderAbilityCard).join("\n");
+      }
+
+      /* ======================
+         フィルター処理
+      ====================== */
+      function applyFilters() {
+        const nameVal = (nameInput.value || "").trim().toLowerCase();
+        const trigVal = activeTriggerFilter;
+
+        const filtered = allAbilities.filter(ab => {
+          const nameJa = (ab.name_ja || "").toLowerCase();
+          const nameEn = (ab.name    || "").toLowerCase();
+          const trig   = ab.trigger  || "";
+
+          let ok = true;
+
+          if (nameVal) {
+            if (!nameJa.includes(nameVal) && !nameEn.includes(nameVal)) ok = false;
+          }
+
+          if (trigVal !== "all" && trig !== trigVal) ok = false;
+
+          return ok;
+        });
+
+        renderList(filtered);
+      }
+
+      /* ======================
+         JSON 読み込み
+      ====================== */
+      async function loadAbilities() {
+        try {
+          const res = await fetch("data/abilities_master_ja.json");
+          if (!res.ok) throw new Error("HTTP status " + res.status);
+          const json = await res.json();
+
+          allAbilities = Object.values(json);
+
+          allAbilities.sort((a, b) => {
+            const na = (a.name_ja || a.name || a.id || "").toLowerCase();
+            const nb = (b.name_ja || b.name || b.id || "").toLowerCase();
+            return na < nb ? -1 : na > nb ? 1 : 0;
+          });
+
+          applyFilters();
+        } catch (e) {
+          console.error(e);
+          grid.innerHTML =
+            "<p>アビリティデータの読み込みに失敗しました。<br>data/abilities_master_ja.json のパスを確認してください。</p>";
+        }
+      }
+
+      /* イベント登録 */
+      nameInput.addEventListener("input", applyFilters);
+
+      resetBtn.addEventListener("click", () => {
+        nameInput.value = "";
+        activeTriggerFilter = "all";
+
+        tabs.forEach(t => t.classList.remove("meta-tab--active"));
+        tabs[0].classList.add("meta-tab--active");
+
+        applyFilters();
+      });
+
+      tabs.forEach(tab => {
+        tab.addEventListener("click", () => {
+          tabs.forEach(t => t.classList.remove("meta-tab--active"));
+          tab.classList.add("meta-tab--active");
+
+          activeTriggerFilter = tab.dataset.triggerFilter || "all";
+          applyFilters();
+        });
+      });
+
+      /* 初期ロード */
+      loadAbilities();
+    })();
+  </script>
+</body>
+</html>

@@ -1,0 +1,6666 @@
+[
+  {
+    "slug": "93_classic_t_rex",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/93_classic_t_rex",
+    "stats": {
+      "health": 1350,
+      "damage": 540,
+      "speed": 109,
+      "armor": 0,
+      "crit": 10,
+      "crit_damage": 130
+    },
+    "icon_file": "images\\creatures\\creature_93_classic_t_rex_93_classic_t_rex.png"
+  },
+  {
+    "slug": "acrocanthops",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/acrocanthops",
+    "stats": {
+      "health": 4650,
+      "damage": 1800,
+      "speed": 120,
+      "armor": 0,
+      "crit": 20,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_acrocanthops_acrocanthops.png"
+  },
+  {
+    "slug": "acrocanthosaurus",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/acrocanthosaurus",
+    "stats": {
+      "health": 4800,
+      "damage": 1700,
+      "speed": 110,
+      "armor": 0,
+      "crit": 30,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_acrocanthosaurus_acrocanthosaurus.png"
+  },
+  {
+    "slug": "aenocyonyx",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/aenocyonyx",
+    "stats": {
+      "health": 4800,
+      "damage": 1500,
+      "speed": 128,
+      "armor": 0,
+      "crit": 25,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_aenocyonyx_aenocyonyx.png"
+  },
+  {
+    "slug": "aerospinosaurus",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/aerospinosaurus",
+    "stats": {
+      "health": 4650,
+      "damage": 1700,
+      "speed": 123,
+      "armor": 10,
+      "crit": 25,
+      "crit_damage": 150
+    },
+    "icon_file": "images\\creatures\\creature_aerospinosaurus_aerospinosaurus.png"
+  },
+  {
+    "slug": "aerotitan",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/aerotitan",
+    "stats": {
+      "health": 4200,
+      "damage": 1300,
+      "speed": 123,
+      "armor": 10,
+      "crit": 25,
+      "crit_damage": 150
+    },
+    "icon_file": "images\\creatures\\creature_aerotitan_aerotitan.png"
+  },
+  {
+    "slug": "ailurarctos",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/ailurarctos",
+    "stats": {
+      "health": 3900,
+      "damage": 1350,
+      "speed": 106,
+      "armor": 10,
+      "crit": 5,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_ailurarctos_ailurarctos.png"
+  },
+  {
+    "slug": "alacranix",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/alacranix",
+    "stats": {
+      "health": 4250,
+      "damage": 1650,
+      "speed": 115,
+      "armor": 40,
+      "crit": 15,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_alacranix_alacranix.png"
+  },
+  {
+    "slug": "alankydactylus",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/alankydactylus",
+    "stats": {
+      "health": 4450,
+      "damage": 1400,
+      "speed": 122,
+      "armor": 15,
+      "crit": 5,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_alankydactylus_alankydactylus.png"
+  },
+  {
+    "slug": "alankyloceratops",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/alankyloceratops",
+    "stats": {
+      "health": 5400,
+      "damage": 1200,
+      "speed": 113,
+      "armor": 40,
+      "crit": 5,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_alankyloceratops_alankyloceratops.png"
+  },
+  {
+    "slug": "alankylosaurus",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/alankylosaurus",
+    "stats": {
+      "health": 4800,
+      "damage": 1100,
+      "speed": 119,
+      "armor": 30,
+      "crit": 5,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_alankylosaurus_alankylosaurus.png"
+  },
+  {
+    "slug": "alanqa",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/alanqa",
+    "stats": {
+      "health": 4050,
+      "damage": 1200,
+      "speed": 125,
+      "armor": 0,
+      "crit": 5,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_alanqa_alanqa.png"
+  },
+  {
+    "slug": "albertocevia",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/albertocevia",
+    "stats": {
+      "health": 4650,
+      "damage": 1600,
+      "speed": 121,
+      "armor": 0,
+      "crit": 10,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_albertocevia_albertocevia.png"
+  },
+  {
+    "slug": "albertosaurus",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/albertosaurus",
+    "stats": {
+      "health": 4350,
+      "damage": 1750,
+      "speed": 106,
+      "armor": 0,
+      "crit": 30,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_albertosaurus_albertosaurus.png"
+  },
+  {
+    "slug": "albertospinos",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/albertospinos",
+    "stats": {
+      "health": 4500,
+      "damage": 1550,
+      "speed": 128,
+      "armor": 0,
+      "crit": 15,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_albertospinos_albertospinos.png"
+  },
+  {
+    "slug": "allodrigues",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/allodrigues",
+    "stats": {
+      "health": 3300,
+      "damage": 1750,
+      "speed": 130,
+      "armor": 0,
+      "crit": 15,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_allodrigues_allodrigues.png"
+  },
+  {
+    "slug": "alloraptor",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/alloraptor",
+    "stats": {
+      "health": 3300,
+      "damage": 1700,
+      "speed": 130,
+      "armor": 0,
+      "crit": 40,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_alloraptor_alloraptor.png"
+  },
+  {
+    "slug": "allosaurus",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/allosaurus",
+    "stats": {
+      "health": 4650,
+      "damage": 1750,
+      "speed": 104,
+      "armor": 0,
+      "crit": 20,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_allosaurus_allosaurus.png"
+  },
+  {
+    "slug": "allosaurus_gen_2",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/allosaurus_gen_2",
+    "stats": {
+      "health": 4500,
+      "damage": 1800,
+      "speed": 105,
+      "armor": 0,
+      "crit": 40,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_allosaurus_gen_2_allosaurus_gen_2.png"
+  },
+  {
+    "slug": "allosinosaurus",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/allosinosaurus",
+    "stats": {
+      "health": 4500,
+      "damage": 1800,
+      "speed": 106,
+      "armor": 15,
+      "crit": 25,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_allosinosaurus_allosinosaurus.png"
+  },
+  {
+    "slug": "amargasaurus",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/amargasaurus",
+    "stats": {
+      "health": 5250,
+      "damage": 1000,
+      "speed": 103,
+      "armor": 0,
+      "crit": 5,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_amargasaurus_amargasaurus.png"
+  },
+  {
+    "slug": "amargocephalus",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/amargocephalus",
+    "stats": {
+      "health": 3600,
+      "damage": 900,
+      "speed": 104,
+      "armor": 40,
+      "crit": 5,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_amargocephalus_amargocephalus.png"
+  },
+  {
+    "slug": "ampelorex",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/ampelorex",
+    "stats": {
+      "health": 5900,
+      "damage": 1550,
+      "speed": 105,
+      "armor": 20,
+      "crit": 10,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_ampelorex_ampelorex.png"
+  },
+  {
+    "slug": "ampelosaurus",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/ampelosaurus",
+    "stats": {
+      "health": 5000,
+      "damage": 1200,
+      "speed": 102,
+      "armor": 25,
+      "crit": 5,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_ampelosaurus_ampelosaurus.png"
+  },
+  {
+    "slug": "amphicyon",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/amphicyon",
+    "stats": {
+      "health": 3150,
+      "damage": 1300,
+      "speed": 122,
+      "armor": 0,
+      "crit": 40,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_amphicyon_amphicyon.png"
+  },
+  {
+    "slug": "andrewsarchus",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/andrewsarchus",
+    "stats": {
+      "health": 3300,
+      "damage": 1400,
+      "speed": 125,
+      "armor": 0,
+      "crit": 40,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_andrewsarchus_andrewsarchus.png"
+  },
+  {
+    "slug": "andrewtherium",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/andrewtherium",
+    "stats": {
+      "health": 3600,
+      "damage": 1300,
+      "speed": 119,
+      "armor": 5,
+      "crit": 25,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_andrewtherium_andrewtherium.png"
+  },
+  {
+    "slug": "andrewtodon",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/andrewtodon",
+    "stats": {
+      "health": 3450,
+      "damage": 1300,
+      "speed": 112,
+      "armor": 15,
+      "crit": 25,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_andrewtodon_andrewtodon.png"
+  },
+  {
+    "slug": "andrewtops",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/andrewtops",
+    "stats": {
+      "health": 3900,
+      "damage": 1600,
+      "speed": 126,
+      "armor": 10,
+      "crit": 20,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_andrewtops_andrewtops.png"
+  },
+  {
+    "slug": "angel",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/angel",
+    "stats": {
+      "health": 4280,
+      "damage": 1450,
+      "speed": 127,
+      "armor": 10,
+      "crit": 20,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_angel_angel.png"
+  },
+  {
+    "slug": "animantarx",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/animantarx",
+    "stats": {
+      "health": 4800,
+      "damage": 1200,
+      "speed": 118,
+      "armor": 30,
+      "crit": 10,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_animantarx_animantarx.png"
+  },
+  {
+    "slug": "ankylocodon",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/ankylocodon",
+    "stats": {
+      "health": 4500,
+      "damage": 1100,
+      "speed": 107,
+      "armor": 25,
+      "crit": 20,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_ankylocodon_ankylocodon.png"
+  },
+  {
+    "slug": "ankylodactylus",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/ankylodactylus",
+    "stats": {
+      "health": 3150,
+      "damage": 1200,
+      "speed": 126,
+      "armor": 15,
+      "crit": 5,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_ankylodactylus_ankylodactylus.png"
+  },
+  {
+    "slug": "ankylodicurus",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/ankylodicurus",
+    "stats": {
+      "health": 4200,
+      "damage": 1150,
+      "speed": 108,
+      "armor": 35,
+      "crit": 15,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_ankylodicurus_ankylodicurus.png"
+  },
+  {
+    "slug": "ankylomoloch",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/ankylomoloch",
+    "stats": {
+      "health": 4050,
+      "damage": 1150,
+      "speed": 118,
+      "armor": 20,
+      "crit": 10,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_ankylomoloch_ankylomoloch.png"
+  },
+  {
+    "slug": "ankylos_lux",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/ankylos_lux",
+    "stats": {
+      "health": 4500,
+      "damage": 1300,
+      "speed": 110,
+      "armor": 35,
+      "crit": 5,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_ankylos_lux_ankylos_lux.png"
+  },
+  {
+    "slug": "ankylosaurus",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/ankylosaurus",
+    "stats": {
+      "health": 4650,
+      "damage": 1200,
+      "speed": 116,
+      "armor": 30,
+      "crit": 5,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_ankylosaurus_ankylosaurus.png"
+  },
+  {
+    "slug": "ankylosaurus_gen_2",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/ankylosaurus_gen_2",
+    "stats": {
+      "health": 4200,
+      "damage": 1000,
+      "speed": 111,
+      "armor": 25,
+      "crit": 5,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_ankylosaurus_gen_2_ankylosaurus_gen_2.png"
+  },
+  {
+    "slug": "ankyntrosaurus",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/ankyntrosaurus",
+    "stats": {
+      "health": 4800,
+      "damage": 1000,
+      "speed": 109,
+      "armor": 40,
+      "crit": 5,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_ankyntrosaurus_ankyntrosaurus.png"
+  },
+  {
+    "slug": "antarctopelta",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/antarctopelta",
+    "stats": {
+      "health": 3750,
+      "damage": 1000,
+      "speed": 111,
+      "armor": 30,
+      "crit": 10,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_antarctopelta_antarctopelta.png"
+  },
+  {
+    "slug": "antarctovenator",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/antarctovenator",
+    "stats": {
+      "health": 4200,
+      "damage": 1300,
+      "speed": 113,
+      "armor": 20,
+      "crit": 10,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_antarctovenator_antarctovenator.png"
+  },
+  {
+    "slug": "anurognathus",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/anurognathus",
+    "stats": {
+      "health": 2550,
+      "damage": 1150,
+      "speed": 131,
+      "armor": 0,
+      "crit": 10,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_anurognathus_anurognathus.png"
+  },
+  {
+    "slug": "apatoceratops",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/apatoceratops",
+    "stats": {
+      "health": 6300,
+      "damage": 1200,
+      "speed": 108,
+      "armor": 30,
+      "crit": 5,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_apatoceratops_apatoceratops.png"
+  },
+  {
+    "slug": "apatosaurus",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/apatosaurus",
+    "stats": {
+      "health": 6000,
+      "damage": 1100,
+      "speed": 101,
+      "armor": 0,
+      "crit": 5,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_apatosaurus_apatosaurus.png"
+  },
+  {
+    "slug": "aquicomilus",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/aquicomilus",
+    "stats": {
+      "health": 3650,
+      "damage": 1500,
+      "speed": 130,
+      "armor": 0,
+      "crit": 10,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_aquicomilus_aquicomilus.png"
+  },
+  {
+    "slug": "aquilamimus",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/aquilamimus",
+    "stats": {
+      "health": 2850,
+      "damage": 1150,
+      "speed": 130,
+      "armor": 0,
+      "crit": 5,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_aquilamimus_aquilamimus.png"
+  },
+  {
+    "slug": "aquilops",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/aquilops",
+    "stats": {
+      "health": 3900,
+      "damage": 1300,
+      "speed": 115,
+      "armor": 5,
+      "crit": 5,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_aquilops_aquilops.png"
+  },
+  {
+    "slug": "aquilosaurus",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/aquilosaurus",
+    "stats": {
+      "health": 4000,
+      "damage": 1600,
+      "speed": 130,
+      "armor": 0,
+      "crit": 10,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_aquilosaurus_aquilosaurus.png"
+  },
+  {
+    "slug": "aquilotae",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/aquilotae",
+    "stats": {
+      "health": 4720,
+      "damage": 1750,
+      "speed": 130,
+      "armor": 0,
+      "crit": 10,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_aquilotae_aquilotae.png"
+  },
+  {
+    "slug": "aquiraptor",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/aquiraptor",
+    "stats": {
+      "health": 4200,
+      "damage": 1350,
+      "speed": 122,
+      "armor": 20,
+      "crit": 10,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_aquiraptor_aquiraptor.png"
+  },
+  {
+    "slug": "aquisaurus",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/aquisaurus",
+    "stats": {
+      "health": 4000,
+      "damage": 1300,
+      "speed": 122,
+      "armor": 20,
+      "crit": 5,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_aquisaurus_aquisaurus.png"
+  },
+  {
+    "slug": "arambourgiania",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/arambourgiania",
+    "stats": {
+      "health": 4350,
+      "damage": 1000,
+      "speed": 115,
+      "armor": 0,
+      "crit": 5,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_arambourgiania_arambourgiania.png"
+  },
+  {
+    "slug": "archaeopteryx",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/archaeopteryx",
+    "stats": {
+      "health": 3300,
+      "damage": 1250,
+      "speed": 127,
+      "armor": 0,
+      "crit": 10,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_archaeopteryx_archaeopteryx.png"
+  },
+  {
+    "slug": "archaeotherium",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/archaeotherium",
+    "stats": {
+      "health": 4200,
+      "damage": 1500,
+      "speed": 123,
+      "armor": 20,
+      "crit": 20,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_archaeotherium_archaeotherium.png"
+  },
+  {
+    "slug": "arctalces",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/arctalces",
+    "stats": {
+      "health": 3750,
+      "damage": 1150,
+      "speed": 113,
+      "armor": 15,
+      "crit": 5,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_arctalces_arctalces.png"
+  },
+  {
+    "slug": "arctocanis",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/arctocanis",
+    "stats": {
+      "health": 5200,
+      "damage": 1400,
+      "speed": 116,
+      "armor": 15,
+      "crit": 10,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_arctocanis_arctocanis.png"
+  },
+  {
+    "slug": "arctodus",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/arctodus",
+    "stats": {
+      "health": 4200,
+      "damage": 1250,
+      "speed": 107,
+      "armor": 10,
+      "crit": 5,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_arctodus_arctodus.png"
+  },
+  {
+    "slug": "arctops",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/arctops",
+    "stats": {
+      "health": 3000,
+      "damage": 1400,
+      "speed": 131,
+      "armor": 0,
+      "crit": 5,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_arctops_arctops.png"
+  },
+  {
+    "slug": "arctovasilas",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/arctovasilas",
+    "stats": {
+      "health": 4800,
+      "damage": 1400,
+      "speed": 117,
+      "armor": 35,
+      "crit": 5,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_arctovasilas_arctovasilas.png"
+  },
+  {
+    "slug": "ardentismaxima",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/ardentismaxima",
+    "stats": {
+      "health": 6000,
+      "damage": 1300,
+      "speed": 109,
+      "armor": 10,
+      "crit": 30,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_ardentismaxima_ardentismaxima.png"
+  },
+  {
+    "slug": "ardontognathus",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/ardontognathus",
+    "stats": {
+      "health": 3650,
+      "damage": 1350,
+      "speed": 126,
+      "armor": 0,
+      "crit": 25,
+      "crit_damage": 133
+    },
+    "icon_file": "images\\creatures\\creature_ardontognathus_ardontognathus.png"
+  },
+  {
+    "slug": "ardontosaurus",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/ardontosaurus",
+    "stats": {
+      "health": 4500,
+      "damage": 1500,
+      "speed": 108,
+      "armor": 0,
+      "crit": 20,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_ardontosaurus_ardontosaurus.png"
+  },
+  {
+    "slug": "argentavis",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/argentavis",
+    "stats": {
+      "health": 4050,
+      "damage": 1050,
+      "speed": 128,
+      "armor": 0,
+      "crit": 10,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_argentavis_argentavis.png"
+  },
+  {
+    "slug": "argenteryx",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/argenteryx",
+    "stats": {
+      "health": 3750,
+      "damage": 1150,
+      "speed": 127,
+      "armor": 0,
+      "crit": 10,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_argenteryx_argenteryx.png"
+  },
+  {
+    "slug": "argentinosaurus",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/argentinosaurus",
+    "stats": {
+      "health": 5400,
+      "damage": 1150,
+      "speed": 102,
+      "armor": 5,
+      "crit": 40,
+      "crit_damage": 150
+    },
+    "icon_file": "images\\creatures\\creature_argentinosaurus_argentinosaurus.png"
+  },
+  {
+    "slug": "armbrusters_wolf",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/armbrusters_wolf",
+    "stats": {
+      "health": 4500,
+      "damage": 1300,
+      "speed": 125,
+      "armor": 0,
+      "crit": 15,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_armbrusters_wolf_armbrusters_wolf.png"
+  },
+  {
+    "slug": "atrocimoloch",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/atrocimoloch",
+    "stats": {
+      "health": 4500,
+      "damage": 1450,
+      "speed": 124,
+      "armor": 15,
+      "crit": 5,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_atrocimoloch_atrocimoloch.png"
+  },
+  {
+    "slug": "atrocodistis",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/atrocodistis",
+    "stats": {
+      "health": 4000,
+      "damage": 1300,
+      "speed": 123,
+      "armor": 20,
+      "crit": 5,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_atrocodistis_atrocodistis.png"
+  },
+  {
+    "slug": "atrocomaxima",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/atrocomaxima",
+    "stats": {
+      "health": 6000,
+      "damage": 1550,
+      "speed": 125,
+      "armor": 15,
+      "crit": 30,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_atrocomaxima_atrocomaxima.png"
+  },
+  {
+    "slug": "atromolistis",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/atromolistis",
+    "stats": {
+      "health": 4800,
+      "damage": 1450,
+      "speed": 124,
+      "armor": 10,
+      "crit": 5,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_atromolistis_atromolistis.png"
+  },
+  {
+    "slug": "australotitan",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/australotitan",
+    "stats": {
+      "health": 1150,
+      "damage": 780,
+      "speed": 86,
+      "armor": 5,
+      "crit": 0,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_australotitan_australotitan.png"
+  },
+  {
+    "slug": "bajadasaurus",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/bajadasaurus",
+    "stats": {
+      "health": 4350,
+      "damage": 1100,
+      "speed": 108,
+      "armor": 0,
+      "crit": 5,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_bajadasaurus_bajadasaurus.png"
+  },
+  {
+    "slug": "bajatonodon",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/bajatonodon",
+    "stats": {
+      "health": 4500,
+      "damage": 1500,
+      "speed": 106,
+      "armor": 0,
+      "crit": 5,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_bajatonodon_bajatonodon.png"
+  },
+  {
+    "slug": "baryonyx",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/baryonyx",
+    "stats": {
+      "health": 4200,
+      "damage": 1400,
+      "speed": 126,
+      "armor": 0,
+      "crit": 30,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_baryonyx_baryonyx.png"
+  },
+  {
+    "slug": "baryonyx_gen_2",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/baryonyx_gen_2",
+    "stats": {
+      "health": 4350,
+      "damage": 1300,
+      "speed": 123,
+      "armor": 0,
+      "crit": 20,
+      "crit_damage": 150
+    },
+    "icon_file": "images\\creatures\\creature_baryonyx_gen_2_baryonyx_gen_2.png"
+  },
+  {
+    "slug": "baryothus",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/baryothus",
+    "stats": {
+      "health": 4600,
+      "damage": 1400,
+      "speed": 118,
+      "armor": 10,
+      "crit": 5,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_baryothus_baryothus.png"
+  },
+  {
+    "slug": "becklejara",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/becklejara",
+    "stats": {
+      "health": 4900,
+      "damage": 1650,
+      "speed": 125,
+      "armor": 0,
+      "crit": 5,
+      "crit_damage": 150
+    },
+    "icon_file": "images\\creatures\\creature_becklejara_becklejara.png"
+  },
+  {
+    "slug": "becklerizaurus",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/becklerizaurus",
+    "stats": {
+      "health": 5000,
+      "damage": 1600,
+      "speed": 127,
+      "armor": 15,
+      "crit": 20,
+      "crit_damage": 135
+    },
+    "icon_file": "images\\creatures\\creature_becklerizaurus_becklerizaurus.png"
+  },
+  {
+    "slug": "becklolyth",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/becklolyth",
+    "stats": {
+      "health": 4200,
+      "damage": 1500,
+      "speed": 131,
+      "armor": 10,
+      "crit": 25,
+      "crit_damage": 135
+    },
+    "icon_file": "images\\creatures\\creature_becklolyth_becklolyth.png"
+  },
+  {
+    "slug": "becklophosaurus",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/becklophosaurus",
+    "stats": {
+      "health": 4200,
+      "damage": 1600,
+      "speed": 118,
+      "armor": 10,
+      "crit": 5,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_becklophosaurus_becklophosaurus.png"
+  },
+  {
+    "slug": "beelzebufo",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/beelzebufo",
+    "stats": {
+      "health": 3600,
+      "damage": 1550,
+      "speed": 125,
+      "armor": 0,
+      "crit": 10,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_beelzebufo_beelzebufo.png"
+  },
+  {
+    "slug": "beta",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/beta",
+    "stats": {
+      "health": 2400,
+      "damage": 1200,
+      "speed": 133,
+      "armor": 0,
+      "crit": 5,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_beta_beta.png"
+  },
+  {
+    "slug": "blonde",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/blonde",
+    "stats": {
+      "health": 4200,
+      "damage": 1600,
+      "speed": 125,
+      "armor": 0,
+      "crit": 10,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_blonde_blonde.png"
+  },
+  {
+    "slug": "blue",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/blue",
+    "stats": {
+      "health": 2700,
+      "damage": 1450,
+      "speed": 131,
+      "armor": 0,
+      "crit": 5,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_blue_blue.png"
+  },
+  {
+    "slug": "borealopelta",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/borealopelta",
+    "stats": {
+      "health": 1200,
+      "damage": 375,
+      "speed": 101,
+      "armor": 0,
+      "crit": 5,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_borealopelta_borealopelta.png"
+  },
+  {
+    "slug": "brachiosaurus",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/brachiosaurus",
+    "stats": {
+      "health": 6000,
+      "damage": 1000,
+      "speed": 111,
+      "armor": 10,
+      "crit": 30,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_brachiosaurus_brachiosaurus.png"
+  },
+  {
+    "slug": "brontolasmus",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/brontolasmus",
+    "stats": {
+      "health": 4200,
+      "damage": 1300,
+      "speed": 108,
+      "armor": 30,
+      "crit": 5,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_brontolasmus_brontolasmus.png"
+  },
+  {
+    "slug": "brontotherium",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/brontotherium",
+    "stats": {
+      "health": 4200,
+      "damage": 1200,
+      "speed": 108,
+      "armor": 20,
+      "crit": 5,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_brontotherium_brontotherium.png"
+  },
+  {
+    "slug": "brunette",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/brunette",
+    "stats": {
+      "health": 4800,
+      "damage": 1500,
+      "speed": 111,
+      "armor": 10,
+      "crit": 5,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_brunette_brunette.png"
+  },
+  {
+    "slug": "bumpy",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/bumpy",
+    "stats": {
+      "health": 4400,
+      "damage": 1100,
+      "speed": 113,
+      "armor": 25,
+      "crit": 10,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_bumpy_bumpy.png"
+  },
+  {
+    "slug": "carbonemys",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/carbonemys",
+    "stats": {
+      "health": 3300,
+      "damage": 900,
+      "speed": 103,
+      "armor": 60,
+      "crit": 5,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_carbonemys_carbonemys.png"
+  },
+  {
+    "slug": "carbotoceratops",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/carbotoceratops",
+    "stats": {
+      "health": 4350,
+      "damage": 1000,
+      "speed": 104,
+      "armor": 50,
+      "crit": 5,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_carbotoceratops_carbotoceratops.png"
+  },
+  {
+    "slug": "carcharodontosaurus",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/carcharodontosaurus",
+    "stats": {
+      "health": 1150,
+      "damage": 400,
+      "speed": 110,
+      "armor": 0,
+      "crit": 30,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_carcharodontosaurus_carcharodontosaurus.png"
+  },
+  {
+    "slug": "carnotarkus",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/carnotarkus",
+    "stats": {
+      "health": 3600,
+      "damage": 1000,
+      "speed": 110,
+      "armor": 20,
+      "crit": 5,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_carnotarkus_carnotarkus.png"
+  },
+  {
+    "slug": "carnotaurus",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/carnotaurus",
+    "stats": {
+      "health": 3600,
+      "damage": 1000,
+      "speed": 104,
+      "armor": 0,
+      "crit": 5,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_carnotaurus_carnotaurus.png"
+  },
+  {
+    "slug": "ceramagnus",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/ceramagnus",
+    "stats": {
+      "health": 4800,
+      "damage": 1300,
+      "speed": 113,
+      "armor": 25,
+      "crit": 10,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_ceramagnus_ceramagnus.png"
+  },
+  {
+    "slug": "ceranosaurus",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/ceranosaurus",
+    "stats": {
+      "health": 5850,
+      "damage": 1550,
+      "speed": 127,
+      "armor": 25,
+      "crit": 20,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_ceranosaurus_ceranosaurus.png"
+  },
+  {
+    "slug": "cerastegotops",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/cerastegotops",
+    "stats": {
+      "health": 5500,
+      "damage": 1700,
+      "speed": 124,
+      "armor": 15,
+      "crit": 10,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_cerastegotops_cerastegotops.png"
+  },
+  {
+    "slug": "ceratosaurus",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/ceratosaurus",
+    "stats": {
+      "health": 5350,
+      "damage": 1650,
+      "speed": 119,
+      "armor": 15,
+      "crit": 15,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_ceratosaurus_ceratosaurus.png"
+  },
+  {
+    "slug": "ceratosaurus_gen_2",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/ceratosaurus_gen_2",
+    "stats": {
+      "health": 1400,
+      "damage": 410,
+      "speed": 106,
+      "armor": 0,
+      "crit": 5,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_ceratosaurus_gen_2_ceratosaurus_gen_2.png"
+  },
+  {
+    "slug": "cervalces",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/cervalces",
+    "stats": {
+      "health": 3300,
+      "damage": 1250,
+      "speed": 128,
+      "armor": 5,
+      "crit": 10,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_cervalces_cervalces.png"
+  },
+  {
+    "slug": "charlie",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/charlie",
+    "stats": {
+      "health": 2300,
+      "damage": 1450,
+      "speed": 131,
+      "armor": 0,
+      "crit": 5,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_charlie_charlie.png"
+  },
+  {
+    "slug": "clever_girl",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/clever_girl",
+    "stats": {
+      "health": 1300,
+      "damage": 500,
+      "speed": 119,
+      "armor": 0,
+      "crit": 30,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_clever_girl_clever_girl.png"
+  },
+  {
+    "slug": "coelhaast",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/coelhaast",
+    "stats": {
+      "health": 3150,
+      "damage": 1250,
+      "speed": 130,
+      "armor": 0,
+      "crit": 10,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_coelhaast_coelhaast.png"
+  },
+  {
+    "slug": "coelurosauravus",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/coelurosauravus",
+    "stats": {
+      "health": 3450,
+      "damage": 1050,
+      "speed": 126,
+      "armor": 0,
+      "crit": 15,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_coelurosauravus_coelurosauravus.png"
+  },
+  {
+    "slug": "compsocaulus",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/compsocaulus",
+    "stats": {
+      "health": 3900,
+      "damage": 1350,
+      "speed": 127,
+      "armor": 0,
+      "crit": 10,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_compsocaulus_compsocaulus.png"
+  },
+  {
+    "slug": "compsognathus",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/compsognathus",
+    "stats": {
+      "health": 3600,
+      "damage": 1200,
+      "speed": 128,
+      "armor": 0,
+      "crit": 5,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_compsognathus_compsognathus.png"
+  },
+  {
+    "slug": "compsognathus_gen_2",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/compsognathus_gen_2",
+    "stats": {
+      "health": 3750,
+      "damage": 1100,
+      "speed": 127,
+      "armor": 0,
+      "crit": 10,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_compsognathus_gen_2_compsognathus_gen_2.png"
+  },
+  {
+    "slug": "compsoraptor",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/compsoraptor",
+    "stats": {
+      "health": 3350,
+      "damage": 1350,
+      "speed": 130,
+      "armor": 0,
+      "crit": 30,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_compsoraptor_compsoraptor.png"
+  },
+  {
+    "slug": "compsovenator",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/compsovenator",
+    "stats": {
+      "health": 3900,
+      "damage": 1500,
+      "speed": 130,
+      "armor": 0,
+      "crit": 35,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_compsovenator_compsovenator.png"
+  },
+  {
+    "slug": "concakuisaurus",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/concakuisaurus",
+    "stats": {
+      "health": 4800,
+      "damage": 1150,
+      "speed": 125,
+      "armor": 0,
+      "crit": 10,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_concakuisaurus_concakuisaurus.png"
+  },
+  {
+    "slug": "concatoloch",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/concatoloch",
+    "stats": {
+      "health": 4600,
+      "damage": 1200,
+      "speed": 112,
+      "armor": 25,
+      "crit": 5,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_concatoloch_concatoloch.png"
+  },
+  {
+    "slug": "concatosaurus",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/concatosaurus",
+    "stats": {
+      "health": 5150,
+      "damage": 1400,
+      "speed": 115,
+      "armor": 15,
+      "crit": 10,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_concatosaurus_concatosaurus.png"
+  },
+  {
+    "slug": "concavenator",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/concavenator",
+    "stats": {
+      "health": 4000,
+      "damage": 1200,
+      "speed": 106,
+      "armor": 10,
+      "crit": 10,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_concavenator_concavenator.png"
+  },
+  {
+    "slug": "constrictoraptor",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/constrictoraptor",
+    "stats": {
+      "health": 4100,
+      "damage": 1350,
+      "speed": 125,
+      "armor": 5,
+      "crit": 10,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_constrictoraptor_constrictoraptor.png"
+  },
+  {
+    "slug": "crichtomoloch",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/crichtomoloch",
+    "stats": {
+      "health": 4650,
+      "damage": 1450,
+      "speed": 115,
+      "armor": 15,
+      "crit": 20,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_crichtomoloch_crichtomoloch.png"
+  },
+  {
+    "slug": "crichtonsaurus",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/crichtonsaurus",
+    "stats": {
+      "health": 4450,
+      "damage": 1350,
+      "speed": 118,
+      "armor": 10,
+      "crit": 20,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_crichtonsaurus_crichtonsaurus.png"
+  },
+  {
+    "slug": "cryolophosaurus",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/cryolophosaurus",
+    "stats": {
+      "health": 1000,
+      "damage": 490,
+      "speed": 101,
+      "armor": 5,
+      "crit": 5,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_cryolophosaurus_cryolophosaurus.png"
+  },
+  {
+    "slug": "dakotacurus",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/dakotacurus",
+    "stats": {
+      "health": 4100,
+      "damage": 1550,
+      "speed": 129,
+      "armor": 15,
+      "crit": 30,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_dakotacurus_dakotacurus.png"
+  },
+  {
+    "slug": "dakotanops",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/dakotanops",
+    "stats": {
+      "health": 3600,
+      "damage": 1400,
+      "speed": 131,
+      "armor": 0,
+      "crit": 10,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_dakotanops_dakotanops.png"
+  },
+  {
+    "slug": "dakotaraptor",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/dakotaraptor",
+    "stats": {
+      "health": 3300,
+      "damage": 1350,
+      "speed": 129,
+      "armor": 0,
+      "crit": 5,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_dakotaraptor_dakotaraptor.png"
+  },
+  {
+    "slug": "darwezopteryx",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/darwezopteryx",
+    "stats": {
+      "health": 4200,
+      "damage": 1300,
+      "speed": 127,
+      "armor": 0,
+      "crit": 5,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_darwezopteryx_darwezopteryx.png"
+  },
+  {
+    "slug": "darwinopterus",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/darwinopterus",
+    "stats": {
+      "health": 2700,
+      "damage": 1000,
+      "speed": 129,
+      "armor": 0,
+      "crit": 5,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_darwinopterus_darwinopterus.png"
+  },
+  {
+    "slug": "deinocheirus",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/deinocheirus",
+    "stats": {
+      "health": 2700,
+      "damage": 1350,
+      "speed": 131,
+      "armor": 0,
+      "crit": 5,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_deinocheirus_deinocheirus.png"
+  },
+  {
+    "slug": "deinomimus",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/deinomimus",
+    "stats": {
+      "health": 4200,
+      "damage": 1800,
+      "speed": 131,
+      "armor": 10,
+      "crit": 5,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_deinomimus_deinomimus.png"
+  },
+  {
+    "slug": "deinonychus",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/deinonychus",
+    "stats": {
+      "health": 2100,
+      "damage": 1200,
+      "speed": 132,
+      "armor": 0,
+      "crit": 5,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_deinonychus_deinonychus.png"
+  },
+  {
+    "slug": "deinosuchus",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/deinosuchus",
+    "stats": {
+      "health": 3500,
+      "damage": 1400,
+      "speed": 113,
+      "armor": 10,
+      "crit": 5,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_deinosuchus_deinosuchus.png"
+  },
+  {
+    "slug": "deinotherium",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/deinotherium",
+    "stats": {
+      "health": 4000,
+      "damage": 1250,
+      "speed": 115,
+      "armor": 10,
+      "crit": 20,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_deinotherium_deinotherium.png"
+  },
+  {
+    "slug": "deinotops",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/deinotops",
+    "stats": {
+      "health": 3600,
+      "damage": 1450,
+      "speed": 131,
+      "armor": 10,
+      "crit": 5,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_deinotops_deinotops.png"
+  },
+  {
+    "slug": "delta",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/delta",
+    "stats": {
+      "health": 2500,
+      "damage": 1450,
+      "speed": 130,
+      "armor": 0,
+      "crit": 5,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_delta_delta.png"
+  },
+  {
+    "slug": "diabloceratops",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/diabloceratops",
+    "stats": {
+      "health": 1500,
+      "damage": 400,
+      "speed": 104,
+      "armor": 6,
+      "crit": 5,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_diabloceratops_diabloceratops.png"
+  },
+  {
+    "slug": "dilophoboa",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/dilophoboa",
+    "stats": {
+      "health": 3600,
+      "damage": 1100,
+      "speed": 124,
+      "armor": 0,
+      "crit": 10,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_dilophoboa_dilophoboa.png"
+  },
+  {
+    "slug": "dilophosaurus",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/dilophosaurus",
+    "stats": {
+      "health": 3600,
+      "damage": 1300,
+      "speed": 124,
+      "armor": 0,
+      "crit": 5,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_dilophosaurus_dilophosaurus.png"
+  },
+  {
+    "slug": "dilophosaurus_gen_2",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/dilophosaurus_gen_2",
+    "stats": {
+      "health": 2550,
+      "damage": 1850,
+      "speed": 121,
+      "armor": 0,
+      "crit": 5,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_dilophosaurus_gen_2_dilophosaurus_gen_2.png"
+  },
+  {
+    "slug": "diloracheirus",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/diloracheirus",
+    "stats": {
+      "health": 4470,
+      "damage": 1650,
+      "speed": 128,
+      "armor": 0,
+      "crit": 10,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_diloracheirus_diloracheirus.png"
+  },
+  {
+    "slug": "diloranosaurus",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/diloranosaurus",
+    "stats": {
+      "health": 4200,
+      "damage": 1500,
+      "speed": 116,
+      "armor": 0,
+      "crit": 5,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_diloranosaurus_diloranosaurus.png"
+  },
+  {
+    "slug": "dilozorion",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/dilozorion",
+    "stats": {
+      "health": 4600,
+      "damage": 1650,
+      "speed": 130,
+      "armor": 0,
+      "crit": 10,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_dilozorion_dilozorion.png"
+  },
+  {
+    "slug": "dimetrodon",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/dimetrodon",
+    "stats": {
+      "health": 4200,
+      "damage": 1400,
+      "speed": 113,
+      "armor": 0,
+      "crit": 5,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_dimetrodon_dimetrodon.png"
+  },
+  {
+    "slug": "dimetrodon_gen_2",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/dimetrodon_gen_2",
+    "stats": {
+      "health": 4800,
+      "damage": 1200,
+      "speed": 112,
+      "armor": 0,
+      "crit": 15,
+      "crit_damage": 140
+    },
+    "icon_file": "images\\creatures\\creature_dimetrodon_gen_2_dimetrodon_gen_2.png"
+  },
+  {
+    "slug": "dimodactylus",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/dimodactylus",
+    "stats": {
+      "health": 3750,
+      "damage": 1150,
+      "speed": 127,
+      "armor": 0,
+      "crit": 15,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_dimodactylus_dimodactylus.png"
+  },
+  {
+    "slug": "dimorphodon",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/dimorphodon",
+    "stats": {
+      "health": 3500,
+      "damage": 900,
+      "speed": 128,
+      "armor": 0,
+      "crit": 5,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_dimorphodon_dimorphodon.png"
+  },
+  {
+    "slug": "diorajasaur",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/diorajasaur",
+    "stats": {
+      "health": 4800,
+      "damage": 1200,
+      "speed": 108,
+      "armor": 30,
+      "crit": 30,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_diorajasaur_diorajasaur.png"
+  },
+  {
+    "slug": "diplocaulus",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/diplocaulus",
+    "stats": {
+      "health": 3300,
+      "damage": 1600,
+      "speed": 127,
+      "armor": 0,
+      "crit": 5,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_diplocaulus_diplocaulus.png"
+  },
+  {
+    "slug": "diplocaulus_gen_2",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/diplocaulus_gen_2",
+    "stats": {
+      "health": 4050,
+      "damage": 1000,
+      "speed": 125,
+      "armor": 0,
+      "crit": 5,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_diplocaulus_gen_2_diplocaulus_gen_2.png"
+  },
+  {
+    "slug": "diplodocus",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/diplodocus",
+    "stats": {
+      "health": 6000,
+      "damage": 1500,
+      "speed": 104,
+      "armor": 0,
+      "crit": 5,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_diplodocus_diplodocus.png"
+  },
+  {
+    "slug": "diplotator",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/diplotator",
+    "stats": {
+      "health": 3000,
+      "damage": 1400,
+      "speed": 127,
+      "armor": 0,
+      "crit": 5,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_diplotator_diplotator.png"
+  },
+  {
+    "slug": "diplovenator",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/diplovenator",
+    "stats": {
+      "health": 4050,
+      "damage": 1000,
+      "speed": 110,
+      "armor": 0,
+      "crit": 5,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_diplovenator_diplovenator.png"
+  },
+  {
+    "slug": "dire_wolf",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/dire_wolf",
+    "stats": {
+      "health": 3600,
+      "damage": 1450,
+      "speed": 127,
+      "armor": 0,
+      "crit": 20,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_dire_wolf_dire_wolf.png"
+  },
+  {
+    "slug": "distortus_rex",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/distortus_rex",
+    "stats": {
+      "health": 5400,
+      "damage": 1800,
+      "speed": 117,
+      "armor": 15,
+      "crit": 15,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_distortus_rex_distortus_rex.png"
+  },
+  {
+    "slug": "dodo",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/dodo",
+    "stats": {
+      "health": 3900,
+      "damage": 1200,
+      "speed": 123,
+      "armor": 0,
+      "crit": 5,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_dodo_dodo.png"
+  },
+  {
+    "slug": "dodocevia",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/dodocevia",
+    "stats": {
+      "health": 4050,
+      "damage": 1400,
+      "speed": 126,
+      "armor": 0,
+      "crit": 5,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_dodocevia_dodocevia.png"
+  },
+  {
+    "slug": "doedicurus",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/doedicurus",
+    "stats": {
+      "health": 4200,
+      "damage": 1200,
+      "speed": 111,
+      "armor": 50,
+      "crit": 5,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_doedicurus_doedicurus.png"
+  },
+  {
+    "slug": "draco_intrepidus",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/draco_intrepidus",
+    "stats": {
+      "health": 4500,
+      "damage": 1650,
+      "speed": 127,
+      "armor": 10,
+      "crit": 25,
+      "crit_damage": 150
+    },
+    "icon_file": "images\\creatures\\creature_draco_intrepidus_draco_intrepidus.png"
+  },
+  {
+    "slug": "draco_lux",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/draco_lux",
+    "stats": {
+      "health": 4950,
+      "damage": 1600,
+      "speed": 128,
+      "armor": 15,
+      "crit": 15,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_draco_lux_draco_lux.png"
+  },
+  {
+    "slug": "dracoceratops",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/dracoceratops",
+    "stats": {
+      "health": 4200,
+      "damage": 1500,
+      "speed": 115,
+      "armor": 0,
+      "crit": 5,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_dracoceratops_dracoceratops.png"
+  },
+  {
+    "slug": "dracoceratosaurus",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/dracoceratosaurus",
+    "stats": {
+      "health": 4500,
+      "damage": 1600,
+      "speed": 120,
+      "armor": 20,
+      "crit": 5,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_dracoceratosaurus_dracoceratosaurus.png"
+  },
+  {
+    "slug": "dracorex",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/dracorex",
+    "stats": {
+      "health": 4800,
+      "damage": 1100,
+      "speed": 124,
+      "armor": 0,
+      "crit": 5,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_dracorex_dracorex.png"
+  },
+  {
+    "slug": "dracorex_gen_2",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/dracorex_gen_2",
+    "stats": {
+      "health": 3600,
+      "damage": 1500,
+      "speed": 108,
+      "armor": 0,
+      "crit": 5,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_dracorex_gen_2_dracorex_gen_2.png"
+  },
+  {
+    "slug": "dracovenator",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/dracovenator",
+    "stats": {
+      "health": 4500,
+      "damage": 1750,
+      "speed": 128,
+      "armor": 0,
+      "crit": 20,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_dracovenator_dracovenator.png"
+  },
+  {
+    "slug": "dreadactylus",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/dreadactylus",
+    "stats": {
+      "health": 4200,
+      "damage": 1000,
+      "speed": 112,
+      "armor": 5,
+      "crit": 5,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_dreadactylus_dreadactylus.png"
+  },
+  {
+    "slug": "dreadnoughtus",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/dreadnoughtus",
+    "stats": {
+      "health": 6000,
+      "damage": 1000,
+      "speed": 107,
+      "armor": 10,
+      "crit": 5,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_dreadnoughtus_dreadnoughtus.png"
+  },
+  {
+    "slug": "dsungaia",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/dsungaia",
+    "stats": {
+      "health": 4200,
+      "damage": 1050,
+      "speed": 117,
+      "armor": 20,
+      "crit": 5,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_dsungaia_dsungaia.png"
+  },
+  {
+    "slug": "dsungaripterus",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/dsungaripterus",
+    "stats": {
+      "health": 3450,
+      "damage": 1000,
+      "speed": 125,
+      "armor": 0,
+      "crit": 25,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_dsungaripterus_dsungaripterus.png"
+  },
+  {
+    "slug": "dsungascorpios",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/dsungascorpios",
+    "stats": {
+      "health": 3300,
+      "damage": 1100,
+      "speed": 116,
+      "armor": 30,
+      "crit": 15,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_dsungascorpios_dsungascorpios.png"
+  },
+  {
+    "slug": "echo",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/echo",
+    "stats": {
+      "health": 2100,
+      "damage": 1350,
+      "speed": 129,
+      "armor": 0,
+      "crit": 15,
+      "crit_damage": 150
+    },
+    "icon_file": "images\\creatures\\creature_echo_echo.png"
+  },
+  {
+    "slug": "edaphocevia",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/edaphocevia",
+    "stats": {
+      "health": 4400,
+      "damage": 1250,
+      "speed": 127,
+      "armor": 0,
+      "crit": 5,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_edaphocevia_edaphocevia.png"
+  },
+  {
+    "slug": "edaphosaurus",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/edaphosaurus",
+    "stats": {
+      "health": 4500,
+      "damage": 1000,
+      "speed": 115,
+      "armor": 0,
+      "crit": 20,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_edaphosaurus_edaphosaurus.png"
+  },
+  {
+    "slug": "edmontoguanodon",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/edmontoguanodon",
+    "stats": {
+      "health": 4500,
+      "damage": 1200,
+      "speed": 110,
+      "armor": 0,
+      "crit": 5,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_edmontoguanodon_edmontoguanodon.png"
+  },
+  {
+    "slug": "edmontosaurus",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/edmontosaurus",
+    "stats": {
+      "health": 4800,
+      "damage": 1000,
+      "speed": 113,
+      "armor": 0,
+      "crit": 5,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_edmontosaurus_edmontosaurus.png"
+  },
+  {
+    "slug": "einiasuchus",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/einiasuchus",
+    "stats": {
+      "health": 3600,
+      "damage": 1000,
+      "speed": 111,
+      "armor": 20,
+      "crit": 5,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_einiasuchus_einiasuchus.png"
+  },
+  {
+    "slug": "einiosaurus",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/einiosaurus",
+    "stats": {
+      "health": 3600,
+      "damage": 1000,
+      "speed": 110,
+      "armor": 15,
+      "crit": 5,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_einiosaurus_einiosaurus.png"
+  },
+  {
+    "slug": "elasmotherium",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/elasmotherium",
+    "stats": {
+      "health": 4500,
+      "damage": 1250,
+      "speed": 108,
+      "armor": 30,
+      "crit": 5,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_elasmotherium_elasmotherium.png"
+  },
+  {
+    "slug": "enteloceros",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/enteloceros",
+    "stats": {
+      "health": 4500,
+      "damage": 1300,
+      "speed": 126,
+      "armor": 20,
+      "crit": 10,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_enteloceros_enteloceros.png"
+  },
+  {
+    "slug": "entelochops",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/entelochops",
+    "stats": {
+      "health": 4200,
+      "damage": 1100,
+      "speed": 126,
+      "armor": 20,
+      "crit": 5,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_entelochops_entelochops.png"
+  },
+  {
+    "slug": "entelodon",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/entelodon",
+    "stats": {
+      "health": 3600,
+      "damage": 1200,
+      "speed": 122,
+      "armor": 0,
+      "crit": 30,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_entelodon_entelodon.png"
+  },
+  {
+    "slug": "entelolania",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/entelolania",
+    "stats": {
+      "health": 4200,
+      "damage": 1400,
+      "speed": 107,
+      "armor": 55,
+      "crit": 5,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_entelolania_entelolania.png"
+  },
+  {
+    "slug": "entelomoth",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/entelomoth",
+    "stats": {
+      "health": 4200,
+      "damage": 1400,
+      "speed": 121,
+      "armor": 20,
+      "crit": 5,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_entelomoth_entelomoth.png"
+  },
+  {
+    "slug": "eremocanis",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/eremocanis",
+    "stats": {
+      "health": 5300,
+      "damage": 1550,
+      "speed": 126,
+      "armor": 20,
+      "crit": 10,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_eremocanis_eremocanis.png"
+  },
+  {
+    "slug": "eremoceros",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/eremoceros",
+    "stats": {
+      "health": 4100,
+      "damage": 1350,
+      "speed": 126,
+      "armor": 10,
+      "crit": 5,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_eremoceros_eremoceros.png"
+  },
+  {
+    "slug": "eremotherium",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/eremotherium",
+    "stats": {
+      "health": 3150,
+      "damage": 1050,
+      "speed": 102,
+      "armor": 0,
+      "crit": 5,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_eremotherium_eremotherium.png"
+  },
+  {
+    "slug": "erlidominus",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/erlidominus",
+    "stats": {
+      "health": 3600,
+      "damage": 1600,
+      "speed": 131,
+      "armor": 0,
+      "crit": 50,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_erlidominus_erlidominus.png"
+  },
+  {
+    "slug": "erlikogamma",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/erlikogamma",
+    "stats": {
+      "health": 3000,
+      "damage": 1450,
+      "speed": 130,
+      "armor": 0,
+      "crit": 5,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_erlikogamma_erlikogamma.png"
+  },
+  {
+    "slug": "erlikosaurus",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/erlikosaurus",
+    "stats": {
+      "health": 3000,
+      "damage": 1400,
+      "speed": 129,
+      "armor": 0,
+      "crit": 5,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_erlikosaurus_erlikosaurus.png"
+  },
+  {
+    "slug": "erlikosaurus_gen_2",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/erlikosaurus_gen_2",
+    "stats": {
+      "health": 3000,
+      "damage": 1350,
+      "speed": 129,
+      "armor": 0,
+      "crit": 5,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_erlikosaurus_gen_2_erlikosaurus_gen_2.png"
+  },
+  {
+    "slug": "erlikospyx",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/erlikospyx",
+    "stats": {
+      "health": 4650,
+      "damage": 1650,
+      "speed": 128,
+      "armor": 0,
+      "crit": 20,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_erlikospyx_erlikospyx.png"
+  },
+  {
+    "slug": "erythrosuchus",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/erythrosuchus",
+    "stats": {
+      "health": 770,
+      "damage": 220,
+      "speed": 100,
+      "armor": 0,
+      "crit": 1,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_erythrosuchus_erythrosuchus.png"
+  },
+  {
+    "slug": "estemmenosuchus",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/estemmenosuchus",
+    "stats": {
+      "health": 4750,
+      "damage": 1400,
+      "speed": 116,
+      "armor": 25,
+      "crit": 10,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_estemmenosuchus_estemmenosuchus.png"
+  },
+  {
+    "slug": "eucladoceros",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/eucladoceros",
+    "stats": {
+      "health": 3300,
+      "damage": 1000,
+      "speed": 128,
+      "armor": 10,
+      "crit": 5,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_eucladoceros_eucladoceros.png"
+  },
+  {
+    "slug": "euoplocephalus",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/euoplocephalus",
+    "stats": {
+      "health": 4000,
+      "damage": 1200,
+      "speed": 112,
+      "armor": 40,
+      "crit": 5,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_euoplocephalus_euoplocephalus.png"
+  },
+  {
+    "slug": "fukuimimus",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/fukuimimus",
+    "stats": {
+      "health": 4800,
+      "damage": 1250,
+      "speed": 121,
+      "armor": 0,
+      "crit": 15,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_fukuimimus_fukuimimus.png"
+  },
+  {
+    "slug": "fukuiraptor",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/fukuiraptor",
+    "stats": {
+      "health": 1150,
+      "damage": 530,
+      "speed": 117,
+      "armor": 10,
+      "crit": 20,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_fukuiraptor_fukuiraptor.png"
+  },
+  {
+    "slug": "fukuisaurus",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/fukuisaurus",
+    "stats": {
+      "health": 4650,
+      "damage": 1050,
+      "speed": 115,
+      "armor": 0,
+      "crit": 5,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_fukuisaurus_fukuisaurus.png"
+  },
+  {
+    "slug": "fukuitops",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/fukuitops",
+    "stats": {
+      "health": 4900,
+      "damage": 1650,
+      "speed": 131,
+      "armor": 15,
+      "crit": 15,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_fukuitops_fukuitops.png"
+  },
+  {
+    "slug": "gallimimus",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/gallimimus",
+    "stats": {
+      "health": 2700,
+      "damage": 1300,
+      "speed": 130,
+      "armor": 0,
+      "crit": 5,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_gallimimus_gallimimus.png"
+  },
+  {
+    "slug": "geminideus",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/geminideus",
+    "stats": {
+      "health": 6500,
+      "damage": 1350,
+      "speed": 110,
+      "armor": 30,
+      "crit": 5,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_geminideus_geminideus.png"
+  },
+  {
+    "slug": "geminititan",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/geminititan",
+    "stats": {
+      "health": 5600,
+      "damage": 1300,
+      "speed": 110,
+      "armor": 0,
+      "crit": 5,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_geminititan_geminititan.png"
+  },
+  {
+    "slug": "geosternbergia",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/geosternbergia",
+    "stats": {
+      "health": 1320,
+      "damage": 575,
+      "speed": 100,
+      "armor": 5,
+      "crit": 0,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_geosternbergia_geosternbergia.png"
+  },
+  {
+    "slug": "ghost",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/ghost",
+    "stats": {
+      "health": 3200,
+      "damage": 1500,
+      "speed": 130,
+      "armor": 0,
+      "crit": 20,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_ghost_ghost.png"
+  },
+  {
+    "slug": "giganotosaurus",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/giganotosaurus",
+    "stats": {
+      "health": 5400,
+      "damage": 1700,
+      "speed": 102,
+      "armor": 0,
+      "crit": 30,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_giganotosaurus_giganotosaurus.png"
+  },
+  {
+    "slug": "giganspinoceratops",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/giganspinoceratops",
+    "stats": {
+      "health": 4750,
+      "damage": 1350,
+      "speed": 114,
+      "armor": 15,
+      "crit": 5,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_giganspinoceratops_giganspinoceratops.png"
+  },
+  {
+    "slug": "gigantspinosaurus",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/gigantspinosaurus",
+    "stats": {
+      "health": 4980,
+      "damage": 1350,
+      "speed": 112,
+      "armor": 15,
+      "crit": 15,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_gigantspinosaurus_gigantspinosaurus.png"
+  },
+  {
+    "slug": "giganyx",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/giganyx",
+    "stats": {
+      "health": 5100,
+      "damage": 1650,
+      "speed": 125,
+      "armor": 0,
+      "crit": 25,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_giganyx_giganyx.png"
+  },
+  {
+    "slug": "gigaspikasaur",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/gigaspikasaur",
+    "stats": {
+      "health": 4650,
+      "damage": 1200,
+      "speed": 108,
+      "armor": 40,
+      "crit": 5,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_gigaspikasaur_gigaspikasaur.png"
+  },
+  {
+    "slug": "giraffatitan",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/giraffatitan",
+    "stats": {
+      "health": 5700,
+      "damage": 1000,
+      "speed": 107,
+      "armor": 10,
+      "crit": 20,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_giraffatitan_giraffatitan.png"
+  },
+  {
+    "slug": "glyptoceras",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/glyptoceras",
+    "stats": {
+      "health": 3950,
+      "damage": 1400,
+      "speed": 113,
+      "armor": 25,
+      "crit": 10,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_glyptoceras_glyptoceras.png"
+  },
+  {
+    "slug": "glyptodon",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/glyptodon",
+    "stats": {
+      "health": 3900,
+      "damage": 1000,
+      "speed": 103,
+      "armor": 40,
+      "crit": 5,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_glyptodon_glyptodon.png"
+  },
+  {
+    "slug": "glyptosavis",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/glyptosavis",
+    "stats": {
+      "health": 4800,
+      "damage": 1500,
+      "speed": 115,
+      "armor": 35,
+      "crit": 10,
+      "crit_damage": 140
+    },
+    "icon_file": "images\\creatures\\creature_glyptosavis_glyptosavis.png"
+  },
+  {
+    "slug": "gorgonops",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/gorgonops",
+    "stats": {
+      "health": 3150,
+      "damage": 1250,
+      "speed": 132,
+      "armor": 0,
+      "crit": 10,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_gorgonops_gorgonops.png"
+  },
+  {
+    "slug": "gorgosaurus",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/gorgosaurus",
+    "stats": {
+      "health": 4200,
+      "damage": 1700,
+      "speed": 102,
+      "armor": 0,
+      "crit": 20,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_gorgosaurus_gorgosaurus.png"
+  },
+  {
+    "slug": "gorgosuchus",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/gorgosuchus",
+    "stats": {
+      "health": 4500,
+      "damage": 1000,
+      "speed": 120,
+      "armor": 0,
+      "crit": 30,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_gorgosuchus_gorgosuchus.png"
+  },
+  {
+    "slug": "gorgotrebax",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/gorgotrebax",
+    "stats": {
+      "health": 4800,
+      "damage": 1600,
+      "speed": 113,
+      "armor": 5,
+      "crit": 20,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_gorgotrebax_gorgotrebax.png"
+  },
+  {
+    "slug": "graciliraptor",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/graciliraptor",
+    "stats": {
+      "health": 3300,
+      "damage": 1100,
+      "speed": 122,
+      "armor": 0,
+      "crit": 15,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_graciliraptor_graciliraptor.png"
+  },
+  {
+    "slug": "gryganyth",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/gryganyth",
+    "stats": {
+      "health": 5200,
+      "damage": 1750,
+      "speed": 123,
+      "armor": 10,
+      "crit": 20,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_gryganyth_gryganyth.png"
+  },
+  {
+    "slug": "grylenken",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/grylenken",
+    "stats": {
+      "health": 3600,
+      "damage": 1500,
+      "speed": 130,
+      "armor": 10,
+      "crit": 30,
+      "crit_damage": 150
+    },
+    "icon_file": "images\\creatures\\creature_grylenken_grylenken.png"
+  },
+  {
+    "slug": "grypolyth",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/grypolyth",
+    "stats": {
+      "health": 4380,
+      "damage": 1400,
+      "speed": 106,
+      "armor": 20,
+      "crit": 5,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_grypolyth_grypolyth.png"
+  },
+  {
+    "slug": "gryposuchus",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/gryposuchus",
+    "stats": {
+      "health": 4200,
+      "damage": 1200,
+      "speed": 116,
+      "armor": 20,
+      "crit": 20,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_gryposuchus_gryposuchus.png"
+  },
+  {
+    "slug": "haast_eagle",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/haast_eagle",
+    "stats": {
+      "health": 2700,
+      "damage": 1150,
+      "speed": 132,
+      "armor": 0,
+      "crit": 5,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_haast_eagle_haast_eagle.png"
+  },
+  {
+    "slug": "haast_eagle_gen_2",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/haast_eagle_gen_2",
+    "stats": {
+      "health": 3000,
+      "damage": 1000,
+      "speed": 130,
+      "armor": 0,
+      "crit": 5,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_haast_eagle_gen_2_haast_eagle_gen_2.png"
+  },
+  {
+    "slug": "haast_maximus",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/haast_maximus",
+    "stats": {
+      "health": 4950,
+      "damage": 1550,
+      "speed": 128,
+      "armor": 0,
+      "crit": 25,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_haast_maximus_haast_maximus.png"
+  },
+  {
+    "slug": "hadros_lux",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/hadros_lux",
+    "stats": {
+      "health": 5100,
+      "damage": 1450,
+      "speed": 108,
+      "armor": 10,
+      "crit": 5,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_hadros_lux_hadros_lux.png"
+  },
+  {
+    "slug": "hatzegopteryx",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/hatzegopteryx",
+    "stats": {
+      "health": 4500,
+      "damage": 1150,
+      "speed": 114,
+      "armor": 0,
+      "crit": 5,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_hatzegopteryx_hatzegopteryx.png"
+  },
+  {
+    "slug": "homalocephale",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/homalocephale",
+    "stats": {
+      "health": 1350,
+      "damage": 420,
+      "speed": 102,
+      "armor": 5,
+      "crit": 5,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_homalocephale_homalocephale.png"
+  },
+  {
+    "slug": "hydra_boa",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/hydra_boa",
+    "stats": {
+      "health": 4200,
+      "damage": 1450,
+      "speed": 122,
+      "armor": 15,
+      "crit": 30,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_hydra_boa_hydra_boa.png"
+  },
+  {
+    "slug": "ichthyovenator",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/ichthyovenator",
+    "stats": {
+      "health": 1350,
+      "damage": 440,
+      "speed": 118,
+      "armor": 0,
+      "crit": 10,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_ichthyovenator_ichthyovenator.png"
+  },
+  {
+    "slug": "iguanodon",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/iguanodon",
+    "stats": {
+      "health": 4500,
+      "damage": 1200,
+      "speed": 112,
+      "armor": 0,
+      "crit": 5,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_iguanodon_iguanodon.png"
+  },
+  {
+    "slug": "imperatosuchus",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/imperatosuchus",
+    "stats": {
+      "health": 4650,
+      "damage": 1350,
+      "speed": 112,
+      "armor": 25,
+      "crit": 15,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_imperatosuchus_imperatosuchus.png"
+  },
+  {
+    "slug": "indochicyon",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/indochicyon",
+    "stats": {
+      "health": 4750,
+      "damage": 1500,
+      "speed": 130,
+      "armor": 0,
+      "crit": 25,
+      "crit_damage": 135
+    },
+    "icon_file": "images\\creatures\\creature_indochicyon_indochicyon.png"
+  },
+  {
+    "slug": "indolycan",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/indolycan",
+    "stats": {
+      "health": 4500,
+      "damage": 1700,
+      "speed": 130,
+      "armor": 0,
+      "crit": 30,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_indolycan_indolycan.png"
+  },
+  {
+    "slug": "indominus_rex",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/indominus_rex",
+    "stats": {
+      "health": 4500,
+      "damage": 1500,
+      "speed": 111,
+      "armor": 0,
+      "crit": 30,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_indominus_rex_indominus_rex.png"
+  },
+  {
+    "slug": "indominus_rex_gen_2",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/indominus_rex_gen_2",
+    "stats": {
+      "health": 4200,
+      "damage": 1400,
+      "speed": 108,
+      "armor": 0,
+      "crit": 20,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_indominus_rex_gen_2_indominus_rex_gen_2.png"
+  },
+  {
+    "slug": "indonemys",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/indonemys",
+    "stats": {
+      "health": 4800,
+      "damage": 1650,
+      "speed": 119,
+      "armor": 30,
+      "crit": 20,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_indonemys_indonemys.png"
+  },
+  {
+    "slug": "indoraptor",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/indoraptor",
+    "stats": {
+      "health": 4200,
+      "damage": 1400,
+      "speed": 128,
+      "armor": 0,
+      "crit": 20,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_indoraptor_indoraptor.png"
+  },
+  {
+    "slug": "indoraptor_gen_2",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/indoraptor_gen_2",
+    "stats": {
+      "health": 3900,
+      "damage": 1450,
+      "speed": 128,
+      "armor": 0,
+      "crit": 20,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_indoraptor_gen_2_indoraptor_gen_2.png"
+  },
+  {
+    "slug": "indotaurus",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/indotaurus",
+    "stats": {
+      "health": 4650,
+      "damage": 1600,
+      "speed": 106,
+      "armor": 0,
+      "crit": 20,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_indotaurus_indotaurus.png"
+  },
+  {
+    "slug": "inostherium",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/inostherium",
+    "stats": {
+      "health": 3000,
+      "damage": 1400,
+      "speed": 131,
+      "armor": 0,
+      "crit": 5,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_inostherium_inostherium.png"
+  },
+  {
+    "slug": "inostrancevia",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/inostrancevia",
+    "stats": {
+      "health": 3900,
+      "damage": 1200,
+      "speed": 130,
+      "armor": 0,
+      "crit": 5,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_inostrancevia_inostrancevia.png"
+  },
+  {
+    "slug": "irritator",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/irritator",
+    "stats": {
+      "health": 4500,
+      "damage": 1000,
+      "speed": 126,
+      "armor": 0,
+      "crit": 30,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_irritator_irritator.png"
+  },
+  {
+    "slug": "irritator_gen_2",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/irritator_gen_2",
+    "stats": {
+      "health": 3500,
+      "damage": 1000,
+      "speed": 124,
+      "armor": 0,
+      "crit": 30,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_irritator_gen_2_irritator_gen_2.png"
+  },
+  {
+    "slug": "junior",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/junior",
+    "stats": {
+      "health": 4750,
+      "damage": 1750,
+      "speed": 114,
+      "armor": 15,
+      "crit": 25,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_junior_junior.png"
+  },
+  {
+    "slug": "kaprosuchus",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/kaprosuchus",
+    "stats": {
+      "health": 4200,
+      "damage": 1000,
+      "speed": 125,
+      "armor": 0,
+      "crit": 5,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_kaprosuchus_kaprosuchus.png"
+  },
+  {
+    "slug": "kelenken",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/kelenken",
+    "stats": {
+      "health": 3000,
+      "damage": 1600,
+      "speed": 131,
+      "armor": 0,
+      "crit": 5,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_kelenken_kelenken.png"
+  },
+  {
+    "slug": "kentrosaurus",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/kentrosaurus",
+    "stats": {
+      "health": 4500,
+      "damage": 1200,
+      "speed": 112,
+      "armor": 10,
+      "crit": 5,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_kentrosaurus_kentrosaurus.png"
+  },
+  {
+    "slug": "keratoporcus",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/keratoporcus",
+    "stats": {
+      "health": 4500,
+      "damage": 1200,
+      "speed": 110,
+      "armor": 20,
+      "crit": 5,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_keratoporcus_keratoporcus.png"
+  },
+  {
+    "slug": "koolabourgiana",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/koolabourgiana",
+    "stats": {
+      "health": 4950,
+      "damage": 1200,
+      "speed": 117,
+      "armor": 0,
+      "crit": 5,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_koolabourgiana_koolabourgiana.png"
+  },
+  {
+    "slug": "koolasuchus",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/koolasuchus",
+    "stats": {
+      "health": 3900,
+      "damage": 1200,
+      "speed": 127,
+      "armor": 0,
+      "crit": 5,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_koolasuchus_koolasuchus.png"
+  },
+  {
+    "slug": "koolasuchus_gen_2",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/koolasuchus_gen_2",
+    "stats": {
+      "health": 4500,
+      "damage": 1500,
+      "speed": 126,
+      "armor": 0,
+      "crit": 5,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_koolasuchus_gen_2_koolasuchus_gen_2.png"
+  },
+  {
+    "slug": "koreanosaurus",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/koreanosaurus",
+    "stats": {
+      "health": 1440,
+      "damage": 400,
+      "speed": 104,
+      "armor": 10,
+      "crit": 5,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_koreanosaurus_koreanosaurus.png"
+  },
+  {
+    "slug": "lambeosaurus",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/lambeosaurus",
+    "stats": {
+      "health": 1250,
+      "damage": 350,
+      "speed": 101,
+      "armor": 5,
+      "crit": 0,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_lambeosaurus_lambeosaurus.png"
+  },
+  {
+    "slug": "leaellynasaura",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/leaellynasaura",
+    "stats": {
+      "health": 1100,
+      "damage": 460,
+      "speed": 110,
+      "armor": 0,
+      "crit": 5,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_leaellynasaura_leaellynasaura.png"
+  },
+  {
+    "slug": "leucistic_baryonyx",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/leucistic_baryonyx",
+    "stats": {
+      "health": 4200,
+      "damage": 1350,
+      "speed": 125,
+      "armor": 0,
+      "crit": 5,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_leucistic_baryonyx_leucistic_baryonyx.png"
+  },
+  {
+    "slug": "lystrosaurus",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/lystrosaurus",
+    "stats": {
+      "health": 3600,
+      "damage": 1150,
+      "speed": 125,
+      "armor": 0,
+      "crit": 10,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_lystrosaurus_lystrosaurus.png"
+  },
+  {
+    "slug": "lystrosavis",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/lystrosavis",
+    "stats": {
+      "health": 3750,
+      "damage": 1350,
+      "speed": 131,
+      "armor": 0,
+      "crit": 20,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_lystrosavis_lystrosavis.png"
+  },
+  {
+    "slug": "lystrosuchus",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/lystrosuchus",
+    "stats": {
+      "health": 3900,
+      "damage": 1150,
+      "speed": 123,
+      "armor": 10,
+      "crit": 10,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_lystrosuchus_lystrosuchus.png"
+  },
+  {
+    "slug": "lythronax",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/lythronax",
+    "stats": {
+      "health": 4200,
+      "damage": 1000,
+      "speed": 104,
+      "armor": 0,
+      "crit": 5,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_lythronax_lythronax.png"
+  },
+  {
+    "slug": "magnapyritor",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/magnapyritor",
+    "stats": {
+      "health": 4800,
+      "damage": 1450,
+      "speed": 128,
+      "armor": 0,
+      "crit": 20,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_magnapyritor_magnapyritor.png"
+  },
+  {
+    "slug": "magnaraptor",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/magnaraptor",
+    "stats": {
+      "health": 4200,
+      "damage": 1900,
+      "speed": 132,
+      "armor": 0,
+      "crit": 25,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_magnaraptor_magnaraptor.png"
+  },
+  {
+    "slug": "maiasaura",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/maiasaura",
+    "stats": {
+      "health": 3000,
+      "damage": 1300,
+      "speed": 126,
+      "armor": 0,
+      "crit": 5,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_maiasaura_maiasaura.png"
+  },
+  {
+    "slug": "majundaboa",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/majundaboa",
+    "stats": {
+      "health": 3600,
+      "damage": 1000,
+      "speed": 110,
+      "armor": 0,
+      "crit": 5,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_majundaboa_majundaboa.png"
+  },
+  {
+    "slug": "majundasuchus",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/majundasuchus",
+    "stats": {
+      "health": 3750,
+      "damage": 1100,
+      "speed": 108,
+      "armor": 0,
+      "crit": 5,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_majundasuchus_majundasuchus.png"
+  },
+  {
+    "slug": "majungasaurus",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/majungasaurus",
+    "stats": {
+      "health": 3450,
+      "damage": 1000,
+      "speed": 105,
+      "armor": 0,
+      "crit": 5,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_majungasaurus_majungasaurus.png"
+  },
+  {
+    "slug": "mammolania",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/mammolania",
+    "stats": {
+      "health": 5100,
+      "damage": 1000,
+      "speed": 115,
+      "armor": 50,
+      "crit": 5,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_mammolania_mammolania.png"
+  },
+  {
+    "slug": "mammotherium",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/mammotherium",
+    "stats": {
+      "health": 3600,
+      "damage": 1500,
+      "speed": 115,
+      "armor": 30,
+      "crit": 5,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_mammotherium_mammotherium.png"
+  },
+  {
+    "slug": "marsupial_lion",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/marsupial_lion",
+    "stats": {
+      "health": 4050,
+      "damage": 1150,
+      "speed": 117,
+      "armor": 0,
+      "crit": 40,
+      "crit_damage": 140
+    },
+    "icon_file": "images\\creatures\\creature_marsupial_lion_marsupial_lion.png"
+  },
+  {
+    "slug": "masiakasaurus",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/masiakasaurus",
+    "stats": {
+      "health": 820,
+      "damage": 425,
+      "speed": 117,
+      "armor": 0,
+      "crit": 10,
+      "crit_damage": 110
+    },
+    "icon_file": "images\\creatures\\creature_masiakasaurus_masiakasaurus.png"
+  },
+  {
+    "slug": "mastodonsaurus",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/mastodonsaurus",
+    "stats": {
+      "health": 1250,
+      "damage": 450,
+      "speed": 105,
+      "armor": 4,
+      "crit": 5,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_mastodonsaurus_mastodonsaurus.png"
+  },
+  {
+    "slug": "megalania",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/megalania",
+    "stats": {
+      "health": 1200,
+      "damage": 380,
+      "speed": 100,
+      "armor": 0,
+      "crit": 0,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_megalania_megalania.png"
+  },
+  {
+    "slug": "megaloceros",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/megaloceros",
+    "stats": {
+      "health": 3300,
+      "damage": 1000,
+      "speed": 127,
+      "armor": 10,
+      "crit": 5,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_megaloceros_megaloceros.png"
+  },
+  {
+    "slug": "megalocevia",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/megalocevia",
+    "stats": {
+      "health": 5100,
+      "damage": 1600,
+      "speed": 121,
+      "armor": 20,
+      "crit": 20,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_megalocevia_megalocevia.png"
+  },
+  {
+    "slug": "megalogaia",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/megalogaia",
+    "stats": {
+      "health": 3750,
+      "damage": 1000,
+      "speed": 122,
+      "armor": 0,
+      "crit": 5,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_megalogaia_megalogaia.png"
+  },
+  {
+    "slug": "megalonyx",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/megalonyx",
+    "stats": {
+      "health": 3450,
+      "damage": 1200,
+      "speed": 103,
+      "armor": 0,
+      "crit": 10,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_megalonyx_megalonyx.png"
+  },
+  {
+    "slug": "megalosaurus",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/megalosaurus",
+    "stats": {
+      "health": 3900,
+      "damage": 1000,
+      "speed": 105,
+      "armor": 0,
+      "crit": 5,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_megalosaurus_megalosaurus.png"
+  },
+  {
+    "slug": "megalosuchus",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/megalosuchus",
+    "stats": {
+      "health": 4500,
+      "damage": 1200,
+      "speed": 116,
+      "armor": 0,
+      "crit": 15,
+      "crit_damage": 150
+    },
+    "icon_file": "images\\creatures\\creature_megalosuchus_megalosuchus.png"
+  },
+  {
+    "slug": "megalotops",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/megalotops",
+    "stats": {
+      "health": 3750,
+      "damage": 1150,
+      "speed": 108,
+      "armor": 10,
+      "crit": 10,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_megalotops_megalotops.png"
+  },
+  {
+    "slug": "megistocurus",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/megistocurus",
+    "stats": {
+      "health": 3750,
+      "damage": 1400,
+      "speed": 115,
+      "armor": 15,
+      "crit": 30,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_megistocurus_megistocurus.png"
+  },
+  {
+    "slug": "megistotherium",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/megistotherium",
+    "stats": {
+      "health": 3600,
+      "damage": 1350,
+      "speed": 120,
+      "armor": 0,
+      "crit": 40,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_megistotherium_megistotherium.png"
+  },
+  {
+    "slug": "meiolania",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/meiolania",
+    "stats": {
+      "health": 3300,
+      "damage": 1000,
+      "speed": 105,
+      "armor": 50,
+      "crit": 5,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_meiolania_meiolania.png"
+  },
+  {
+    "slug": "microraptor",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/microraptor",
+    "stats": {
+      "health": 1650,
+      "damage": 1100,
+      "speed": 136,
+      "armor": 0,
+      "crit": 15,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_microraptor_microraptor.png"
+  },
+  {
+    "slug": "miragaia",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/miragaia",
+    "stats": {
+      "health": 3000,
+      "damage": 1000,
+      "speed": 109,
+      "armor": 0,
+      "crit": 5,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_miragaia_miragaia.png"
+  },
+  {
+    "slug": "monkeydactyl",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/monkeydactyl",
+    "stats": {
+      "health": 4100,
+      "damage": 1500,
+      "speed": 125,
+      "armor": 15,
+      "crit": 10,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_monkeydactyl_monkeydactyl.png"
+  },
+  {
+    "slug": "monkeyondactylus",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/monkeyondactylus",
+    "stats": {
+      "health": 4500,
+      "damage": 1650,
+      "speed": 125,
+      "armor": 20,
+      "crit": 10,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_monkeyondactylus_monkeyondactylus.png"
+  },
+  {
+    "slug": "monolometrodon",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/monolometrodon",
+    "stats": {
+      "health": 4200,
+      "damage": 1400,
+      "speed": 125,
+      "armor": 0,
+      "crit": 5,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_monolometrodon_monolometrodon.png"
+  },
+  {
+    "slug": "monolomoth",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/monolomoth",
+    "stats": {
+      "health": 5000,
+      "damage": 1500,
+      "speed": 114,
+      "armor": 25,
+      "crit": 5,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_monolomoth_monolomoth.png"
+  },
+  {
+    "slug": "monolophosaurus",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/monolophosaurus",
+    "stats": {
+      "health": 3100,
+      "damage": 1300,
+      "speed": 127,
+      "armor": 0,
+      "crit": 5,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_monolophosaurus_monolophosaurus.png"
+  },
+  {
+    "slug": "monolophosaurus_gen_2",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/monolophosaurus_gen_2",
+    "stats": {
+      "health": 2700,
+      "damage": 1350,
+      "speed": 126,
+      "armor": 0,
+      "crit": 5,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_monolophosaurus_gen_2_monolophosaurus_gen_2.png"
+  },
+  {
+    "slug": "monolorhino",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/monolorhino",
+    "stats": {
+      "health": 4500,
+      "damage": 1250,
+      "speed": 116,
+      "armor": 30,
+      "crit": 5,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_monolorhino_monolorhino.png"
+  },
+  {
+    "slug": "monomimus",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/monomimus",
+    "stats": {
+      "health": 3750,
+      "damage": 1350,
+      "speed": 131,
+      "armor": 0,
+      "crit": 5,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_monomimus_monomimus.png"
+  },
+  {
+    "slug": "monostegotops",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/monostegotops",
+    "stats": {
+      "health": 4250,
+      "damage": 1250,
+      "speed": 116,
+      "armor": 25,
+      "crit": 5,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_monostegotops_monostegotops.png"
+  },
+  {
+    "slug": "moros_intrepidus",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/moros_intrepidus",
+    "stats": {
+      "health": 3300,
+      "damage": 1200,
+      "speed": 115,
+      "armor": 0,
+      "crit": 20,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_moros_intrepidus_moros_intrepidus.png"
+  },
+  {
+    "slug": "mortem_rex",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/mortem_rex",
+    "stats": {
+      "health": 4950,
+      "damage": 2000,
+      "speed": 108,
+      "armor": 10,
+      "crit": 40,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_mortem_rex_mortem_rex.png"
+  },
+  {
+    "slug": "moschops",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/moschops",
+    "stats": {
+      "health": 4500,
+      "damage": 1000,
+      "speed": 113,
+      "armor": 25,
+      "crit": 5,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_moschops_moschops.png"
+  },
+  {
+    "slug": "mutadon",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/mutadon",
+    "stats": {
+      "health": 4800,
+      "damage": 1650,
+      "speed": 129,
+      "armor": 0,
+      "crit": 5,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_mutadon_mutadon.png"
+  },
+  {
+    "slug": "nasutoceratops",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/nasutoceratops",
+    "stats": {
+      "health": 4800,
+      "damage": 1000,
+      "speed": 109,
+      "armor": 20,
+      "crit": 5,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_nasutoceratops_nasutoceratops.png"
+  },
+  {
+    "slug": "nodopatosaurus",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/nodopatosaurus",
+    "stats": {
+      "health": 4800,
+      "damage": 1000,
+      "speed": 106,
+      "armor": 30,
+      "crit": 5,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_nodopatosaurus_nodopatosaurus.png"
+  },
+  {
+    "slug": "nodopatotitan",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/nodopatotitan",
+    "stats": {
+      "health": 6150,
+      "damage": 1100,
+      "speed": 108,
+      "armor": 40,
+      "crit": 5,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_nodopatotitan_nodopatotitan.png"
+  },
+  {
+    "slug": "nodosaurus",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/nodosaurus",
+    "stats": {
+      "health": 4350,
+      "damage": 1150,
+      "speed": 115,
+      "armor": 30,
+      "crit": 5,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_nodosaurus_nodosaurus.png"
+  },
+  {
+    "slug": "nomingia",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/nomingia",
+    "stats": {
+      "health": 4500,
+      "damage": 1450,
+      "speed": 125,
+      "armor": 10,
+      "crit": 10,
+      "crit_damage": 150
+    },
+    "icon_file": "images\\creatures\\creature_nomingia_nomingia.png"
+  },
+  {
+    "slug": "nominrex",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/nominrex",
+    "stats": {
+      "health": 4600,
+      "damage": 1700,
+      "speed": 128,
+      "armor": 10,
+      "crit": 20,
+      "crit_damage": 150
+    },
+    "icon_file": "images\\creatures\\creature_nominrex_nominrex.png"
+  },
+  {
+    "slug": "nundasuchus",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/nundasuchus",
+    "stats": {
+      "health": 3000,
+      "damage": 1600,
+      "speed": 128,
+      "armor": 0,
+      "crit": 25,
+      "crit_damage": 150
+    },
+    "icon_file": "images\\creatures\\creature_nundasuchus_nundasuchus.png"
+  },
+  {
+    "slug": "nyctopteryx",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/nyctopteryx",
+    "stats": {
+      "health": 4600,
+      "damage": 1600,
+      "speed": 127,
+      "armor": 0,
+      "crit": 25,
+      "crit_damage": 135
+    },
+    "icon_file": "images\\creatures\\creature_nyctopteryx_nyctopteryx.png"
+  },
+  {
+    "slug": "nyctosaurus",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/nyctosaurus",
+    "stats": {
+      "health": 4200,
+      "damage": 1600,
+      "speed": 126,
+      "armor": 0,
+      "crit": 25,
+      "crit_damage": 135
+    },
+    "icon_file": "images\\creatures\\creature_nyctosaurus_nyctosaurus.png"
+  },
+  {
+    "slug": "olorotitan",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/olorotitan",
+    "stats": {
+      "health": 810,
+      "damage": 495,
+      "speed": 103,
+      "armor": 5,
+      "crit": 0,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_olorotitan_olorotitan.png"
+  },
+  {
+    "slug": "ophiacodon",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/ophiacodon",
+    "stats": {
+      "health": 4350,
+      "damage": 1400,
+      "speed": 108,
+      "armor": 0,
+      "crit": 40,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_ophiacodon_ophiacodon.png"
+  },
+  {
+    "slug": "ornithomimus",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/ornithomimus",
+    "stats": {
+      "health": 3000,
+      "damage": 1600,
+      "speed": 131,
+      "armor": 0,
+      "crit": 5,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_ornithomimus_ornithomimus.png"
+  },
+  {
+    "slug": "ouranosaurus",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/ouranosaurus",
+    "stats": {
+      "health": 3600,
+      "damage": 1500,
+      "speed": 104,
+      "armor": 10,
+      "crit": 5,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_ouranosaurus_ouranosaurus.png"
+  },
+  {
+    "slug": "ovilophomoloch",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/ovilophomoloch",
+    "stats": {
+      "health": 3150,
+      "damage": 1250,
+      "speed": 129,
+      "armor": 0,
+      "crit": 10,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_ovilophomoloch_ovilophomoloch.png"
+  },
+  {
+    "slug": "ovilophosaurus",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/ovilophosaurus",
+    "stats": {
+      "health": 2850,
+      "damage": 1200,
+      "speed": 127,
+      "armor": 0,
+      "crit": 10,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_ovilophosaurus_ovilophosaurus.png"
+  },
+  {
+    "slug": "ovinnolophosaurus",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/ovinnolophosaurus",
+    "stats": {
+      "health": 4300,
+      "damage": 1700,
+      "speed": 131,
+      "armor": 0,
+      "crit": 30,
+      "crit_damage": 150
+    },
+    "icon_file": "images\\creatures\\creature_ovinnolophosaurus_ovinnolophosaurus.png"
+  },
+  {
+    "slug": "oviraptor",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/oviraptor",
+    "stats": {
+      "health": 2700,
+      "damage": 1300,
+      "speed": 129,
+      "armor": 0,
+      "crit": 15,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_oviraptor_oviraptor.png"
+  },
+  {
+    "slug": "oviraptor_gen_2",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/oviraptor_gen_2",
+    "stats": {
+      "health": 3300,
+      "damage": 1350,
+      "speed": 131,
+      "armor": 0,
+      "crit": 25,
+      "crit_damage": 150
+    },
+    "icon_file": "images\\creatures\\creature_oviraptor_gen_2_oviraptor_gen_2.png"
+  },
+  {
+    "slug": "ovylenken",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/ovylenken",
+    "stats": {
+      "health": 4000,
+      "damage": 1250,
+      "speed": 131,
+      "armor": 0,
+      "crit": 0,
+      "crit_damage": 200
+    },
+    "icon_file": "images\\creatures\\creature_ovylenken_ovylenken.png"
+  },
+  {
+    "slug": "pachycephalosaurus",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/pachycephalosaurus",
+    "stats": {
+      "health": 3900,
+      "damage": 1200,
+      "speed": 121,
+      "armor": 0,
+      "crit": 5,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_pachycephalosaurus_pachycephalosaurus.png"
+  },
+  {
+    "slug": "panthera",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/panthera",
+    "stats": {
+      "health": 3250,
+      "damage": 1300,
+      "speed": 126,
+      "armor": 5,
+      "crit": 10,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_panthera_panthera.png"
+  },
+  {
+    "slug": "panthera_blytheae",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/panthera_blytheae",
+    "stats": {
+      "health": 3900,
+      "damage": 1550,
+      "speed": 126,
+      "armor": 0,
+      "crit": 20,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_panthera_blytheae_panthera_blytheae.png"
+  },
+  {
+    "slug": "pantherator",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/pantherator",
+    "stats": {
+      "health": 4300,
+      "damage": 1600,
+      "speed": 127,
+      "armor": 0,
+      "crit": 30,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_pantherator_pantherator.png"
+  },
+  {
+    "slug": "paramoloch",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/paramoloch",
+    "stats": {
+      "health": 4350,
+      "damage": 1500,
+      "speed": 126,
+      "armor": 10,
+      "crit": 5,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_paramoloch_paramoloch.png"
+  },
+  {
+    "slug": "parasaurolophus",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/parasaurolophus",
+    "stats": {
+      "health": 4500,
+      "damage": 1200,
+      "speed": 106,
+      "armor": 0,
+      "crit": 5,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_parasaurolophus_parasaurolophus.png"
+  },
+  {
+    "slug": "parasaurolophus_lux",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/parasaurolophus_lux",
+    "stats": {
+      "health": 4950,
+      "damage": 1400,
+      "speed": 106,
+      "armor": 15,
+      "crit": 5,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_parasaurolophus_lux_parasaurolophus_lux.png"
+  },
+  {
+    "slug": "parasauthops",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/parasauthops",
+    "stats": {
+      "health": 4650,
+      "damage": 1550,
+      "speed": 109,
+      "armor": 0,
+      "crit": 15,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_parasauthops_parasauthops.png"
+  },
+  {
+    "slug": "phorurex",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/phorurex",
+    "stats": {
+      "health": 3900,
+      "damage": 1500,
+      "speed": 128,
+      "armor": 0,
+      "crit": 10,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_phorurex_phorurex.png"
+  },
+  {
+    "slug": "phorusaura",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/phorusaura",
+    "stats": {
+      "health": 3600,
+      "damage": 1400,
+      "speed": 130,
+      "armor": 0,
+      "crit": 5,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_phorusaura_phorusaura.png"
+  },
+  {
+    "slug": "phorusrhacos",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/phorusrhacos",
+    "stats": {
+      "health": 3250,
+      "damage": 1500,
+      "speed": 130,
+      "armor": 0,
+      "crit": 5,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_phorusrhacos_phorusrhacos.png"
+  },
+  {
+    "slug": "plateopikasaurus",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/plateopikasaurus",
+    "stats": {
+      "health": 5100,
+      "damage": 1450,
+      "speed": 117,
+      "armor": 25,
+      "crit": 10,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_plateopikasaurus_plateopikasaurus.png"
+  },
+  {
+    "slug": "plateorex",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/plateorex",
+    "stats": {
+      "health": 5100,
+      "damage": 1750,
+      "speed": 117,
+      "armor": 25,
+      "crit": 20,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_plateorex_plateorex.png"
+  },
+  {
+    "slug": "plateosaurus",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/plateosaurus",
+    "stats": {
+      "health": 4200,
+      "damage": 1300,
+      "speed": 117,
+      "armor": 15,
+      "crit": 15,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_plateosaurus_plateosaurus.png"
+  },
+  {
+    "slug": "postimetrodon",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/postimetrodon",
+    "stats": {
+      "health": 4500,
+      "damage": 1200,
+      "speed": 124,
+      "armor": 0,
+      "crit": 5,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_postimetrodon_postimetrodon.png"
+  },
+  {
+    "slug": "postosuchus",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/postosuchus",
+    "stats": {
+      "health": 3000,
+      "damage": 1200,
+      "speed": 126,
+      "armor": 0,
+      "crit": 20,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_postosuchus_postosuchus.png"
+  },
+  {
+    "slug": "poukaidei",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/poukaidei",
+    "stats": {
+      "health": 4050,
+      "damage": 1500,
+      "speed": 131,
+      "armor": 0,
+      "crit": 5,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_poukaidei_poukaidei.png"
+  },
+  {
+    "slug": "poukandactylus",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/poukandactylus",
+    "stats": {
+      "health": 4300,
+      "damage": 1400,
+      "speed": 127,
+      "armor": 0,
+      "crit": 15,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_poukandactylus_poukandactylus.png"
+  },
+  {
+    "slug": "preondactylus",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/preondactylus",
+    "stats": {
+      "health": 2250,
+      "damage": 1350,
+      "speed": 133,
+      "armor": 0,
+      "crit": 5,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_preondactylus_preondactylus.png"
+  },
+  {
+    "slug": "procerathomimus",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/procerathomimus",
+    "stats": {
+      "health": 3000,
+      "damage": 1600,
+      "speed": 127,
+      "armor": 0,
+      "crit": 5,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_procerathomimus_procerathomimus.png"
+  },
+  {
+    "slug": "proceratosaurus",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/proceratosaurus",
+    "stats": {
+      "health": 3000,
+      "damage": 1300,
+      "speed": 126,
+      "armor": 0,
+      "crit": 5,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_proceratosaurus_proceratosaurus.png"
+  },
+  {
+    "slug": "proto_lux",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/proto_lux",
+    "stats": {
+      "health": 5150,
+      "damage": 1550,
+      "speed": 115,
+      "armor": 25,
+      "crit": 10,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_proto_lux_proto_lux.png"
+  },
+  {
+    "slug": "protoceratops",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/protoceratops",
+    "stats": {
+      "health": 4000,
+      "damage": 1350,
+      "speed": 107,
+      "armor": 15,
+      "crit": 5,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_protoceratops_protoceratops.png"
+  },
+  {
+    "slug": "protonodon",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/protonodon",
+    "stats": {
+      "health": 5000,
+      "damage": 1450,
+      "speed": 113,
+      "armor": 20,
+      "crit": 5,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_protonodon_protonodon.png"
+  },
+  {
+    "slug": "pteranodon",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/pteranodon",
+    "stats": {
+      "health": 3750,
+      "damage": 1150,
+      "speed": 127,
+      "armor": 0,
+      "crit": 10,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_pteranodon_pteranodon.png"
+  },
+  {
+    "slug": "pteranokyrie",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/pteranokyrie",
+    "stats": {
+      "health": 5100,
+      "damage": 1450,
+      "speed": 128,
+      "armor": 25,
+      "crit": 10,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_pteranokyrie_pteranokyrie.png"
+  },
+  {
+    "slug": "pteraquetzal",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/pteraquetzal",
+    "stats": {
+      "health": 4500,
+      "damage": 1000,
+      "speed": 125,
+      "armor": 0,
+      "crit": 5,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_pteraquetzal_pteraquetzal.png"
+  },
+  {
+    "slug": "pterovexus",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/pterovexus",
+    "stats": {
+      "health": 4450,
+      "damage": 1450,
+      "speed": 130,
+      "armor": 5,
+      "crit": 20,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_pterovexus_pterovexus.png"
+  },
+  {
+    "slug": "pulmonoscorpius",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/pulmonoscorpius",
+    "stats": {
+      "health": 2400,
+      "damage": 1000,
+      "speed": 116,
+      "armor": 30,
+      "crit": 15,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_pulmonoscorpius_pulmonoscorpius.png"
+  },
+  {
+    "slug": "purrolyth",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/purrolyth",
+    "stats": {
+      "health": 3600,
+      "damage": 1000,
+      "speed": 105,
+      "armor": 10,
+      "crit": 5,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_purrolyth_purrolyth.png"
+  },
+  {
+    "slug": "purussaurus",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/purussaurus",
+    "stats": {
+      "health": 4500,
+      "damage": 1000,
+      "speed": 111,
+      "armor": 15,
+      "crit": 5,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_purussaurus_purussaurus.png"
+  },
+  {
+    "slug": "purussaurus_gen_2",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/purussaurus_gen_2",
+    "stats": {
+      "health": 4200,
+      "damage": 1250,
+      "speed": 111,
+      "armor": 10,
+      "crit": 20,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_purussaurus_gen_2_purussaurus_gen_2.png"
+  },
+  {
+    "slug": "purutaurus",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/purutaurus",
+    "stats": {
+      "health": 4200,
+      "damage": 1000,
+      "speed": 110,
+      "armor": 0,
+      "crit": 5,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_purutaurus_purutaurus.png"
+  },
+  {
+    "slug": "pyroraptor",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/pyroraptor",
+    "stats": {
+      "health": 3150,
+      "damage": 1500,
+      "speed": 129,
+      "armor": 0,
+      "crit": 5,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_pyroraptor_pyroraptor.png"
+  },
+  {
+    "slug": "pyroraptor_gen_2",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/pyroraptor_gen_2",
+    "stats": {
+      "health": 3150,
+      "damage": 1200,
+      "speed": 129,
+      "armor": 0,
+      "crit": 10,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_pyroraptor_gen_2_pyroraptor_gen_2.png"
+  },
+  {
+    "slug": "pyrorixis",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/pyrorixis",
+    "stats": {
+      "health": 4500,
+      "damage": 1500,
+      "speed": 128,
+      "armor": 10,
+      "crit": 10,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_pyrorixis_pyrorixis.png"
+  },
+  {
+    "slug": "pyrosuchus",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/pyrosuchus",
+    "stats": {
+      "health": 3750,
+      "damage": 1350,
+      "speed": 126,
+      "armor": 15,
+      "crit": 5,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_pyrosuchus_pyrosuchus.png"
+  },
+  {
+    "slug": "pyrritator",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/pyrritator",
+    "stats": {
+      "health": 2550,
+      "damage": 1400,
+      "speed": 129,
+      "armor": 0,
+      "crit": 20,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_pyrritator_pyrritator.png"
+  },
+  {
+    "slug": "quetzalcoatlus",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/quetzalcoatlus",
+    "stats": {
+      "health": 5100,
+      "damage": 1000,
+      "speed": 117,
+      "armor": 0,
+      "crit": 5,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_quetzalcoatlus_quetzalcoatlus.png"
+  },
+  {
+    "slug": "quetzalcoatlus_gen_2",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/quetzalcoatlus_gen_2",
+    "stats": {
+      "health": 3600,
+      "damage": 1080,
+      "speed": 121,
+      "armor": 10,
+      "crit": 10,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_quetzalcoatlus_gen_2_quetzalcoatlus_gen_2.png"
+  },
+  {
+    "slug": "quetzaljara",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/quetzaljara",
+    "stats": {
+      "health": 4650,
+      "damage": 1450,
+      "speed": 123,
+      "armor": 10,
+      "crit": 20,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_quetzaljara_quetzaljara.png"
+  },
+  {
+    "slug": "quetzorion",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/quetzorion",
+    "stats": {
+      "health": 4350,
+      "damage": 1650,
+      "speed": 130,
+      "armor": 0,
+      "crit": 20,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_quetzorion_quetzorion.png"
+  },
+  {
+    "slug": "rajadorixis",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/rajadorixis",
+    "stats": {
+      "health": 5100,
+      "damage": 1650,
+      "speed": 124,
+      "armor": 20,
+      "crit": 30,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_rajadorixis_rajadorixis.png"
+  },
+  {
+    "slug": "rajadotholus",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/rajadotholus",
+    "stats": {
+      "health": 4900,
+      "damage": 1300,
+      "speed": 112,
+      "armor": 30,
+      "crit": 25,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_rajadotholus_rajadotholus.png"
+  },
+  {
+    "slug": "rajakylosaurus",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/rajakylosaurus",
+    "stats": {
+      "health": 4550,
+      "damage": 1200,
+      "speed": 107,
+      "armor": 30,
+      "crit": 20,
+      "crit_damage": 150
+    },
+    "icon_file": "images\\creatures\\creature_rajakylosaurus_rajakylosaurus.png"
+  },
+  {
+    "slug": "rajasaurus",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/rajasaurus",
+    "stats": {
+      "health": 4200,
+      "damage": 1100,
+      "speed": 104,
+      "armor": 10,
+      "crit": 30,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_rajasaurus_rajasaurus.png"
+  },
+  {
+    "slug": "rajatholus",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/rajatholus",
+    "stats": {
+      "health": 4200,
+      "damage": 1200,
+      "speed": 111,
+      "armor": 10,
+      "crit": 25,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_rajatholus_rajatholus.png"
+  },
+  {
+    "slug": "rativates",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/rativates",
+    "stats": {
+      "health": 1170,
+      "damage": 485,
+      "speed": 114,
+      "armor": 0,
+      "crit": 10,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_rativates_rativates.png"
+  },
+  {
+    "slug": "rebel",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/rebel",
+    "stats": {
+      "health": 4280,
+      "damage": 1450,
+      "speed": 127,
+      "armor": 10,
+      "crit": 20,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_rebel_rebel.png"
+  },
+  {
+    "slug": "rebirth_spinosaurus",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/rebirth_spinosaurus",
+    "stats": {
+      "health": 4650,
+      "damage": 1700,
+      "speed": 118,
+      "armor": 10,
+      "crit": 25,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_rebirth_spinosaurus_rebirth_spinosaurus.png"
+  },
+  {
+    "slug": "red",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/red",
+    "stats": {
+      "health": 3600,
+      "damage": 1400,
+      "speed": 129,
+      "armor": 15,
+      "crit": 5,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_red_red.png"
+  },
+  {
+    "slug": "refrenantem",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/refrenantem",
+    "stats": {
+      "health": 4800,
+      "damage": 1600,
+      "speed": 126,
+      "armor": 0,
+      "crit": 20,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_refrenantem_refrenantem.png"
+  },
+  {
+    "slug": "rexy",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/rexy",
+    "stats": {
+      "health": 4950,
+      "damage": 1850,
+      "speed": 106,
+      "armor": 0,
+      "crit": 45,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_rexy_rexy.png"
+  },
+  {
+    "slug": "rinchenia",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/rinchenia",
+    "stats": {
+      "health": 2700,
+      "damage": 1450,
+      "speed": 129,
+      "armor": 0,
+      "crit": 10,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_rinchenia_rinchenia.png"
+  },
+  {
+    "slug": "rinchicyon",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/rinchicyon",
+    "stats": {
+      "health": 3900,
+      "damage": 1400,
+      "speed": 129,
+      "armor": 0,
+      "crit": 25,
+      "crit_damage": 150
+    },
+    "icon_file": "images\\creatures\\creature_rinchicyon_rinchicyon.png"
+  },
+  {
+    "slug": "rodrigues_solitaire",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/rodrigues_solitaire",
+    "stats": {
+      "health": 2850,
+      "damage": 1300,
+      "speed": 128,
+      "armor": 0,
+      "crit": 5,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_rodrigues_solitaire_rodrigues_solitaire.png"
+  },
+  {
+    "slug": "sah_panthera",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/sah_panthera",
+    "stats": {
+      "health": 4650,
+      "damage": 1600,
+      "speed": 128,
+      "armor": 10,
+      "crit": 30,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_sah_panthera_sah_panthera.png"
+  },
+  {
+    "slug": "sarcomantarx",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/sarcomantarx",
+    "stats": {
+      "health": 5000,
+      "damage": 1500,
+      "speed": 122,
+      "armor": 20,
+      "crit": 10,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_sarcomantarx_sarcomantarx.png"
+  },
+  {
+    "slug": "sarcorixis",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/sarcorixis",
+    "stats": {
+      "health": 4500,
+      "damage": 1100,
+      "speed": 113,
+      "armor": 25,
+      "crit": 5,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_sarcorixis_sarcorixis.png"
+  },
+  {
+    "slug": "sarcosaurus",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/sarcosaurus",
+    "stats": {
+      "health": 3700,
+      "damage": 1500,
+      "speed": 128,
+      "armor": 0,
+      "crit": 10,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_sarcosaurus_sarcosaurus.png"
+  },
+  {
+    "slug": "sarcosuchus",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/sarcosuchus",
+    "stats": {
+      "health": 3600,
+      "damage": 1000,
+      "speed": 108,
+      "armor": 10,
+      "crit": 5,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_sarcosuchus_sarcosuchus.png"
+  },
+  {
+    "slug": "saurolyth",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/saurolyth",
+    "stats": {
+      "health": 3700,
+      "damage": 1600,
+      "speed": 131,
+      "armor": 10,
+      "crit": 25,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_saurolyth_saurolyth.png"
+  },
+  {
+    "slug": "saurophaganax",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/saurophaganax",
+    "stats": {
+      "health": 1420,
+      "damage": 625,
+      "speed": 105,
+      "armor": 5,
+      "crit": 5,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_saurophaganax_saurophaganax.png"
+  },
+  {
+    "slug": "saurornitholestes",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/saurornitholestes",
+    "stats": {
+      "health": 3500,
+      "damage": 1600,
+      "speed": 131,
+      "armor": 0,
+      "crit": 25,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_saurornitholestes_saurornitholestes.png"
+  },
+  {
+    "slug": "scaphognathus",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/scaphognathus",
+    "stats": {
+      "health": 3000,
+      "damage": 1100,
+      "speed": 128,
+      "armor": 0,
+      "crit": 5,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_scaphognathus_scaphognathus.png"
+  },
+  {
+    "slug": "scaphotator",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/scaphotator",
+    "stats": {
+      "health": 3300,
+      "damage": 1200,
+      "speed": 127,
+      "armor": 0,
+      "crit": 5,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_scaphotator_scaphotator.png"
+  },
+  {
+    "slug": "scelidosaurus",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/scelidosaurus",
+    "stats": {
+      "health": 4900,
+      "damage": 1450,
+      "speed": 113,
+      "armor": 40,
+      "crit": 10,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_scelidosaurus_scelidosaurus.png"
+  },
+  {
+    "slug": "scolosaurus",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/scolosaurus",
+    "stats": {
+      "health": 4050,
+      "damage": 1000,
+      "speed": 107,
+      "armor": 30,
+      "crit": 5,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_scolosaurus_scolosaurus.png"
+  },
+  {
+    "slug": "scorpius_rex",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/scorpius_rex",
+    "stats": {
+      "health": 3750,
+      "damage": 1300,
+      "speed": 117,
+      "armor": 0,
+      "crit": 15,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_scorpius_rex_scorpius_rex.png"
+  },
+  {
+    "slug": "scorpius_rex_gen_2",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/scorpius_rex_gen_2",
+    "stats": {
+      "health": 3600,
+      "damage": 1250,
+      "speed": 118,
+      "armor": 0,
+      "crit": 10,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_scorpius_rex_gen_2_scorpius_rex_gen_2.png"
+  },
+  {
+    "slug": "scorpius_rex_gen_3",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/scorpius_rex_gen_3",
+    "stats": {
+      "health": 4050,
+      "damage": 1350,
+      "speed": 119,
+      "armor": 0,
+      "crit": 25,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_scorpius_rex_gen_3_scorpius_rex_gen_3.png"
+  },
+  {
+    "slug": "scutophicyon",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/scutophicyon",
+    "stats": {
+      "health": 4050,
+      "damage": 1350,
+      "speed": 118,
+      "armor": 10,
+      "crit": 25,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_scutophicyon_scutophicyon.png"
+  },
+  {
+    "slug": "scutosaurus",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/scutosaurus",
+    "stats": {
+      "health": 4800,
+      "damage": 1200,
+      "speed": 116,
+      "armor": 25,
+      "crit": 5,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_scutosaurus_scutosaurus.png"
+  },
+  {
+    "slug": "secodontosaurus",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/secodontosaurus",
+    "stats": {
+      "health": 3900,
+      "damage": 1500,
+      "speed": 114,
+      "armor": 0,
+      "crit": 5,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_secodontosaurus_secodontosaurus.png"
+  },
+  {
+    "slug": "segnoraptor",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/segnoraptor",
+    "stats": {
+      "health": 3300,
+      "damage": 1250,
+      "speed": 134,
+      "armor": 0,
+      "crit": 5,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_segnoraptor_segnoraptor.png"
+  },
+  {
+    "slug": "segnosaurus",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/segnosaurus",
+    "stats": {
+      "health": 1260,
+      "damage": 460,
+      "speed": 103,
+      "armor": 5,
+      "crit": 5,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_segnosaurus_segnosaurus.png"
+  },
+  {
+    "slug": "segnotherisaurus",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/segnotherisaurus",
+    "stats": {
+      "health": 4100,
+      "damage": 1350,
+      "speed": 125,
+      "armor": 10,
+      "crit": 25,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_segnotherisaurus_segnotherisaurus.png"
+  },
+  {
+    "slug": "sinoceratops",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/sinoceratops",
+    "stats": {
+      "health": 3550,
+      "damage": 1400,
+      "speed": 107,
+      "armor": 25,
+      "crit": 5,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_sinoceratops_sinoceratops.png"
+  },
+  {
+    "slug": "sinokotaraptor",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/sinokotaraptor",
+    "stats": {
+      "health": 3300,
+      "damage": 1200,
+      "speed": 128,
+      "armor": 0,
+      "crit": 10,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_sinokotaraptor_sinokotaraptor.png"
+  },
+  {
+    "slug": "sinosauropteryx",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/sinosauropteryx",
+    "stats": {
+      "health": 2700,
+      "damage": 1000,
+      "speed": 128,
+      "armor": 0,
+      "crit": 10,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_sinosauropteryx_sinosauropteryx.png"
+  },
+  {
+    "slug": "sinraptor",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/sinraptor",
+    "stats": {
+      "health": 1350,
+      "damage": 575,
+      "speed": 114,
+      "armor": 0,
+      "crit": 5,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_sinraptor_sinraptor.png"
+  },
+  {
+    "slug": "skoolasaurus",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/skoolasaurus",
+    "stats": {
+      "health": 4800,
+      "damage": 1100,
+      "speed": 124,
+      "armor": 30,
+      "crit": 15,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_skoolasaurus_skoolasaurus.png"
+  },
+  {
+    "slug": "skoonametrodon",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/skoonametrodon",
+    "stats": {
+      "health": 5190,
+      "damage": 1900,
+      "speed": 112,
+      "armor": 10,
+      "crit": 20,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_skoonametrodon_skoonametrodon.png"
+  },
+  {
+    "slug": "skoonasaurus",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/skoonasaurus",
+    "stats": {
+      "health": 5850,
+      "damage": 1150,
+      "speed": 108,
+      "armor": 30,
+      "crit": 20,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_skoonasaurus_skoonasaurus.png"
+  },
+  {
+    "slug": "skorpiodactylus",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/skorpiodactylus",
+    "stats": {
+      "health": 3900,
+      "damage": 1300,
+      "speed": 127,
+      "armor": 10,
+      "crit": 15,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_skorpiodactylus_skorpiodactylus.png"
+  },
+  {
+    "slug": "skorpiostegotops",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/skorpiostegotops",
+    "stats": {
+      "health": 4250,
+      "damage": 1450,
+      "speed": 124,
+      "armor": 25,
+      "crit": 10,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_skorpiostegotops_skorpiostegotops.png"
+  },
+  {
+    "slug": "skorpiovenator",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/skorpiovenator",
+    "stats": {
+      "health": 3400,
+      "damage": 1300,
+      "speed": 107,
+      "armor": 10,
+      "crit": 5,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_skorpiovenator_skorpiovenator.png"
+  },
+  {
+    "slug": "smilocephalosaurus",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/smilocephalosaurus",
+    "stats": {
+      "health": 3750,
+      "damage": 1400,
+      "speed": 127,
+      "armor": 0,
+      "crit": 5,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_smilocephalosaurus_smilocephalosaurus.png"
+  },
+  {
+    "slug": "smilodon",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/smilodon",
+    "stats": {
+      "health": 3000,
+      "damage": 1500,
+      "speed": 129,
+      "armor": 0,
+      "crit": 5,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_smilodon_smilodon.png"
+  },
+  {
+    "slug": "smilonemys",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/smilonemys",
+    "stats": {
+      "health": 4500,
+      "damage": 1500,
+      "speed": 127,
+      "armor": 40,
+      "crit": 5,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_smilonemys_smilonemys.png"
+  },
+  {
+    "slug": "sonorasaurus",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/sonorasaurus",
+    "stats": {
+      "health": 5250,
+      "damage": 1000,
+      "speed": 105,
+      "armor": 0,
+      "crit": 5,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_sonorasaurus_sonorasaurus.png"
+  },
+  {
+    "slug": "sphaerotholus",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/sphaerotholus",
+    "stats": {
+      "health": 4000,
+      "damage": 1250,
+      "speed": 117,
+      "armor": 10,
+      "crit": 10,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_sphaerotholus_sphaerotholus.png"
+  },
+  {
+    "slug": "spinoceratops",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/spinoceratops",
+    "stats": {
+      "health": 5100,
+      "damage": 1150,
+      "speed": 118,
+      "armor": 30,
+      "crit": 5,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_spinoceratops_spinoceratops.png"
+  },
+  {
+    "slug": "spinoconstrictor",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/spinoconstrictor",
+    "stats": {
+      "health": 4500,
+      "damage": 1300,
+      "speed": 126,
+      "armor": 0,
+      "crit": 10,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_spinoconstrictor_spinoconstrictor.png"
+  },
+  {
+    "slug": "spinonyx",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/spinonyx",
+    "stats": {
+      "health": 4200,
+      "damage": 1000,
+      "speed": 124,
+      "armor": 0,
+      "crit": 5,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_spinonyx_spinonyx.png"
+  },
+  {
+    "slug": "spinosaurus",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/spinosaurus",
+    "stats": {
+      "health": 3600,
+      "damage": 1000,
+      "speed": 122,
+      "armor": 0,
+      "crit": 5,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_spinosaurus_spinosaurus.png"
+  },
+  {
+    "slug": "spinosaurus_aegyptiacus",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/spinosaurus_aegyptiacus",
+    "stats": {
+      "health": 1300,
+      "damage": 520,
+      "speed": 106,
+      "armor": 0,
+      "crit": 5,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_spinosaurus_aegyptiacus_spinosaurus_aegyptiacus.png"
+  },
+  {
+    "slug": "spinosaurus_gen_2",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/spinosaurus_gen_2",
+    "stats": {
+      "health": 3900,
+      "damage": 1000,
+      "speed": 122,
+      "armor": 0,
+      "crit": 5,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_spinosaurus_gen_2_spinosaurus_gen_2.png"
+  },
+  {
+    "slug": "spinotahraptor",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/spinotahraptor",
+    "stats": {
+      "health": 3750,
+      "damage": 1400,
+      "speed": 126,
+      "armor": 0,
+      "crit": 5,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_spinotahraptor_spinotahraptor.png"
+  },
+  {
+    "slug": "spinotasuchus",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/spinotasuchus",
+    "stats": {
+      "health": 4250,
+      "damage": 1150,
+      "speed": 129,
+      "armor": 0,
+      "crit": 5,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_spinotasuchus_spinotasuchus.png"
+  },
+  {
+    "slug": "spinotops",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/spinotops",
+    "stats": {
+      "health": 4700,
+      "damage": 1600,
+      "speed": 118,
+      "armor": 25,
+      "crit": 20,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_spinotops_spinotops.png"
+  },
+  {
+    "slug": "stegoceras",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/stegoceras",
+    "stats": {
+      "health": 3600,
+      "damage": 1250,
+      "speed": 115,
+      "armor": 0,
+      "crit": 15,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_stegoceras_stegoceras.png"
+  },
+  {
+    "slug": "stegoceratops",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/stegoceratops",
+    "stats": {
+      "health": 3900,
+      "damage": 1100,
+      "speed": 111,
+      "armor": 25,
+      "crit": 5,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_stegoceratops_stegoceratops.png"
+  },
+  {
+    "slug": "stegodeus",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/stegodeus",
+    "stats": {
+      "health": 5100,
+      "damage": 1100,
+      "speed": 107,
+      "armor": 30,
+      "crit": 5,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_stegodeus_stegodeus.png"
+  },
+  {
+    "slug": "stegosaurus",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/stegosaurus",
+    "stats": {
+      "health": 3900,
+      "damage": 1000,
+      "speed": 116,
+      "armor": 20,
+      "crit": 5,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_stegosaurus_stegosaurus.png"
+  },
+  {
+    "slug": "stegosaurus_ungulatus",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/stegosaurus_ungulatus",
+    "stats": {
+      "health": 1180,
+      "damage": 350,
+      "speed": 100,
+      "armor": 10,
+      "crit": 5,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_stegosaurus_ungulatus_stegosaurus_ungulatus.png"
+  },
+  {
+    "slug": "stegouros",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/stegouros",
+    "stats": {
+      "health": 1300,
+      "damage": 430,
+      "speed": 109,
+      "armor": 4,
+      "crit": 6,
+      "crit_damage": 135
+    },
+    "icon_file": "images\\creatures\\creature_stegouros_stegouros.png"
+  },
+  {
+    "slug": "struthiomimus",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/struthiomimus",
+    "stats": {
+      "health": 3300,
+      "damage": 1300,
+      "speed": 126,
+      "armor": 0,
+      "crit": 15,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_struthiomimus_struthiomimus.png"
+  },
+  {
+    "slug": "stygidaryx",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/stygidaryx",
+    "stats": {
+      "health": 5000,
+      "damage": 1450,
+      "speed": 128,
+      "armor": 15,
+      "crit": 5,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_stygidaryx_stygidaryx.png"
+  },
+  {
+    "slug": "stygimoloch",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/stygimoloch",
+    "stats": {
+      "health": 3150,
+      "damage": 1500,
+      "speed": 129,
+      "armor": 0,
+      "crit": 5,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_stygimoloch_stygimoloch.png"
+  },
+  {
+    "slug": "stygimoloch_gen_2",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/stygimoloch_gen_2",
+    "stats": {
+      "health": 3000,
+      "damage": 1300,
+      "speed": 128,
+      "armor": 0,
+      "crit": 5,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_stygimoloch_gen_2_stygimoloch_gen_2.png"
+  },
+  {
+    "slug": "styracosaurus_lux",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/styracosaurus_lux",
+    "stats": {
+      "health": 4800,
+      "damage": 1500,
+      "speed": 121,
+      "armor": 15,
+      "crit": 10,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_styracosaurus_lux_styracosaurus_lux.png"
+  },
+  {
+    "slug": "suchomimus",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/suchomimus",
+    "stats": {
+      "health": 3900,
+      "damage": 1000,
+      "speed": 104,
+      "armor": 0,
+      "crit": 5,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_suchomimus_suchomimus.png"
+  },
+  {
+    "slug": "suchotator",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/suchotator",
+    "stats": {
+      "health": 4500,
+      "damage": 1300,
+      "speed": 116,
+      "armor": 0,
+      "crit": 20,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_suchotator_suchotator.png"
+  },
+  {
+    "slug": "tanycolagreus",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/tanycolagreus",
+    "stats": {
+      "health": 2850,
+      "damage": 1560,
+      "speed": 130,
+      "armor": 0,
+      "crit": 5,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_tanycolagreus_tanycolagreus.png"
+  },
+  {
+    "slug": "tapejara",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/tapejara",
+    "stats": {
+      "health": 3650,
+      "damage": 1350,
+      "speed": 124,
+      "armor": 0,
+      "crit": 25,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_tapejara_tapejara.png"
+  },
+  {
+    "slug": "tarbognathus",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/tarbognathus",
+    "stats": {
+      "health": 3000,
+      "damage": 1450,
+      "speed": 123,
+      "armor": 0,
+      "crit": 30,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_tarbognathus_tarbognathus.png"
+  },
+  {
+    "slug": "tarbosaurus",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/tarbosaurus",
+    "stats": {
+      "health": 4500,
+      "damage": 1700,
+      "speed": 104,
+      "armor": 0,
+      "crit": 40,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_tarbosaurus_tarbosaurus.png"
+  },
+  {
+    "slug": "tenontorex",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/tenontorex",
+    "stats": {
+      "health": 4750,
+      "damage": 1900,
+      "speed": 117,
+      "armor": 15,
+      "crit": 20,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_tenontorex_tenontorex.png"
+  },
+  {
+    "slug": "tenontosaurus",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/tenontosaurus",
+    "stats": {
+      "health": 4500,
+      "damage": 1100,
+      "speed": 114,
+      "armor": 0,
+      "crit": 5,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_tenontosaurus_tenontosaurus.png"
+  },
+  {
+    "slug": "testacornibus",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/testacornibus",
+    "stats": {
+      "health": 4200,
+      "damage": 1100,
+      "speed": 128,
+      "armor": 45,
+      "crit": 5,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_testacornibus_testacornibus.png"
+  },
+  {
+    "slug": "therizinosaurus",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/therizinosaurus",
+    "stats": {
+      "health": 3300,
+      "damage": 1300,
+      "speed": 130,
+      "armor": 0,
+      "crit": 5,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_therizinosaurus_therizinosaurus.png"
+  },
+  {
+    "slug": "thoradolosaur",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/thoradolosaur",
+    "stats": {
+      "health": 4500,
+      "damage": 1750,
+      "speed": 105,
+      "armor": 0,
+      "crit": 30,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_thoradolosaur_thoradolosaur.png"
+  },
+  {
+    "slug": "thylaconyx",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/thylaconyx",
+    "stats": {
+      "health": 4800,
+      "damage": 1250,
+      "speed": 122,
+      "armor": 0,
+      "crit": 25,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_thylaconyx_thylaconyx.png"
+  },
+  {
+    "slug": "thylacosmilus",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/thylacosmilus",
+    "stats": {
+      "health": 3500,
+      "damage": 1500,
+      "speed": 125,
+      "armor": 0,
+      "crit": 10,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_thylacosmilus_thylacosmilus.png"
+  },
+  {
+    "slug": "thylacotator",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/thylacotator",
+    "stats": {
+      "health": 4500,
+      "damage": 1000,
+      "speed": 117,
+      "armor": 0,
+      "crit": 40,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_thylacotator_thylacotator.png"
+  },
+  {
+    "slug": "thylos_intrepidus",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/thylos_intrepidus",
+    "stats": {
+      "health": 4200,
+      "damage": 1400,
+      "speed": 125,
+      "armor": 0,
+      "crit": 40,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_thylos_intrepidus_thylos_intrepidus.png"
+  },
+  {
+    "slug": "tiger",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/tiger",
+    "stats": {
+      "health": 4100,
+      "damage": 1400,
+      "speed": 119,
+      "armor": 20,
+      "crit": 5,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_tiger_tiger.png"
+  },
+  {
+    "slug": "titanoboa",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/titanoboa",
+    "stats": {
+      "health": 4500,
+      "damage": 1300,
+      "speed": 115,
+      "armor": 0,
+      "crit": 20,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_titanoboa_titanoboa.png"
+  },
+  {
+    "slug": "titanoboa_gen_2",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/titanoboa_gen_2",
+    "stats": {
+      "health": 4350,
+      "damage": 1000,
+      "speed": 115,
+      "armor": 0,
+      "crit": 20,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_titanoboa_gen_2_titanoboa_gen_2.png"
+  },
+  {
+    "slug": "titanosaurus",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/titanosaurus",
+    "stats": {
+      "health": 4800,
+      "damage": 1250,
+      "speed": 100,
+      "armor": 30,
+      "crit": 5,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_titanosaurus_titanosaurus.png"
+  },
+  {
+    "slug": "titanotarkus",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/titanotarkus",
+    "stats": {
+      "health": 5400,
+      "damage": 1500,
+      "speed": 108,
+      "armor": 25,
+      "crit": 10,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_titanotarkus_titanotarkus.png"
+  },
+  {
+    "slug": "titanotholus",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/titanotholus",
+    "stats": {
+      "health": 5400,
+      "damage": 1600,
+      "speed": 112,
+      "armor": 25,
+      "crit": 5,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_titanotholus_titanotholus.png"
+  },
+  {
+    "slug": "titanotor",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/titanotor",
+    "stats": {
+      "health": 5100,
+      "damage": 1600,
+      "speed": 102,
+      "armor": 30,
+      "crit": 15,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_titanotor_titanotor.png"
+  },
+  {
+    "slug": "toro",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/toro",
+    "stats": {
+      "health": 1320,
+      "damage": 395,
+      "speed": 107,
+      "armor": 5,
+      "crit": 5,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_toro_toro.png"
+  },
+  {
+    "slug": "tragodistis",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/tragodistis",
+    "stats": {
+      "health": 4500,
+      "damage": 1000,
+      "speed": 105,
+      "armor": 40,
+      "crit": 5,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_tragodistis_tragodistis.png"
+  },
+  {
+    "slug": "triceratops",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/triceratops",
+    "stats": {
+      "health": 3300,
+      "damage": 1000,
+      "speed": 111,
+      "armor": 20,
+      "crit": 5,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_triceratops_triceratops.png"
+  },
+  {
+    "slug": "triceratops_gen_2",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/triceratops_gen_2",
+    "stats": {
+      "health": 3750,
+      "damage": 1000,
+      "speed": 110,
+      "armor": 10,
+      "crit": 5,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_triceratops_gen_2_triceratops_gen_2.png"
+  },
+  {
+    "slug": "troodoboa",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/troodoboa",
+    "stats": {
+      "health": 3900,
+      "damage": 1200,
+      "speed": 117,
+      "armor": 0,
+      "crit": 10,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_troodoboa_troodoboa.png"
+  },
+  {
+    "slug": "troodon",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/troodon",
+    "stats": {
+      "health": 3000,
+      "damage": 1200,
+      "speed": 130,
+      "armor": 0,
+      "crit": 15,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_troodon_troodon.png"
+  },
+  {
+    "slug": "trykosaurus",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/trykosaurus",
+    "stats": {
+      "health": 4350,
+      "damage": 1600,
+      "speed": 108,
+      "armor": 35,
+      "crit": 20,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_trykosaurus_trykosaurus.png"
+  },
+  {
+    "slug": "trykovenator",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/trykovenator",
+    "stats": {
+      "health": 4500,
+      "damage": 1600,
+      "speed": 110,
+      "armor": 25,
+      "crit": 20,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_trykovenator_trykovenator.png"
+  },
+  {
+    "slug": "tryostronix",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/tryostronix",
+    "stats": {
+      "health": 4200,
+      "damage": 1400,
+      "speed": 125,
+      "armor": 0,
+      "crit": 20,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_tryostronix_tryostronix.png"
+  },
+  {
+    "slug": "tsintamoth",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/tsintamoth",
+    "stats": {
+      "health": 4950,
+      "damage": 1250,
+      "speed": 113,
+      "armor": 10,
+      "crit": 5,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_tsintamoth_tsintamoth.png"
+  },
+  {
+    "slug": "tsintaosaurus",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/tsintaosaurus",
+    "stats": {
+      "health": 4350,
+      "damage": 1250,
+      "speed": 108,
+      "armor": 0,
+      "crit": 5,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_tsintaosaurus_tsintaosaurus.png"
+  },
+  {
+    "slug": "tuojiangosaurus",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/tuojiangosaurus",
+    "stats": {
+      "health": 3600,
+      "damage": 1000,
+      "speed": 105,
+      "armor": 0,
+      "crit": 5,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_tuojiangosaurus_tuojiangosaurus.png"
+  },
+  {
+    "slug": "tuoramoloch",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/tuoramoloch",
+    "stats": {
+      "health": 4380,
+      "damage": 1600,
+      "speed": 126,
+      "armor": 5,
+      "crit": 5,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_tuoramoloch_tuoramoloch.png"
+  },
+  {
+    "slug": "tupandactylus",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/tupandactylus",
+    "stats": {
+      "health": 3000,
+      "damage": 950,
+      "speed": 126,
+      "armor": 0,
+      "crit": 5,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_tupandactylus_tupandactylus.png"
+  },
+  {
+    "slug": "tyrannodactylus",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/tyrannodactylus",
+    "stats": {
+      "health": 4500,
+      "damage": 1800,
+      "speed": 121,
+      "armor": 15,
+      "crit": 15,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_tyrannodactylus_tyrannodactylus.png"
+  },
+  {
+    "slug": "tyrannolophosaur",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/tyrannolophosaur",
+    "stats": {
+      "health": 4200,
+      "damage": 1700,
+      "speed": 110,
+      "armor": 0,
+      "crit": 30,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_tyrannolophosaur_tyrannolophosaur.png"
+  },
+  {
+    "slug": "tyrannometrodon",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/tyrannometrodon",
+    "stats": {
+      "health": 4950,
+      "damage": 1900,
+      "speed": 110,
+      "armor": 0,
+      "crit": 35,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_tyrannometrodon_tyrannometrodon.png"
+  },
+  {
+    "slug": "tyrannosaur_buck",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/tyrannosaur_buck",
+    "stats": {
+      "health": 5100,
+      "damage": 1700,
+      "speed": 104,
+      "armor": 10,
+      "crit": 25,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_tyrannosaur_buck_tyrannosaur_buck.png"
+  },
+  {
+    "slug": "tyrannosaur_doe",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/tyrannosaur_doe",
+    "stats": {
+      "health": 4500,
+      "damage": 1750,
+      "speed": 121,
+      "armor": 0,
+      "crit": 20,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_tyrannosaur_doe_tyrannosaur_doe.png"
+  },
+  {
+    "slug": "tyrannosaurus_rex",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/tyrannosaurus_rex",
+    "stats": {
+      "health": 4800,
+      "damage": 1900,
+      "speed": 102,
+      "armor": 0,
+      "crit": 30,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_tyrannosaurus_rex_tyrannosaurus_rex.png"
+  },
+  {
+    "slug": "tyrannosaurus_rex_gen_2",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/tyrannosaurus_rex_gen_2",
+    "stats": {
+      "health": 4350,
+      "damage": 1800,
+      "speed": 104,
+      "armor": 0,
+      "crit": 20,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_tyrannosaurus_rex_gen_2_tyrannosaurus_rex_gen_2.png"
+  },
+  {
+    "slug": "utahraptor",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/utahraptor",
+    "stats": {
+      "health": 2250,
+      "damage": 1400,
+      "speed": 128,
+      "armor": 0,
+      "crit": 5,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_utahraptor_utahraptor.png"
+  },
+  {
+    "slug": "utarinex",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/utarinex",
+    "stats": {
+      "health": 3600,
+      "damage": 1650,
+      "speed": 128,
+      "armor": 10,
+      "crit": 25,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_utarinex_utarinex.png"
+  },
+  {
+    "slug": "utasinoraptor",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/utasinoraptor",
+    "stats": {
+      "health": 3000,
+      "damage": 1400,
+      "speed": 127,
+      "armor": 15,
+      "crit": 5,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_utasinoraptor_utasinoraptor.png"
+  },
+  {
+    "slug": "vectispinus",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/vectispinus",
+    "stats": {
+      "health": 975,
+      "damage": 550,
+      "speed": 99,
+      "armor": 10,
+      "crit": 0,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_vectispinus_vectispinus.png"
+  },
+  {
+    "slug": "velociraptor",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/velociraptor",
+    "stats": {
+      "health": 1650,
+      "damage": 1550,
+      "speed": 132,
+      "armor": 0,
+      "crit": 5,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_velociraptor_velociraptor.png"
+  },
+  {
+    "slug": "velosrhacos",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/velosrhacos",
+    "stats": {
+      "health": 3000,
+      "damage": 1400,
+      "speed": 130,
+      "armor": 0,
+      "crit": 5,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_velosrhacos_velosrhacos.png"
+  },
+  {
+    "slug": "woolly_mammoth",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/woolly_mammoth",
+    "stats": {
+      "health": 4200,
+      "damage": 1000,
+      "speed": 115,
+      "armor": 10,
+      "crit": 5,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_woolly_mammoth_woolly_mammoth.png"
+  },
+  {
+    "slug": "woolly_rhino",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/woolly_rhino",
+    "stats": {
+      "health": 4500,
+      "damage": 1500,
+      "speed": 108,
+      "armor": 10,
+      "crit": 5,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_woolly_rhino_woolly_rhino.png"
+  },
+  {
+    "slug": "wuerhosaurus",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/wuerhosaurus",
+    "stats": {
+      "health": 4500,
+      "damage": 1100,
+      "speed": 115,
+      "armor": 25,
+      "crit": 5,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_wuerhosaurus_wuerhosaurus.png"
+  },
+  {
+    "slug": "yutyrannus",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/yutyrannus",
+    "stats": {
+      "health": 1420,
+      "damage": 500,
+      "speed": 110,
+      "armor": 0,
+      "crit": 6,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_yutyrannus_yutyrannus.png"
+  },
+  {
+    "slug": "yuxisaurus",
+    "name": "",
+    "url": "https://www.paleo.gg/games/jurassic-world-alive/dinodex/yuxisaurus",
+    "stats": {
+      "health": 1500,
+      "damage": 410,
+      "speed": 105,
+      "armor": 10,
+      "crit": 10,
+      "crit_damage": 125
+    },
+    "icon_file": "images\\creatures\\creature_yuxisaurus_yuxisaurus.png"
+  }
+]

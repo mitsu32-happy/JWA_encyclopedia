@@ -1,0 +1,503 @@
+/* ===============================
+   creatures.css
+   恐竜一覧ページ専用スタイル（Glassmorphism）
+   =============================== */
+
+/* 一覧ページ用：ヘッダーを少し上に詰める */
+.page--inner .site-header {
+  padding-top: 6px;
+  padding-bottom: 4px;
+}
+
+/* ページヘッドの余白微調整 */
+.page--inner .page-head {
+  padding-top: 6px;
+  padding-bottom: 10px;
+}
+
+/* グリッド（恐竜一覧） */
+.grid--creatures {
+  gap: 14px;
+}
+
+/* ===============================
+   カード：恐竜用（Glassmorphism強め）
+   =============================== */
+
+.card--creature {
+  position: relative;
+  overflow: hidden;
+  border-radius: 18px;
+  padding: 10px;
+  background:
+    radial-gradient(circle at top left, rgba(0, 227, 255, 0.4), transparent 60%),
+    radial-gradient(circle at bottom right, rgba(34, 255, 204, 0.35), transparent 60%),
+    rgba(0, 0, 0, 0.7);
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.9);
+  backdrop-filter: blur(22px);
+  transition:
+    transform 0.14s ease-out,
+    box-shadow 0.14s ease-out,
+    border-color 0.14s ease-out,
+    background 0.18s ease-out;
+}
+
+/* カード上に淡い光の層 */
+.card--creature::before {
+  content: "";
+  position: absolute;
+  inset: -40%;
+  background:
+    radial-gradient(circle at 0 0, rgba(255, 255, 255, 0.12), transparent 55%),
+    radial-gradient(circle at 100% 100%, rgba(0, 227, 255, 0.22), transparent 55%);
+  mix-blend-mode: screen;
+  opacity: 0.0;
+  transition: opacity 0.2s ease-out;
+  pointer-events: none;
+}
+
+/* ホバー時：ふわっと持ち上がる */
+.card--creature:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 22px 60px rgba(0, 0, 0, 0.95);
+  border-color: rgba(255, 255, 255, 0.3);
+}
+
+.card--creature:hover::before {
+  opacity: 0.6;
+}
+
+/* 中身のレイアウト調整 */
+.card--creature .card-main {
+  align-items: stretch;
+}
+
+.card--creature .card-info {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+/* タイトル行＋レアリティバッジの行 */
+.card-title-row {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 6px;
+}
+
+.card-title-row .card-title {
+  font-size: 0.95rem;
+}
+
+.rarity-badge {
+  padding: 2px 8px;
+  border-radius: 999px;
+  font-size: 0.68rem;
+  letter-spacing: 0.06em;
+  font-weight: 600;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.85);
+}
+
+/* メタ情報（クラス・ロール） */
+.card-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+}
+
+/* ステータス行（任意で使う用） */
+.card-stats {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 2px;
+  font-size: 0.7rem;
+  color: rgba(210, 220, 255, 0.92);
+}
+
+.card-stats .stat {
+  padding: 2px 8px;
+  border-radius: 999px;
+  background: rgba(0, 0, 0, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+/* サムネイルをもう少し“カードっぽく” */
+.card--creature .card-thumb {
+  width: 82px;
+  height: 82px;
+  border-radius: 16px;
+  background:
+    radial-gradient(circle at top, rgba(255, 255, 255, 0.15), transparent 60%),
+    rgba(0, 0, 0, 0.9);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: inset 0 0 12px rgba(0, 0, 0, 0.9);
+}
+
+/* サムネイル画像がはみ出さないように */
+.card--creature .card-thumb img {
+  object-fit: contain;
+}
+
+/* ===============================
+   レアリティごとの発光表現
+   （枠色 + バッジ色）
+   =============================== */
+
+/* レアリティごとのベースボーダー（base.css の上に乗せる） */
+.rarity--common {
+  border-color: rgba(200, 200, 200, 0.65);
+}
+.rarity--rare {
+  border-color: rgba(86, 160, 255, 0.9);
+}
+.rarity--epic {
+  border-color: rgba(198, 120, 255, 0.95);
+}
+.rarity--legendary {
+  border-color: rgba(255, 214, 120, 0.98);
+}
+.rarity--unique {
+  border-color: rgba(122, 255, 204, 0.98);
+}
+.rarity--apex {
+  border-color: rgba(255, 120, 150, 0.98);
+}
+.rarity--omega {
+  border-color: rgba(0, 227, 255, 1);
+}
+
+/* レアリティバッジ用の色＋光 */
+.rarity-badge--common {
+  background: linear-gradient(135deg, #cfd4dd, #f3f3f3);
+  color: #1d2028;
+}
+.rarity-badge--rare {
+  background: linear-gradient(135deg, #3f8bff, #7fb5ff);
+  color: #03101f;
+}
+.rarity-badge--epic {
+  background: linear-gradient(135deg, #a855ff, #e58bff);
+  color: #100318;
+}
+.rarity-badge--legendary {
+  background: linear-gradient(135deg, #ffc94a, #ffe89f);
+  color: #221200;
+}
+.rarity-badge--unique {
+  background: linear-gradient(135deg, #4cffb8, #c0ffe8);
+  color: #001910;
+}
+.rarity-badge--apex {
+  background: linear-gradient(135deg, #ff5478, #ff9fb0);
+  color: #2a0209;
+}
+.rarity-badge--omega {
+  background: linear-gradient(135deg, #00e3ff, #8af5ff);
+  color: #001219;
+}
+
+/* ===============================
+   レスポンシブ微調整
+   =============================== */
+
+@media (max-width: 480px) {
+  .grid--creatures {
+    grid-template-columns: 1fr;
+  }
+
+  .card--creature .card-thumb {
+    width: 76px;
+    height: 76px;
+  }
+}
+
+@media (min-width: 768px) {
+  .page-inner {
+    max-width: 640px;
+  }
+}
+/* ===============================
+   詳細ページ（creature_detail.html）用スタイル
+   =============================== */
+
+.page--creature-detail .page-inner {
+  max-width: 760px;
+}
+
+/* 上部ヒーローエリア */
+
+.detail-hero {
+  display: grid;
+  grid-template-columns: minmax(0, 260px) minmax(0, 1fr);
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.detail-hero-left,
+.detail-hero-right {
+  min-width: 0;
+}
+
+.detail-image-card {
+  position: relative;
+  padding: 10px;
+  border-radius: 20px;
+  background:
+    radial-gradient(circle at top left, rgba(0, 227, 255, 0.35), transparent 60%),
+    radial-gradient(circle at bottom right, rgba(34, 255, 204, 0.28), transparent 60%),
+    rgba(0, 0, 0, 0.85);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  box-shadow: 0 18px 50px rgba(0, 0, 0, 0.9);
+  backdrop-filter: blur(24px);
+}
+
+.detail-image-inner {
+  border-radius: 16px;
+  overflow: hidden;
+  background: #000;
+  aspect-ratio: 1 / 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.detail-image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.detail-image-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 8px;
+}
+
+/* 右側：名前・タグ・ステータス概要 */
+
+.detail-title-block {
+  margin-bottom: 12px;
+}
+
+.detail-name-main {
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+.detail-name-sub {
+  font-size: 0.85rem;
+  color: var(--color-text-muted);
+  margin-top: 2px;
+}
+
+.detail-tags {
+  margin-top: 8px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+/* 概要ステータスの横並び */
+
+.detail-stats-summary {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(90px, 1fr));
+  gap: 8px;
+  margin-top: 10px;
+}
+
+.detail-stat-item {
+  padding: 6px 8px;
+  border-radius: 12px;
+  background: rgba(0, 0, 0, 0.7);
+  border: 1px solid rgba(255, 255, 255, 0.16);
+}
+
+.detail-stat-item .label {
+  font-size: 0.7rem;
+  color: var(--color-text-muted);
+}
+
+.detail-stat-item .value {
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.detail-short-note {
+  margin-top: 10px;
+  font-size: 0.72rem;
+  color: rgba(200, 210, 238, 0.85);
+}
+
+/* タブ */
+
+.detail-tabs {
+  display: flex;
+  gap: 6px;
+  margin: 6px 0 10px;
+  overflow-x: auto;
+  padding-bottom: 2px;
+}
+
+.detail-tab {
+  border-radius: 999px;
+  padding: 6px 12px;
+  font-size: 0.75rem;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  background: rgba(0, 0, 0, 0.6);
+  color: var(--color-text-muted);
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.detail-tab--active {
+  border-color: rgba(0, 227, 255, 0.9);
+  color: var(--color-accent);
+  background: rgba(0, 227, 255, 0.14);
+}
+
+/* パネル */
+
+.detail-panel {
+  display: none;
+  margin-bottom: 14px;
+}
+
+.detail-panel--active {
+  display: block;
+}
+
+.detail-section-title {
+  margin: 0 0 8px;
+  font-size: 1rem;
+}
+
+.detail-card {
+  margin-bottom: 10px;
+  padding: 10px 12px;
+  border-radius: 16px;
+  background:
+    radial-gradient(circle at top left, rgba(0, 227, 255, 0.25), transparent 60%),
+    rgba(0, 0, 0, 0.85);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  box-shadow: 0 14px 40px rgba(0, 0, 0, 0.9);
+  backdrop-filter: blur(20px);
+}
+
+.detail-subtitle {
+  margin: 0 0 6px;
+  font-size: 0.9rem;
+}
+
+.detail-body {
+  margin: 4px 0 0;
+  font-size: 0.8rem;
+  color: var(--color-text-main);
+}
+
+.detail-note-small {
+  margin: 4px 0 0;
+  font-size: 0.7rem;
+  color: var(--color-text-muted);
+}
+
+/* 簡易テーブル */
+
+.detail-stats-table {
+  display: grid;
+  gap: 4px;
+  margin-top: 4px;
+}
+
+.detail-stats-table .row {
+  display: grid;
+  grid-template-columns: 110px minmax(0, 1fr);
+  gap: 6px;
+  font-size: 0.8rem;
+}
+
+.detail-stats-table .label {
+  color: var(--color-text-muted);
+}
+
+.detail-stats-table .value {
+  color: var(--color-text-main);
+}
+
+/* リスト */
+
+.detail-list {
+  margin: 4px 0 0 1.1em;
+  padding: 0;
+  font-size: 0.8rem;
+}
+
+.detail-list li {
+  margin-bottom: 3px;
+}
+
+/* アビリティ一覧（詳細内） */
+
+.detail-abilities {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.detail-ability {
+  display: grid;
+  grid-template-columns: 42px minmax(0, 1fr);
+  gap: 8px;
+  align-items: flex-start;
+}
+
+.detail-ability .icon {
+  width: 42px;
+  height: 42px;
+  border-radius: 12px;
+  overflow: hidden;
+  background: #000;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.detail-ability .icon img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.detail-ability .info .name {
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.detail-ability .info .meta {
+  font-size: 0.7rem;
+  color: var(--color-text-muted);
+  margin-top: 2px;
+}
+
+.detail-ability .info .desc {
+  font-size: 0.78rem;
+  margin-top: 3px;
+}
+
+/* レスポンシブ調整 */
+
+@media (max-width: 640px) {
+  .detail-hero {
+    grid-template-columns: 1fr;
+  }
+
+  .detail-hero-left {
+    order: 1;
+  }
+  .detail-hero-right {
+    order: 2;
+  }
+}

@@ -1,0 +1,1538 @@
+{
+  "tyrannosaurus_rex": {
+    "movies": [
+      {
+        "series": "ジュラシック・パーク",
+        "role": "メイン恐竜（T. rex、通称レクシィ）",
+        "notes": "ジュラシック・パーク初作の看板肉食恐竜として登場。ツアー中の脱走とビジターセンターでのクライマックスシーンに登場。",
+        "credibility": "中"
+      },
+      {
+        "series": "ロスト・ワールド／ジュラシック・パーク",
+        "role": "重要恐竜",
+        "notes": "親子T. rexが登場し、サンディエゴ上陸シーンなど物語の中心に関わる。",
+        "credibility": "中"
+      },
+      {
+        "series": "ジュラシック・パークIII",
+        "role": "ゲスト的登場",
+        "notes": "スピノサウルスとの短い対決シーンで登場。",
+        "credibility": "中"
+      },
+      {
+        "series": "ジュラシック・ワールド",
+        "role": "クライマックスの主役恐竜",
+        "notes": "インドミナス・レックスとの最終決戦でヴェロキラプトルと共闘。",
+        "credibility": "中"
+      },
+      {
+        "series": "ジュラシック・ワールド／炎の王国",
+        "role": "象徴的な恐竜",
+        "notes": "島からの脱出シーンやオークション会場付近などで再登場。",
+        "credibility": "中"
+      },
+      {
+        "series": "ジュラシック・ワールド／新たなる支配者",
+        "role": "シリーズの象徴",
+        "notes": "ギガノトサウルスとの決戦など、シリーズを通したT. rexの物語が完結する。",
+        "credibility": "中"
+      },
+      {
+        "series": "Jurassic World Rebirth",
+        "role": "リデザインされたT. rex",
+        "notes": "よりたくましい体型の新デザインで登場するとされる。",
+        "credibility": "中"
+      }
+    ]
+  },
+  "tyrannosaurus_rex_gen_2": {
+    "movies": [
+      {
+        "series": "ジュラシック・パーク",
+        "role": "同種として参照",
+        "notes": "ゲーム内の第二世代T. rex。映画中は個体区別はないが、同じT. rex系統として扱う。",
+        "credibility": "低"
+      }
+    ]
+  },
+  "velociraptor": {
+    "movies": [
+      {
+        "series": "ジュラシック・パーク",
+        "role": "メイン敵恐竜",
+        "notes": "厨房シーンなどで高い知能と連携行動が強調される。",
+        "credibility": "高"
+      },
+      {
+        "series": "ロスト・ワールド／ジュラシック・パーク",
+        "role": "主要な脅威",
+        "notes": "ロスト・ワールドで群れとして登場し、ハンターたちを襲撃。",
+        "credibility": "中"
+      },
+      {
+        "series": "ジュラシック・パークIII",
+        "role": "重要恐竜",
+        "notes": "巣と卵を巡るエピソードなど、社会性の高い行動が描写される。",
+        "credibility": "中"
+      },
+      {
+        "series": "ジュラシック・ワールド",
+        "role": "準主役恐竜（ブルーなど）",
+        "notes": "オーウェンが調教する4頭のうちの1種として登場し、インドミナス戦で活躍。",
+        "credibility": "高"
+      },
+      {
+        "series": "ジュラシック・ワールド／炎の王国",
+        "role": "準主役恐竜（ブルー）",
+        "notes": "ブルーを中心に物語のキーとなる。",
+        "credibility": "高"
+      },
+      {
+        "series": "ジュラシック・ワールド／新たなる支配者",
+        "role": "準主役恐竜",
+        "notes": "ブルーと子どものベータが物語に関わる。",
+        "credibility": "中"
+      },
+      {
+        "series": "Jurassic World Rebirth",
+        "role": "再登場恐竜",
+        "notes": "新デザインのラプトルが登場するとされる。",
+        "credibility": "中"
+      }
+    ]
+  },
+  "triceratops": {
+    "movies": [
+      {
+        "series": "ジュラシック・パーク",
+        "role": "印象的な病気のトリケラトプス",
+        "notes": "見学ツアー中、腹を壊した個体として登場し、グラントたちが診察する名シーン。",
+        "credibility": "高"
+      },
+      {
+        "series": "ロスト・ワールド／ジュラシック・パーク",
+        "role": "背景〜群れシーン",
+        "notes": "ハンターに追われる群れなどで短く登場。",
+        "credibility": "中"
+      },
+      {
+        "series": "ジュラシック・パークIII",
+        "role": "背景登場",
+        "notes": "島での群れシーンなど、短時間の登場。",
+        "credibility": "中"
+      },
+      {
+        "series": "ジュラシック・ワールド",
+        "role": "パークの展示動物",
+        "notes": "子どもが乗れるアトラクション用個体などとして登場。",
+        "credibility": "中"
+      },
+      {
+        "series": "ジュラシック・ワールド／炎の王国",
+        "role": "背景〜群れシーン",
+        "notes": "火山噴火から逃げる群れの一部として登場。",
+        "credibility": "中"
+      },
+      {
+        "series": "ジュラシック・ワールド／新たなる支配者",
+        "role": "背景登場",
+        "notes": "野生化した恐竜群の一つとして短く描写。",
+        "credibility": "中"
+      },
+      {
+        "series": "Jurassic World Rebirth",
+        "role": "背景登場の可能性",
+        "notes": "再登場種リストに含まれるとされるが、詳細な出番は不明。",
+        "credibility": "低"
+      }
+    ]
+  },
+  "triceratops_gen_2": {
+    "movies": [
+      {
+        "series": "ジュラシック・パーク",
+        "role": "同種として参照",
+        "notes": "ゲーム内の第二世代。映画では個体差は明示されない。",
+        "credibility": "低"
+      }
+    ]
+  },
+  "stegosaurus": {
+    "movies": [
+      {
+        "series": "ロスト・ワールド／ジュラシック・パーク",
+        "role": "目立つ群れシーン",
+        "notes": "赤ちゃんステゴサウルスを撮影したことで親に追いかけられるシーンが有名。",
+        "credibility": "高"
+      },
+      {
+        "series": "ジュラシック・パークIII",
+        "role": "背景登場",
+        "notes": "島での群れシーンに短く登場。",
+        "credibility": "中"
+      },
+      {
+        "series": "ジュラシック・ワールド",
+        "role": "パークの展示恐竜",
+        "notes": "草食恐竜エリアの1種として短く登場。",
+        "credibility": "中"
+      },
+      {
+        "series": "ジュラシック・ワールド／炎の王国",
+        "role": "群れシーン",
+        "notes": "火山噴火から逃げる群れの一部として登場。",
+        "credibility": "中"
+      },
+      {
+        "series": "ジュラシック・ワールド／新たなる支配者",
+        "role": "背景登場",
+        "notes": "野生化した恐竜群の中に短く確認できる。",
+        "credibility": "中"
+      },
+      {
+        "series": "Jurassic World Rebirth",
+        "role": "再登場の可能性",
+        "notes": "再登場種として名前のみ確認されている段階。",
+        "credibility": "低"
+      }
+    ]
+  },
+  "stegosaurus_ungulatus": {
+    "movies": [
+      {
+        "series": "ロスト・ワールド／ジュラシック・パーク",
+        "role": "ステゴサウルス系統",
+        "notes": "映画中では種レベルの区別はされておらず、ステゴサウルスとして一括で描写。",
+        "credibility": "低"
+      }
+    ]
+  },
+  "brachiosaurus": {
+    "movies": [
+      {
+        "series": "ジュラシック・パーク",
+        "role": "初めて間近に見る恐竜",
+        "notes": "アランとエリーが初めて恐竜を見る象徴的なシーンの草食恐竜。",
+        "credibility": "高"
+      },
+      {
+        "series": "ジュラシック・パークIII",
+        "role": "背景登場",
+        "notes": "島での群れシーンで短く登場。",
+        "credibility": "中"
+      },
+      {
+        "series": "ジュラシック・ワールド",
+        "role": "ホロスケープなど",
+        "notes": "ホログラム表示や映像資料として登場。",
+        "credibility": "中"
+      },
+      {
+        "series": "ジュラシック・ワールド／炎の王国",
+        "role": "感動的な別れのシーン",
+        "notes": "桟橋で火山に飲み込まれるブラキオサウルスが印象的。",
+        "credibility": "高"
+      },
+      {
+        "series": "ジュラシック・ワールド／新たなる支配者",
+        "role": "背景登場",
+        "notes": "野生の群れとして短く登場。",
+        "credibility": "中"
+      },
+      {
+        "series": "Jurassic World Rebirth",
+        "role": "言及のみ",
+        "notes": "ブラキオサウルスの象徴的なシーンへのオマージュが語られている。",
+        "credibility": "中"
+      }
+    ]
+  },
+  "gallimimus": {
+    "movies": [
+      {
+        "series": "ジュラシック・パーク",
+        "role": "群れのスタンピード",
+        "notes": "グラントと子どもたちが群れと一緒に走る「群れがこっちに来る！」のシーンで登場。",
+        "credibility": "高"
+      },
+      {
+        "series": "ジュラシック・ワールド",
+        "role": "スタンピード再現シーン",
+        "notes": "パーク内の群れシーンでオマージュ的に登場。",
+        "credibility": "中"
+      }
+    ]
+  },
+  "apatosaurus": {
+    "movies": [
+      {
+        "series": "ジュラシック・ワールド",
+        "role": "感情的なシーンの中心",
+        "notes": "インドミナスに襲われた個体をオーウェンたちが看取るシーンがある。",
+        "credibility": "高"
+      },
+      {
+        "series": "ジュラシック・ワールド／炎の王国",
+        "role": "群れシーン",
+        "notes": "火山噴火から逃げる草食恐竜群の一部。",
+        "credibility": "中"
+      },
+      {
+        "series": "ジュラシック・ワールド／新たなる支配者",
+        "role": "背景登場",
+        "notes": "野生群の一部として短く描写。",
+        "credibility": "中"
+      },
+      {
+        "series": "Jurassic World Rebirth",
+        "role": "再登場種",
+        "notes": "再登場種リストに含まれる。",
+        "credibility": "中"
+      }
+    ]
+  },
+  "ankylosaurus": {
+    "movies": [
+      {
+        "series": "ジュラシック・パークIII",
+        "role": "背景登場",
+        "notes": "群れとして短時間登場。",
+        "credibility": "中"
+      },
+      {
+        "series": "ジュラシック・ワールド",
+        "role": "バトルシーン",
+        "notes": "インドミナスと戦うも敗れてしまうシーンがある。",
+        "credibility": "高"
+      },
+      {
+        "series": "ジュラシック・ワールド／炎の王国",
+        "role": "群れシーン",
+        "notes": "火山噴火から逃げる群れの一部。",
+        "credibility": "中"
+      },
+      {
+        "series": "ジュラシック・ワールド／新たなる支配者",
+        "role": "背景登場",
+        "notes": "野生群として短く登場。",
+        "credibility": "中"
+      },
+      {
+        "series": "Jurassic World Rebirth",
+        "role": "再登場種",
+        "notes": "再登場種リストに含まれる。",
+        "credibility": "中"
+      }
+    ]
+  },
+  "ankylosaurus_gen_2": {
+    "movies": [
+      {
+        "series": "ジュラシック・ワールド",
+        "role": "同種として参照",
+        "notes": "ゲーム内の第二世代。映画とは個体区別されない。",
+        "credibility": "低"
+      }
+    ]
+  },
+  "carnotaurus": {
+    "movies": [
+      {
+        "series": "ジュラシック・ワールド／炎の王国",
+        "role": "敵役恐竜",
+        "notes": "カルノタウルスがティラノサウルスに吹き飛ばされるシーンが有名。",
+        "credibility": "高"
+      },
+      {
+        "series": "ジュラシック・ワールド／新たなる支配者",
+        "role": "背景〜脅威シーン",
+        "notes": "街中や保護区での登場シーンがある。",
+        "credibility": "中"
+      },
+      {
+        "series": "Jurassic World Rebirth",
+        "role": "再登場種",
+        "notes": "再登場種として報じられている。",
+        "credibility": "中"
+      }
+    ]
+  },
+  "allosaurus": {
+    "movies": [
+      {
+        "series": "ジュラシック・ワールド／炎の王国",
+        "role": "敵役恐竜",
+        "notes": "溶岩に照らされるシーンなどで登場。",
+        "credibility": "中"
+      },
+      {
+        "series": "バトル・アット・ビッグ・ロック",
+        "role": "メイン恐竜",
+        "notes": "短編『バトル・アット・ビッグロック』で家族を襲う恐竜として登場。",
+        "credibility": "高"
+      },
+      {
+        "series": "ジュラシック・ワールド／新たなる支配者",
+        "role": "背景〜脅威シーン",
+        "notes": "プロローグや本編に登場するとされる。",
+        "credibility": "中"
+      }
+    ]
+  },
+  "pteranodon": {
+    "movies": [
+      {
+        "series": "ロスト・ワールド／ジュラシック・パーク",
+        "role": "ラストのカメオ",
+        "notes": "エンディング付近で島上空を舞う姿が一瞬映る。",
+        "credibility": "高"
+      },
+      {
+        "series": "ジュラシック・パークIII",
+        "role": "主要敵シーン",
+        "notes": "バードケージ（鳥かご）シーンで重要な脅威として登場。",
+        "credibility": "高"
+      },
+      {
+        "series": "ジュラシック・ワールド／炎の王国",
+        "role": "背景〜脅威シーン",
+        "notes": "火山から逃げる中や後半の街中シーンで登場。",
+        "credibility": "中"
+      },
+      {
+        "series": "バトル・アット・ビッグ・ロック",
+        "role": "背景登場",
+        "notes": "上空を飛ぶ姿などが確認できる。",
+        "credibility": "中"
+      },
+      {
+        "series": "ジュラシック・ワールド／新たなる支配者",
+        "role": "背景〜脅威シーン",
+        "notes": "プロローグや本編で複数個体が登場。",
+        "credibility": "中"
+      },
+      {
+        "series": "Jurassic World Rebirth",
+        "role": "再登場種",
+        "notes": "再登場種リストに含まれる。",
+        "credibility": "中"
+      }
+    ]
+  },
+  "dimorphodon": {
+    "movies": [
+      {
+        "series": "ジュラシック・ワールド",
+        "role": "テロドン群の一部",
+        "notes": "パーク崩壊時、プテラノドンと共に来園者を襲う小型翼竜。",
+        "credibility": "高"
+      },
+      {
+        "series": "ジュラシック・ワールド／炎の王国",
+        "role": "背景登場",
+        "notes": "火山噴火やオークション関連シーンで短く登場。",
+        "credibility": "中"
+      }
+    ]
+  },
+  "dilophosaurus": {
+    "movies": [
+      {
+        "series": "ジュラシック・パーク",
+        "role": "ニドリーを襲う小型肉食恐竜",
+        "notes": "フリルと毒液でIT技術者ニドリーを襲う印象的なシーン。",
+        "credibility": "高"
+      },
+      {
+        "series": "ジュラシック・ワールド",
+        "role": "ホログラム登場",
+        "notes": "ビジターセンターでホログラムとして登場し、ラプトルを驚かせる。",
+        "credibility": "高"
+      },
+      {
+        "series": "ジュラシック・ワールド／炎の王国",
+        "role": "模型・展示での登場",
+        "notes": "ロックウッド邸の展示として登場。生体は登場しない。",
+        "credibility": "高"
+      },
+      {
+        "series": "ジュラシック・ワールド／新たなる支配者",
+        "role": "生体として再登場",
+        "notes": "クレアを襲う場面やドジスンを追い詰めるシーンで複数個体が登場。",
+        "credibility": "高"
+      }
+    ]
+  },
+  "dilophosaurus_gen_2": {
+    "movies": [
+      {
+        "series": "ジュラシック・パーク",
+        "role": "同種として参照",
+        "notes": "ゲーム内の第二世代。映画側では個体区別は描かれない。",
+        "credibility": "低"
+      }
+    ]
+  },
+  "indominus_rex": {
+    "movies": [
+      {
+        "series": "ジュラシック・ワールド",
+        "role": "メイン敵恐竜",
+        "notes": "ジュラシック・ワールドの看板ハイブリッドとして登場し、パーク崩壊の元凶となる。",
+        "credibility": "高"
+      }
+    ]
+  },
+  "indominus_rex_gen_2": {
+    "movies": [
+      {
+        "series": "ジュラシック・ワールド",
+        "role": "同種として参照",
+        "notes": "ゲーム内の第二世代。映画では1個体のみ登場。",
+        "credibility": "低"
+      }
+    ]
+  },
+  "indoraptor": {
+    "movies": [
+      {
+        "series": "ジュラシック・ワールド／炎の王国",
+        "role": "メイン敵恐竜",
+        "notes": "ロックウッド邸地下で開発されたハイブリッド。屋敷内での追跡劇が中心。",
+        "credibility": "高"
+      }
+    ]
+  },
+  "indoraptor_gen_2": {
+    "movies": [
+      {
+        "series": "ジュラシック・ワールド／炎の王国",
+        "role": "同種として参照",
+        "notes": "ゲーム内の第二世代。映画ではプロトタイプ1種のみ。",
+        "credibility": "低"
+      }
+    ]
+  },
+  "spinosaurus": {
+    "movies": [
+      {
+        "series": "ジュラシック・パークIII",
+        "role": "メイン敵恐竜",
+        "notes": "墜落機の襲撃やT. rexとの戦闘など、作品を通して執拗に主人公たちを追う。",
+        "credibility": "高"
+      },
+      {
+        "series": "Jurassic World Rebirth",
+        "role": "再登場＆新デザイン",
+        "notes": "半水棲に近い新しい体型で再登場すると報じられている。",
+        "credibility": "中"
+      }
+    ]
+  },
+  "spinosaurus_aegyptiacus": {
+    "movies": [
+      {
+        "series": "ジュラシック・パークIII",
+        "role": "スピノサウルスの学名",
+        "notes": "映画中では種名は明示されないが、設定上この種に相当。",
+        "credibility": "低"
+      },
+      {
+        "series": "Jurassic World Rebirth",
+        "role": "半水棲のスピノサウルス",
+        "notes": "最新の研究を反映したデザインと言及される。",
+        "credibility": "中"
+      }
+    ]
+  },
+  "spinosaurus_gen_2": {
+    "movies": [
+      {
+        "series": "ジュラシック・パークIII",
+        "role": "同種として参照",
+        "notes": "ゲーム内の第二世代。映画では個体差は描写されない。",
+        "credibility": "低"
+      }
+    ]
+  },
+  "rebirth_spinosaurus": {
+    "movies": [
+      {
+        "series": "Jurassic World Rebirth",
+        "role": "リブースト版スピノサウルス",
+        "notes": "新作映画に登場するリデザイン個体を反映したゲーム内クリーチャーと考えられる。",
+        "credibility": "中"
+      }
+    ]
+  },
+  "stygimoloch": {
+    "movies": [
+      {
+        "series": "ジュラシック・ワールド／炎の王国",
+        "role": "印象的な脱出シーン",
+        "notes": "オーウェンと組んでオークション会場の檻を破壊するシーンがある。",
+        "credibility": "高"
+      }
+    ]
+  },
+  "stygimoloch_gen_2": {
+    "movies": [
+      {
+        "series": "ジュラシック・ワールド／炎の王国",
+        "role": "同種として参照",
+        "notes": "ゲーム内の第二世代。映画では1個体のみ登場。",
+        "credibility": "低"
+      }
+    ]
+  },
+  "pachycephalosaurus": {
+    "movies": [
+      {
+        "series": "ロスト・ワールド／ジュラシック・パーク",
+        "role": "頭突き恐竜",
+        "notes": "ハンターの車に頭突きをかます「パッキー」として登場。",
+        "credibility": "高"
+      }
+    ]
+  },
+  "parasaurolophus": {
+    "movies": [
+      {
+        "series": "ロスト・ワールド／ジュラシック・パーク",
+        "role": "背景〜群れシーン",
+        "notes": "ハンターに追われる草食恐竜群の一部として登場。",
+        "credibility": "中"
+      },
+      {
+        "series": "ジュラシック・パークIII",
+        "role": "背景登場",
+        "notes": "島の群れとして短く描写される。",
+        "credibility": "中"
+      },
+      {
+        "series": "ジュラシック・ワールド",
+        "role": "パークの草食恐竜群",
+        "notes": "草原エリアの群れの一部として登場。",
+        "credibility": "中"
+      },
+      {
+        "series": "ジュラシック・ワールド／炎の王国",
+        "role": "背景登場",
+        "notes": "島から逃げる恐竜群に含まれる。",
+        "credibility": "中"
+      }
+    ]
+  },
+  "parasaurolophus_lux": {
+    "movies": [
+      {
+        "series": "Jurassic World Camp Cretaceous",
+        "role": "光るパラサウロロフス",
+        "notes": "夜に発光する個体が登場する。ゲーム内のLux版の元ネタ。",
+        "credibility": "高"
+      }
+    ]
+  },
+  "pachyrhinosaurus": {
+    "movies": [
+      {
+        "series": "ジュラシック・ワールド／新たなる支配者",
+        "role": "背景登場",
+        "notes": "野生化した恐竜群の一部として短く確認される。",
+        "credibility": "中"
+      }
+    ]
+  },
+  "compy": {
+    "movies": [
+      {
+        "series": "ロスト・ワールド／ジュラシック・パーク",
+        "role": "小型の集団捕食者",
+        "notes": "序盤で少女を襲い、後半ではハンターを集団で襲撃するシーンがある。",
+        "credibility": "高"
+      },
+      {
+        "series": "ジュラシック・パークIII",
+        "role": "短い背景登場",
+        "notes": "森の中で群れの姿が見られる。",
+        "credibility": "中"
+      },
+      {
+        "series": "ジュラシック・ワールド",
+        "role": "ホログラム登場",
+        "notes": "ビジターセンターでホログラムとして登場。",
+        "credibility": "高"
+      },
+      {
+        "series": "ジュラシック・ワールド／新たなる支配者",
+        "role": "群れでの登場",
+        "notes": "森林地帯での背景シーンに登場。",
+        "credibility": "中"
+      }
+    ]
+  },
+  "mosasaurus": {
+    "movies": [
+      {
+        "series": "ジュラシック・ワールド",
+        "role": "海のショーの大型捕食者",
+        "notes": "海中ショーで巨大なモササウルスが登場し、クライマックスでもインドミナスを襲う。",
+        "credibility": "高"
+      },
+      {
+        "series": "ジュラシック・ワールド／炎の王国",
+        "role": "危険生物として描写",
+        "notes": "海へ逃げ出し、後半ではサーファーを襲う場面が印象的。",
+        "credibility": "高"
+      },
+      {
+        "series": "ジュラシック・ワールド／新たなる支配者",
+        "role": "強敵として登場",
+        "notes": "漁船を襲うシーンなどに登場。",
+        "credibility": "中"
+      }
+    ]
+  },
+  "baryonyx": {
+    "movies": [
+      {
+        "series": "ジュラシック・ワールド／炎の王国",
+        "role": "主要敵シーン",
+        "notes": "溶岩が迫る施設内で主人公たちを追う。",
+        "credibility": "高"
+      },
+      {
+        "series": "ジュラシック・ワールド／新たなる支配者",
+        "role": "変異個体の背景登場",
+        "notes": "戦闘・保護区シーンなどに複数個体が短く登場。",
+        "credibility": "中"
+      }
+    ]
+  },
+  "ceratosaurus": {
+    "movies": [
+      {
+        "series": "ジュラシック・パークIII",
+        "role": "短い遭遇シーン",
+        "notes": "スピノサウルスの糞の匂いに気づいて去るコミカルなシーンがある。",
+        "credibility": "高"
+      },
+      {
+        "series": "ジュラシック・ワールド／新たなる支配者",
+        "role": "背景登場",
+        "notes": "森林エリアで短く姿が確認できる。",
+        "credibility": "中"
+      }
+    ]
+  },
+  "dreadnoughtus": {
+    "movies": [
+      {
+        "series": "ジュラシック・ワールド／新たなる支配者",
+        "role": "巨大草食恐竜",
+        "notes": "プロローグ映像を中心に登場し、白亜紀時代の環境を象徴する大型竜脚類として描写される。",
+        "credibility": "中"
+      }
+    ]
+  },
+  "quetzalcoatlus": {
+    "movies": [
+      {
+        "series": "ジュラシック・ワールド／新たなる支配者",
+        "role": "大型飛行捕食者",
+        "notes": "飛行中の航空機を襲う重要シーンに登場。",
+        "credibility": "高"
+      }
+    ]
+  },
+  "giganotosaurus": {
+    "movies": [
+      {
+        "series": "ジュラシック・ワールド／新たなる支配者",
+        "role": "メイン敵恐竜",
+        "notes": "シリーズ最強クラスの捕食者として登場し、T. rexとの対決も描かれる。",
+        "credibility": "高"
+      }
+    ]
+  },
+  "therizinosaurus": {
+    "movies": [
+      {
+        "series": "ジュラシック・ワールド／新たなる支配者",
+        "role": "準主役恐竜",
+        "notes": "盲目だが鋭い爪と聴覚で追跡する恐竜として登場。クライマックスの戦闘にも関わる。",
+        "credibility": "高"
+      }
+    ]
+  },
+  "pyroraptor": {
+    "movies": [
+      {
+        "series": "ジュラシック・ワールド／新たなる支配者",
+        "role": "水中潜行可能なラプトル",
+        "notes": "氷湖のシーンで主人公たちを追い詰める新種ラプトル。",
+        "credibility": "高"
+      }
+    ]
+  },
+  "iguanodon": {
+    "movies": [
+      {
+        "series": "ジュラシック・ワールド／新たなる支配者",
+        "role": "背景登場",
+        "notes": "野生化した恐竜群の中に短時間登場する。",
+        "credibility": "中"
+      }
+    ]
+  },
+  "ouranosaurus": {
+    "movies": [
+      {
+        "series": "ジュラシック・ワールド／新たなる支配者",
+        "role": "背景登場",
+        "notes": "草食恐竜群の一部として見られるシーンがある。",
+        "credibility": "中"
+      }
+    ]
+  },
+  "sinoceratops": {
+    "movies": [
+      {
+        "series": "ジュラシック・ワールド／炎の王国",
+        "role": "主人公を救う恐竜",
+        "notes": "オーウェンを襲うバリオニクスを角で弾き飛ばすシーンが有名。",
+        "credibility": "高"
+      }
+    ]
+  },
+  "styracosaurus": {
+    "movies": [
+      {
+        "series": "ジュラシック・ワールド／サバイバル・キャンプ",
+        "role": "重要エピソード登場",
+        "notes": "子ども向けスピンオフで複数エピソードに草食恐竜として登場。",
+        "credibility": "中"
+      }
+    ]
+  },
+  "nasutoceratops": {
+    "movies": [
+      {
+        "series": "バトル・アット・ビッグ・ロック",
+        "role": "家族を襲うアロサウルスと交戦",
+        "notes": "短編で群れとして登場し、アロサウルスと戦う印象的なシーンがある。",
+        "credibility": "高"
+      },
+      {
+        "series": "ジュラシック・ワールド／新たなる支配者",
+        "role": "背景登場",
+        "notes": "保護区シーンなどで確認できる。",
+        "credibility": "中"
+      }
+    ]
+  },
+  "microceratus": {
+    "movies": [
+      {
+        "series": "ジュラシック・ワールド／新たなる支配者",
+        "role": "コメディタッチの背景恐竜",
+        "notes": "野生群の中で小型草食恐竜として短く描写される。",
+        "credibility": "中"
+      }
+    ]
+  },
+  "parasaurolophus_gen_2": {
+    "movies": [
+      {
+        "series": "ロスト・ワールド／ジュラシック・パーク",
+        "role": "同種扱い",
+        "notes": "映画では種区別はされず、通常のパラサウロロフスとして登場。",
+        "credibility": "低"
+      }
+    ]
+  },
+  "edmontosaurus": {
+    "movies": [
+      {
+        "series": "ジュラシック・ワールド／新たなる支配者",
+        "role": "背景の大型草食恐竜",
+        "notes": "野生化した草食恐竜群の一部として確認される。",
+        "credibility": "中"
+      }
+    ]
+  },
+  "hadrosaurus": {
+    "movies": [
+      {
+        "series": "ジュラシック・ワールド／新たなる支配者",
+        "role": "背景登場",
+        "notes": "Hadrosaurid（カモノハシ竜系）の群れ描写の中に含まれるとされる。",
+        "credibility": "低"
+      }
+    ]
+  },
+  "protoceratops": {
+    "movies": [
+      {
+        "series": "ジュラシック・ワールド／新たなる支配者",
+        "role": "背景登場",
+        "notes": "森の中や野生群の一部として短く描写される。",
+        "credibility": "中"
+      }
+    ]
+  },
+  "therizinosaurus_gen_2": {
+    "movies": [
+      {
+        "series": "ジュラシック・ワールド／新たなる支配者",
+        "role": "同種として参照",
+        "notes": "映画ではバリエーション個体の区別は無いため、元種扱いとなる。",
+        "credibility": "低"
+      }
+    ]
+  },
+  "quetzalcoatlus_gen_2": {
+    "movies": [
+      {
+        "series": "ジュラシック・ワールド／新たなる支配者",
+        "role": "同種として参照",
+        "notes": "ゲーム内の別個体設定。映画では巨大翼竜として一括描写。",
+        "credibility": "低"
+      }
+    ]
+  },
+  "corythosaurus": {
+    "movies": [
+      {
+        "series": "ジュラシック・パークIII",
+        "role": "背景登場",
+        "notes": "草食恐竜群のシーンで短く描写される。",
+        "credibility": "中"
+      }
+    ]
+  },
+  "miragaia": {
+    "movies": [
+      {
+        "series": "ジュラシック・ワールド／新たなる支配者",
+        "role": "背景の剣竜類",
+        "notes": "剣竜類の群れ描写の中に見られるタイプとして扱われる。",
+        "credibility": "低"
+      }
+    ]
+  },
+  "amatitan": {
+    "movies": [
+      {
+        "series": "ジュラシック・ワールド／新たなる支配者",
+        "role": "巨大草食恐竜枠",
+        "notes": "竜脚類の群れシーンに類似種が含まれているとされる。",
+        "credibility": "低"
+      }
+    ]
+  },
+  "ankylocephalosaurus": {
+    "movies": [
+      {
+        "series": "ジュラシック・ワールド",
+        "role": "背景合成恐竜",
+        "notes": "パーク資料映像で『ハイブリッドの可能性』として紹介されるアートが登場したとされる。",
+        "credibility": "低"
+      }
+    ]
+  },
+  "segisaurus": {
+    "movies": [
+      {
+        "series": "ジュラシック・ワールド／新たなる支配者",
+        "role": "小型恐竜背景",
+        "notes": "小型群れの中に含まれていると推測されるが明確な描写は少ない。",
+        "credibility": "低"
+      }
+    ]
+  },
+  "dimetrodon": {
+    "movies": [
+      {
+        "series": "ジュラシック・ワールド／新たなる支配者",
+        "role": "地下施設の敵役",
+        "notes": "研究施設の通路で主人公を襲う生物として登場。",
+        "credibility": "高"
+      }
+    ]
+  },
+  "lystrosaurus": {
+    "movies": [
+      {
+        "series": "ジュラシック・ワールド／新たなる支配者",
+        "role": "ケイジ内の仲間",
+        "notes": "地下施設の檻の中で主人公と同じく捕まっていた個体として登場。",
+        "credibility": "高"
+      }
+    ]
+  },
+  "moros_intrepidus": {
+    "movies": [
+      {
+        "series": "ジュラシック・ワールド／新たなる支配者",
+        "role": "プロローグ登場",
+        "notes": "白亜紀パートで他の恐竜の周囲に登場する小型肉食恐竜。",
+        "credibility": "中"
+      }
+    ]
+  },
+  "gallimimus_gen_2": {
+    "movies": [
+      {
+        "series": "ジュラシック・パーク",
+        "role": "同種として参照",
+        "notes": "ゲーム内の第二世代。映画では世代区別は描写されず、通常のガリミムスとして群れが登場する。",
+        "credibility": "低"
+      }
+    ]
+  },
+  "archelon": {
+    "movies": [
+      {
+        "series": "ジュラシック・ワールド／新たなる支配者",
+        "role": "化石標本",
+        "notes": "展示・資料映像としてアーケロンの化石が映るシーンがある。",
+        "credibility": "中"
+      }
+    ]
+  },
+  "quetzicoatlus_small": {
+    "movies": [
+      {
+        "series": "ジュラシック・ワールド／新たなる支配者",
+        "role": "背景の小型翼竜グループ",
+        "notes": "大型ケツァルコアトルスとは別に、小型翼竜が群れとして登場するシーンがある。",
+        "credibility": "低"
+      }
+    ]
+  },
+  "allosaurus_gen_2": {
+    "movies": [
+      {
+        "series": "バトル・アット・ビッグ・ロック",
+        "role": "別個体として参照",
+        "notes": "ゲーム内の第二世代。短編にはアロサウルスが明確に登場するが個体差は描写されない。",
+        "credibility": "低"
+      }
+    ]
+  },
+  "kentrosaurus": {
+    "movies": [
+      {
+        "series": "ジュラシック・ワールド／新たなる支配者",
+        "role": "背景の剣竜類",
+        "notes": "剣竜類の群れの中にケントロサウルス系の個体が含まれるとされる。",
+        "credibility": "低"
+      }
+    ]
+  },
+  "brachylophosaurus": {
+    "movies": [
+      {
+        "series": "ジュラシック・ワールド／新たなる支配者",
+        "role": "背景のカモノハシ竜類",
+        "notes": "Dominion で登場するハドロサウルス群の中にブラキロホサウルス系個体が含まれると推測される。",
+        "credibility": "低"
+      }
+    ]
+  },
+  "microceratus_gen_2": {
+    "movies": [
+      {
+        "series": "ジュラシック・ワールド／新たなる支配者",
+        "role": "同種として参照",
+        "notes": "ゲーム内の第二世代。映画では特定個体の区別は存在しない。",
+        "credibility": "低"
+      }
+    ]
+  },
+  "monolophosaurus": {
+    "movies": [
+      {
+        "series": "ジュラシック・ワールド／新たなる支配者",
+        "role": "白亜紀パートの小型捕食者",
+        "notes": "プロローグの白亜紀群集シーンに短く登場。",
+        "credibility": "中"
+      }
+    ]
+  },
+  "dreadnoughtus_gen_2": {
+    "movies": [
+      {
+        "series": "ジュラシック・ワールド／新たなる支配者",
+        "role": "同種参照",
+        "notes": "映画では竜脚類としてまとめて描写され、ゲームの世代区別は存在しない。",
+        "credibility": "低"
+      }
+    ]
+  },
+  "dunkleosteus": {
+    "movies": [
+      {
+        "series": "ジュラシック・パーク",
+        "role": "資料映像扱い",
+        "notes": "作中の展示資料として過去の巨大魚類が紹介される際に名前が登場する。",
+        "credibility": "低"
+      }
+    ]
+  },
+  "lycaenops": {
+    "movies": [
+      {
+        "series": "ジュラシック・ワールド／サバイバル・キャンプ",
+        "role": "一時敵役",
+        "notes": "短いシーンだが、スピンオフアニメにて主人公を驚かせる場面で登場。",
+        "credibility": "中"
+      }
+    ]
+  },
+  "majungasaurus": {
+    "movies": [
+      {
+        "series": "ジュラシック・ワールド／新たなる支配者",
+        "role": "背景のアベリサウルス類",
+        "notes": "Dominion の野生化描写の中にアベリサウルス科に近い個体が短く映る。",
+        "credibility": "低"
+      }
+    ]
+  },
+  "austroraptor": {
+    "movies": [
+      {
+        "series": "ジュラシック・ワールド／新たなる支配者",
+        "role": "背景の中型捕食者",
+        "notes": "雪原シーンの捕食者として類似種が登場するとされる。",
+        "credibility": "低"
+      }
+    ]
+  },
+  "deinocheirus": {
+    "movies": [
+      {
+        "series": "ジュラシック・ワールド／新たなる支配者",
+        "role": "沼地の巨大草食恐竜",
+        "notes": "Dominion の沼地探索シーンで、巨大な腕をもつ個体が水中から現れる描写がある。",
+        "credibility": "中"
+      }
+    ]
+  },
+  "pachycephalosaurus_gen_2": {
+    "movies": [
+      {
+        "series": "ロスト・ワールド／ジュラシック・パーク",
+        "role": "同種扱い",
+        "notes": "ゲームの第二世代。映画では『パッキー』として1種のみ登場。",
+        "credibility": "低"
+      }
+    ]
+  },
+  "torosaurus": {
+    "movies": [
+      {
+        "series": "ジュラシック・ワールド／新たなる支配者",
+        "role": "背景の大型角竜",
+        "notes": "角竜類の群れにトロサウルスと思われる個体が映る。",
+        "credibility": "低"
+      }
+    ]
+  },
+  "proceratosaurus": {
+    "movies": [
+      {
+        "series": "ジュラシック・ワールド／サバイバル・キャンプ",
+        "role": "脅威として複数回登場",
+        "notes": "アニメ版で繰り返し登場し、俊敏な小型捕食者として描写される。",
+        "credibility": "高"
+      }
+    ]
+  },
+  "carnoraptor": {
+    "movies": [
+      {
+        "series": "ジュラシック・ワールド",
+        "role": "資料映像・設定資料",
+        "notes": "パーク施設のホログラム資料にハイブリッド構想の1つとして登場したと言及がある。",
+        "credibility": "低"
+      }
+    ]
+  },
+  "glyptodon": {
+    "movies": [
+      {
+        "series": "ジュラシック・ワールド／サバイバル・キャンプ",
+        "role": "背景登場",
+        "notes": "短い背景カットで確認できる古生物。",
+        "credibility": "中"
+      }
+    ]
+  },
+  "metriacanthosaurus": {
+    "movies": [
+      {
+        "series": "ジュラシック・パーク",
+        "role": "資料映像・ゲノム保管種",
+        "notes": "作中の遺伝子保管庫（カプセル表示）に種名が登場し、パーク計画に含まれていることが示されていた。",
+        "credibility": "高"
+      },
+      {
+        "series": "ジュラシック・ワールド",
+        "role": "施設データ上の存在",
+        "notes": "ホログラム資料にゲノム登録種として名称のみ登場。",
+        "credibility": "中"
+      }
+    ]
+  },
+  "herrerasaurus": {
+    "movies": [
+      {
+        "series": "ジュラシック・パーク",
+        "role": "資料映像の遺伝子保管種",
+        "notes": "遺伝子保存一覧に名前が登場する。作中で生体は確認できない。",
+        "credibility": "高"
+      }
+    ]
+  },
+  "proceratosaurus_gen_2": {
+    "movies": [
+      {
+        "series": "ジュラシック・ワールド／サバイバル・キャンプ",
+        "role": "同種扱い",
+        "notes": "ゲーム内の別個体設定だが、アニメでは種の区別はないため参照程度の扱い。",
+        "credibility": "低"
+      }
+    ]
+  },
+  "moschops": {
+    "movies": [
+      {
+        "series": "ジュラシック・ワールド／サバイバル・キャンプ",
+        "role": "背景登場",
+        "notes": "キャンプ場の背景となる森で短く姿が確認できる古生物。",
+        "credibility": "中"
+      }
+    ]
+  },
+  "smilodon": {
+    "movies": [
+      {
+        "series": "ジュラシック・ワールド／新たなる支配者",
+        "role": "資料展示化石",
+        "notes": "保護区・資料映像に古生物展示の一部として登場するとされる。",
+        "credibility": "低"
+      }
+    ]
+  },
+  "gigantspinosaurus": {
+    "movies": [
+      {
+        "series": "Dominion (推定)",
+        "role": "剣竜類背景",
+        "notes": "剣竜類の群れの中にスパイク形状が近い個体が見られ、専門家・ファンの間で同定候補とされる。",
+        "credibility": "低"
+      }
+    ]
+  },
+  "jobaria": {
+    "movies": [
+      {
+        "series": "ジュラシック・ワールド／サバイバル・キャンプ",
+        "role": "竜脚類背景",
+        "notes": "森の奥で目撃される大型草食恐竜として短い描写がある。",
+        "credibility": "中"
+      }
+    ]
+  },
+  "anchiceratops": {
+    "movies": [
+      {
+        "series": "ジュラシック・ワールド／新たなる支配者",
+        "role": "角竜類の推定種",
+        "notes": "角竜の群れシーンで、角配置が近い個体が映るとされる。",
+        "credibility": "低"
+      }
+    ]
+  },
+  "mutaburrasaurus": {
+    "movies": [
+      {
+        "series": "ジュラシック・ワールド／サバイバル・キャンプ",
+        "role": "背景の草食恐竜",
+        "notes": "複数エピソードにおいて群れの中に含まれる。",
+        "credibility": "中"
+      }
+    ]
+  },
+  "mamenchisaurus": {
+    "movies": [
+      {
+        "series": "ジュラシック・ワールド／新たなる支配者",
+        "role": "超大型首長竜（推定）",
+        "notes": "長大な首を持つ竜脚類の遠景ショットがあり、モデルが近いと考えられている。",
+        "credibility": "低"
+      }
+    ]
+  },
+  "scutosaurus": {
+    "movies": [
+      {
+        "series": "ジュラシック・ワールド／サバイバル・キャンプ",
+        "role": "背景の古生物",
+        "notes": "脱走した古生物の群れの中に含まれる姿が一瞬見える。",
+        "credibility": "中"
+      }
+    ]
+  },
+  "saurolophus": {
+    "movies": [
+      {
+        "series": "ジュラシック・ワールド／新たなる支配者",
+        "role": "推定ハドロサウルス類",
+        "notes": "ハドロサウルス科の群れに類似個体が含まれる。",
+        "credibility": "低"
+      }
+    ]
+  },
+  "ankyloceratops": {
+    "movies": [
+      {
+        "series": "ジュラシック・ワールド",
+        "role": "資料アート枠",
+        "notes": "ハイブリッド計画のアイデア画像の一つとして確認されるアートデザイン。",
+        "credibility": "低"
+      }
+    ]
+  },
+  "mononykus": {
+    "movies": [
+      {
+        "series": "ジュラシック・ワールド／新たなる支配者",
+        "role": "小型恐竜の推定描写",
+        "notes": "雪原シーンの走る小型恐竜の中に類似個体が見られるとされる。",
+        "credibility": "低"
+      }
+    ]
+  },
+  "tapejara": {
+    "movies": [
+      {
+        "series": "ジュラシック・パークIII",
+        "role": "鳥かごの背景翼竜群",
+        "notes": "プテラノドン以外に複数の翼竜が確認され、テペジャラ型のトサカを持つ個体が映るとされる。",
+        "credibility": "低"
+      }
+    ]
+  },
+  "pterodaustro": {
+    "movies": [
+      {
+        "series": "ジュラシック・ワールド／新たなる支配者",
+        "role": "背景の小型翼竜群",
+        "notes": "翼のシルエットが近い小型個体が背景として描写される。",
+        "credibility": "低"
+      }
+    ]
+  },
+  "argentinosaurus": {
+    "movies": [
+      {
+        "series": "ジュラシック・ワールド／新たなる支配者",
+        "role": "超大型竜脚類の推定モデル",
+        "notes": "Dominion の竜脚類遠景ショットの一部にアルゼンチノサウルス型の巨体が確認されると論じられている。",
+        "credibility": "低"
+      }
+    ]
+  },
+  "raphus_rex": {
+    "movies": [
+      {
+        "series": "Jurassic World (資料ホログラム)",
+        "role": "設定資料内の派生種",
+        "notes": "パーク内ホログラム資料の変異個体リストに名前が登場するとされる架空種。",
+        "credibility": "低"
+      }
+    ]
+  },
+  "echo": {
+    "movies": [
+      {
+        "series": "ジュラシック・ワールド",
+        "role": "ラプトル・スクワッドの一員",
+        "notes": "オーウェンに調教された4頭のヴェロキラプトルの1頭として登場（ブルー／デルタ／チャーリー／エコー）。",
+        "credibility": "高"
+      }
+    ]
+  },
+  "clever_girl": {
+    "movies": [
+      {
+        "series": "ジュラシック・パーク",
+        "role": "ラプトル（ゲーム用スキン）",
+        "notes": "ロバート・ムルドゥーンの名台詞「Clever girl」に由来する個体をモチーフとしたゲーム側のキャラクター。",
+        "credibility": "中"
+      }
+    ]
+  },
+  "junior": {
+    "movies": [
+      {
+        "series": "ロスト・ワールド／ジュラシック・パーク",
+        "role": "幼体ティラノサウルス（ジュニア）",
+        "notes": "脚を骨折してハンター達に捕獲されるT.レックスの幼体。両親が救出に向かう重要シーンに登場。",
+        "credibility": "高"
+      }
+    ]
+  },
+  "scorpius_rex": {
+    "movies": [
+      {
+        "series": "ジュラシック・ワールド／サバイバル・キャンプ",
+        "role": "ハイブリッド恐竜・メイン怪物",
+        "notes": "シリーズ初期に登場する暴走ハイブリッドとして、キャンプ・クリテイシャスの物語を大きく動かす存在。",
+        "credibility": "高"
+      }
+    ]
+  },
+  "charlie": {
+    "movies": [
+      {
+        "series": "ジュラシック・ワールド",
+        "role": "ラプトル・スクワッドの一員",
+        "notes": "オーウェンが訓練する4頭のヴェロキラプトルの一頭。デルタやエコーとともにインドミナス・レックスと対峙する。",
+        "credibility": "高"
+      }
+    ]
+  },
+  "distortus_rex": {
+    "movies": [
+      {
+        "series": "ジュラシック・ワールド関連作品",
+        "role": "ゲーム・スピンオフ系ハイブリッド",
+        "notes": "公式映像作品での明確な登場は確認が難しく、ゲームや派生メディア由来と考えられるハイブリッド。登場作品の扱いは暫定。",
+        "credibility": "低"
+      }
+    ]
+  },
+  "giraffatitan": {
+    "movies": [
+      {
+        "series": "ジュラシック・ワールド／新たなる支配者（プロローグ）",
+        "role": "大型竜脚類（背景）",
+        "notes": "プロローグ映像などでブラキオサウルス類として描写される個体の一部がジラファティタンと解釈されることがある。",
+        "credibility": "中"
+      }
+    ]
+  },
+  "tyrannosaur_doe": {
+    "movies": [
+      {
+        "series": "ロスト・ワールド／ジュラシック・パーク",
+        "role": "親T.レックス（メス）",
+        "notes": "負傷した幼体ジュニアを取り返すため、オスと共にトレーラーを襲撃するT.レックスのメス個体。",
+        "credibility": "高"
+      }
+    ]
+  },
+  "tyrannosaur_buck": {
+    "movies": [
+      {
+        "series": "ロスト・ワールド／ジュラシック・パーク",
+        "role": "親T.レックス（オス）",
+        "notes": "サンディエゴの街中に連れ出されるシーンで有名なT.レックスのオス個体。",
+        "credibility": "高"
+      }
+    ]
+  },
+  "delta": {
+    "movies": [
+      {
+        "series": "ジュラシック・ワールド",
+        "role": "ラプトル・スクワッドの一員",
+        "notes": "オーウェンのラプトル部隊の一頭として、インドミナス追跡シーンなどに登場。",
+        "credibility": "高"
+      }
+    ]
+  },
+  "pyroraptor_gen_2": {
+    "movies": [
+      {
+        "series": "ジュラシック・ワールド／新たなる支配者",
+        "role": "ゲーム用バリアント",
+        "notes": "映画本編に登場するピロラプトルを元にしたカラーバリエーション。映画の個体そのものではなく、ゲームオリジナルの解釈。",
+        "credibility": "中"
+      }
+    ]
+  },
+  "brunette": {
+    "movies": [
+      {
+        "series": "ジュラシック・ワールド：カオス・セオリー",
+        "role": "ベックレスピナクスの双子の片割れ",
+        "notes": "アニメシリーズに登場するベックレスピナクスの片割れで、もう一方の『ブロンド』と共に行動する。",
+        "credibility": "中"
+      }
+    ]
+  },
+  "blonde": {
+    "movies": [
+      {
+        "series": "ジュラシック・ワールド：カオス・セオリー",
+        "role": "ベックレスピナクスの双子の片割れ",
+        "notes": "アニメシリーズに登場するベックレスピナクスの個体で、『ブルネット』の双子として描かれる。",
+        "credibility": "中"
+      }
+    ]
+  },
+  "beta": {
+    "movies": [
+      {
+        "series": "ジュラシック・ワールド／新たなる支配者",
+        "role": "ブルーの子ども（ベータ）",
+        "notes": "ブルーの子として登場し、物語序盤でバイオシンに連れ去られる重要キャラクター。",
+        "credibility": "高"
+      }
+    ]
+  },
+  "leucistic_baryonyx": {
+    "movies": [
+      {
+        "series": "ジュラシック・ワールド：カオス・セオリー",
+        "role": "色彩異常のバリオニクス",
+        "notes": "淡い体色を持つバリオニクスとして、アニメシリーズに登場する個体を元にしたと解釈されている。",
+        "credibility": "中"
+      }
+    ]
+  },
+  "rexy": {
+    "movies": [
+      {
+        "series": "ジュラシック・パーク",
+        "role": "メインT.レックス（レクシィ）",
+        "notes": "ジュラシック・パーク1作目でティムとレックスを救う象徴的なT.レックス。以降のシリーズにも継続して登場する。",
+        "credibility": "高"
+      },
+      {
+        "series": "ジュラシック・ワールド",
+        "role": "アトラクション用T.レックス",
+        "notes": "インドミナス・レックスとの最終決戦で再登場する、初代パーク由来の個体。",
+        "credibility": "高"
+      },
+      {
+        "series": "ジュラシック・ワールド／炎の王国",
+        "role": "保護対象のT.レックス",
+        "notes": "イスラ・ヌブラル火山噴火から救出されるシーンなどに登場。",
+        "credibility": "中"
+      },
+      {
+        "series": "ジュラシック・ワールド／新たなる支配者",
+        "role": "シリーズ象徴恐竜",
+        "notes": "ギガノトサウルスとの最終決戦など、シリーズの締めくくりとして重要な役割を果たす。",
+        "credibility": "高"
+      }
+    ]
+  }
+}

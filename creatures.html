@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>恐竜図鑑 | JWA非公式Wiki</title>
+  <link rel="stylesheet" href="css/base.css" />
+  <link rel="stylesheet" href="css/creatures.css" />
+
+  <!-- レア度ドット & クラスプルダウン用の軽いスタイル -->
+  <style>
+    /* スマホ向けにフィルターボタンを少しコンパクトにする（種別/映画） */
+    @media (max-width: 600px) {
+      .meta-tabs {
+        gap: 2px !important;
+      }
+      .meta-tab {
+        font-size: 0.72rem;
+        padding: 3px 8px;
+        max-width: 80px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+    }
+
+    /* レア度ドット */
+    .rarity-dots {
+      display: inline-flex;
+      gap: 6px;
+      align-items: center;
+    }
+    .rarity-dot {
+      width: 14px;
+      height: 14px;
+      border-radius: 999px;
+      border: 1px solid rgba(255,255,255,0.5);
+      background: rgba(0,0,0,0.4);
+      cursor: pointer;
+      padding: 0;
+      outline: none;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      transition: transform 0.1s ease, box-shadow 0.1s ease, border-color 0.1s ease;
+    }
+    .rarity-dot--all {
+      border-style: dashed;
+      background: transparent;
+    }
+    .rarity-dot--Common    { background: #9e9e9e; }
+    .rarity-dot--Rare      { background: #4db1ff; }
+    .rarity-dot--Epic      { background: #b86bff; }
+    .rarity-dot--Legendary { background: #ffb54d; }
+    .rarity-dot--Unique    { background: #4dff88; }
+    .rarity-dot--Apex      { background: #ff4d8b; }
+    .rarity-dot--Omega     { background: #ff4df2; }
+
+    .rarity-dot--active {
+      box-shadow: 0 0 0 2px rgba(0, 255, 255, 0.6);
+      transform: scale(1.15);
+      border-color: rgba(0, 255, 255, 0.9);
+    }
+
+    /* クラスプルダウン */
+    .class-select {
+      min-width: 120px;
+      padding: 4px 10px;
+      border-radius: 999px;
+      border: 1px solid rgba(255,255,255,0.25);
+      background: rgba(0,0,0,0.6);
+      color: #fff;
+      font-size: 0.8rem;
+      outline: none;
+    }
+    @media (max-width: 600px) {
+      .class-select {
+        min-width: 100px;
+        font-size: 0.72rem;
+        padding: 3px 8px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="page page--inner">
+
+    <!-- ▼ 共通ヘッダー -->
+    <header class="site-header">
+      <div class="logo-area">
+        <img src="images/ui/logo_jwa_wiki.png" class="site-logo" alt="JWA非公式Wiki" />
+        <div>
+          <div class="site-title-main">JWA非公式Wiki</div>
+          <div class="site-title-sub">〜ジュラ会監修〜</div>
+        </div>
+      </div>
+    </header>
+
+    <!-- ▼ メイン -->
+    <main class="page-main">
+      <div class="page-inner">
+
+        <!-- ==== ページヘッド ==== -->
+        <section class="page-head">
+          <div class="page-top-nav">
+            <h1 class="page-title">恐竜図鑑</h1>
+            <div style="display:flex; gap:6px;">
+              <a href="abilities.html" class="btn btn--outline btn--sm">アビリティ一覧へ</a>
+              <a href="index.html" class="btn btn--outline btn--sm">トップに戻る</a>
+            </div>
+          </div>
+
+          <p class="page-subtitle">
+            JWAに登場するクリーチャーを、検索＆フィルターで絞り込んで閲覧できます。
+          </p>
+
+          <!-- ▼ 種別 / 映画フィルタ ▼ -->
+          <div class="meta-tabs" style="flex-wrap:wrap; gap:4px;">
+            <span style="font-size:0.75rem; opacity:0.8; margin-right:4px;">種別:</span>
+            <button class="meta-tab meta-tab--active" data-real-filter="all">すべて</button>
+            <button class="meta-tab" data-real-filter="real">実在</button>
+            <button class="meta-tab" data-real-filter="original">オリジナル</button>
+
+            <span style="font-size:0.75rem; opacity:0.8; margin:0 4px 0 10px;">映画:</span>
+            <button class="meta-tab meta-tab--active" data-movie-filter="all">すべて</button>
+            <button class="meta-tab" data-movie-filter="with">登場</button>
+            <button class="meta-tab" data-movie-filter="without">未登場</button>
+          </div>
+
+          <!-- ▼ レア度ドット / クラスプルダウン ▼ -->
+          <div class="meta-tabs" style="flex-wrap:wrap; gap:4px; margin-top:4px;">
+            <span style="font-size:0.75rem; opacity:0.8; margin-right:4px;">レア度:</span>
+            <div id="rarity-tabs" class="rarity-dots"></div>
+
+            <span style="font-size:0.75rem; opacity:0.8; margin:0 4px 0 10px;">クラス:</span>
+            <select id="class-select" class="class-select"></select>
+          </div>
+        </section>
+
+        <!-- ==== フィルターUI ==== -->
+        <section class="page-filters" style="margin-bottom: 10px;">
+          <div style="display:flex; gap:6px; align-items:flex-end;">
+            <div style="flex:1;">
+              <input
+                id="filter-name"
+                type="search"
+                placeholder="名前で検索（日本語・英語どちらも可）"
+                style="
+                  width: 100%;
+                  padding: 8px 10px;
+                  border-radius: 999px;
+                  border: 1px solid rgba(255,255,255,0.25);
+                  background: rgba(0,0,0,0.6);
+                  color: #fff;
+                  font-size: 0.8rem;
+                  outline: none;
+                "
+              />
+            </div>
+
+            <button
+              id="filter-reset"
+              class="btn btn--outline btn--sm"
+              type="button"
+              style="margin-left:auto; margin-bottom:0;"
+            >
+              リセット
+            </button>
+          </div>
+        </section>
+
+        <!-- ==== 一覧本体 ==== -->
+        <section class="page-content">
+          <div class="grid grid--creatures" id="creature-grid"></div>
+
+          <div id="creature-empty-message"
+               style="display:none; font-size:0.8rem; color:rgba(200,210,238,0.8); margin-top:8px;">
+            条件に合致するクリーチャーが見つかりませんでした。
+          </div>
+        </section>
+
+      </div>
+    </main>
+
+    <!-- ▼ 共通フッター -->
+    <footer class="site-footer">
+      非公式ファンサイトです。Jurassic World Alive の運営元とは関係ありません。
+    </footer>
+
+  </div>
+
+  <!-- ==== スクリプト：データ連携 & フィルタ ==== -->
+  <script>
+    (function () {
+      const grid = document.getElementById("creature-grid");
+      const emptyMsg = document.getElementById("creature-empty-message");
+
+      const nameInput = document.getElementById("filter-name");
+      const resetBtn  = document.getElementById("filter-reset");
+
+      const realTabs  = Array.from(document.querySelectorAll("[data-real-filter]"));
+      const movieTabs = Array.from(document.querySelectorAll("[data-movie-filter]"));
+
+      const rarityTabsContainer = document.getElementById("rarity-tabs");
+      const classSelect         = document.getElementById("class-select");
+
+      let rarityDots = [];
+
+      let allCreatures = [];
+      let realFilter   = "all";   // all / real / original
+      let movieFilter  = "all";   // all / with / without
+      let rarityFilter = "all";   // all / rarity string
+      let classFilter  = "all";   // all / class string
+
+      const raritySet = new Set();
+      const classSet  = new Set();
+
+      const rarityColorMap = {
+        Common:    "rarity--common",
+        Rare:      "rarity--rare",
+        Epic:      "rarity--epic",
+        Legendary: "rarity--legendary",
+        Unique:    "rarity--unique",
+        Apex:      "rarity--apex",
+        Omega:     "rarity--omega",
+      };
+
+      function renderCreatureCard(entry) {
+        const c = entry.creature;
+        const nameJa = c.name_ja || c.name || c.id;
+        const nameEn = c.name || "";
+
+        const iconPath = c.icon_file
+          ? c.icon_file.replace(/\\\\/g, "/").replace(/\\/g, "/")
+          : "images/creatures/creature_placeholder.png";
+
+        const classification = c.classification || {};
+        const rarity = classification.rarity || c.rarity || "";
+        const classVal = classification.class || "";
+
+        const rarityJa = {
+          Common:    "コモン",
+          Rare:      "レア",
+          Epic:      "エピック",
+          Legendary: "レジェンド",
+          Unique:    "ユニーク",
+          Apex:      "アペックス",
+          Omega:     "オメガ",
+        }[rarity] || rarity;
+
+        const rarityChip = rarity
+          ? `<span class="chip chip--rarity ${rarityColorMap[rarity] || ""}">${rarityJa}</span>`
+          : "";
+
+        const classChip = classVal
+          ? `<span class="chip chip--class">${classVal}</span>`
+          : "";
+
+        const movieChip = entry.hasMovies
+          ? '<span class="chip chip--movie">登場</span>'
+          : '<span class="chip chip--movie movie-none">未登場</span>';
+
+        const realChip = entry.isReal
+          ? '<span class="chip chip--real">実在</span>'
+          : '<span class="chip chip--real">オリジナル</span>';
+
+        return `
+<article class="card card--creature">
+  <a href="creature_detail.html?id=${encodeURIComponent(c.id)}" style="text-decoration:none;color:inherit;">
+    <div class="card-main">
+      <div class="card-thumb">
+        <img src="${iconPath}" alt="${nameJa}">
+      </div>
+      <div class="card-info">
+        <h2 class="card-title">${nameJa}</h2>
+        ${nameEn ? `<p class="card-subtitle">${nameEn}</p>` : ""}
+
+        <div class="card-meta" style="margin-top:4px; flex-wrap:wrap; gap:4px;">
+          ${rarityChip}
+          ${classChip}
+          ${realChip}
+          ${movieChip}
+        </div>
+      </div>
+    </div>
+  </a>
+</article>`;
+      }
+
+      function renderList(list) {
+        if (!list.length) {
+          grid.innerHTML = "";
+          emptyMsg.style.display = "block";
+          return;
+        }
+        emptyMsg.style.display = "none";
+        // ここを "" にすることで末尾に "\n" が表示される問題を解消
+        grid.innerHTML = list.map(renderCreatureCard).join("");
+      }
+
+      function applyFilters() {
+        const q = (nameInput.value || "").trim().toLowerCase();
+
+        const filtered = allCreatures.filter(entry => {
+          const c = entry.creature;
+          const classification = c.classification || {};
+          const rarity = classification.rarity || c.rarity || "";
+          const classVal = classification.class || "";
+
+          // 名前検索
+          if (q) {
+            const nj = (c.name_ja || "").toLowerCase();
+            const ne = (c.name    || "").toLowerCase();
+            if (!nj.includes(q) && !ne.includes(q)) return false;
+          }
+
+          // 実在／オリジナル
+          if (realFilter === "real" && !entry.isReal) return false;
+          if (realFilter === "original" && entry.isReal) return false;
+
+          // 映画登場
+          if (movieFilter === "with" && !entry.hasMovies) return false;
+          if (movieFilter === "without" && entry.hasMovies) return false;
+
+          // レア度
+          if (rarityFilter !== "all" && rarity !== rarityFilter) return false;
+
+          // クラス
+          if (classFilter !== "all" && classVal !== classFilter) return false;
+
+          return true;
+        });
+
+        renderList(filtered);
+      }
+
+      function setupRarityDotsAndClassSelect() {
+        if (!rarityTabsContainer || !classSelect) return;
+
+        rarityDots = [];
+        rarityTabsContainer.innerHTML = "";
+
+        // レア度ドット
+        const rarityOrder = ["Common","Rare","Epic","Legendary","Unique","Apex","Omega"];
+        const rarityLabelMap = {
+          Common:    "コモン",
+          Rare:      "レア",
+          Epic:      "エピック",
+          Legendary: "レジェンド",
+          Unique:    "ユニーク",
+          Apex:      "アペックス",
+          Omega:     "オメガ",
+        };
+
+        const rarities = Array.from(raritySet).filter(Boolean).sort((a, b) => {
+          const ia = rarityOrder.indexOf(a);
+          const ib = rarityOrder.indexOf(b);
+          if (ia === -1 && ib === -1) return a.localeCompare(b);
+          if (ia === -1) return 1;
+          if (ib === -1) return -1;
+          return ia - ib;
+        });
+
+        function createDot(value, label, extraClass, isActive) {
+          const btn = document.createElement("button");
+          btn.type = "button";
+          btn.className = "rarity-dot" + (extraClass ? " " + extraClass : "") + (isActive ? " rarity-dot--active" : "");
+          btn.dataset.rarityFilter = value;
+          btn.title = label;
+          btn.setAttribute("aria-label", label);
+          rarityTabsContainer.appendChild(btn);
+          rarityDots.push(btn);
+        }
+
+        createDot("all", "レア度：すべて", "rarity-dot--all", true);
+
+        rarities.forEach(r => {
+          const label = "レア度：" + (rarityLabelMap[r] || r);
+          createDot(r, label, "rarity-dot--" + r, false);
+        });
+
+        rarityDots.forEach(btn => {
+          btn.addEventListener("click", () => {
+            const val = btn.dataset.rarityFilter || "all";
+            rarityFilter = val;
+            rarityDots.forEach(b => b.classList.toggle("rarity-dot--active", b === btn));
+            applyFilters();
+          });
+        });
+
+        // クラスプルダウン
+        classSelect.innerHTML = "";
+        const optAll = document.createElement("option");
+        optAll.value = "all";
+        optAll.textContent = "すべて";
+        classSelect.appendChild(optAll);
+
+        const classes = Array.from(classSet).filter(Boolean).sort((a, b) => a.localeCompare(b));
+        classes.forEach(c => {
+          const opt = document.createElement("option");
+          opt.value = c;
+          opt.textContent = c;
+          classSelect.appendChild(opt);
+        });
+
+        classSelect.value = "all";
+        classSelect.addEventListener("change", () => {
+          classFilter = classSelect.value || "all";
+          applyFilters();
+        });
+      }
+
+      async function loadData() {
+        try {
+          const [creRes, realRes, movieRes] = await Promise.all([
+            fetch("data/creatures_master_ja.json"),
+            fetch("data/creatures_real_world.json"),
+            fetch("data/movies_master.json"),
+          ]);
+
+          if (!creRes.ok)  throw new Error("creatures_master_ja.json 読み込み失敗");
+          if (!realRes.ok) throw new Error("creatures_real_world.json 読み込み失敗");
+          if (!movieRes.ok) throw new Error("movies_master.json 読み込み失敗");
+
+          const [creJson, realJson, movieJson] = await Promise.all([
+            creRes.json(),
+            realRes.json(),
+            movieRes.json(),
+          ]);
+
+          const list = Object.values(creJson);
+
+          raritySet.clear();
+          classSet.clear();
+
+          allCreatures = list.map(c => {
+            const realInfo = realJson[c.id] || {};
+            const cred = realInfo.real_world?.credibility || "";
+            const isReal = !!cred;
+
+            const movies = movieJson[c.id]?.movies || [];
+            const hasMovies = movies.length > 0;
+
+            const classification = c.classification || {};
+            if (classification.rarity) raritySet.add(classification.rarity);
+            if (classification.class)  classSet.add(classification.class);
+
+            return { creature: c, isReal, hasMovies };
+          });
+
+          allCreatures.sort((a, b) => {
+            const na = (a.creature.name_ja || a.creature.name || "").toLowerCase();
+            const nb = (b.creature.name_ja || b.creature.name || "").toLowerCase();
+            return na.localeCompare(nb);
+          });
+
+          setupRarityDotsAndClassSelect();
+          applyFilters();
+        } catch (e) {
+          console.error(e);
+          grid.innerHTML = "";
+          emptyMsg.style.display = "block";
+          emptyMsg.textContent = "データの読み込みに失敗しました。";
+        }
+      }
+
+      nameInput.addEventListener("input", applyFilters);
+
+      realTabs.forEach(btn => {
+        btn.addEventListener("click", () => {
+          realFilter = btn.dataset.realFilter || "all";
+          realTabs.forEach(b => b.classList.toggle("meta-tab--active", b === btn));
+          applyFilters();
+        });
+      });
+
+      movieTabs.forEach(btn => {
+        btn.addEventListener("click", () => {
+          movieFilter = btn.dataset.movieFilter || "all";
+          movieTabs.forEach(b => b.classList.toggle("meta-tab--active", b === btn));
+          applyFilters();
+        });
+      });
+
+      resetBtn.addEventListener("click", () => {
+        nameInput.value = "";
+        realFilter   = "all";
+        movieFilter  = "all";
+        rarityFilter = "all";
+        classFilter  = "all";
+
+        realTabs.forEach((b, i) =>
+          b.classList.toggle("meta-tab--active", i === 0)
+        );
+        movieTabs.forEach((b, i) =>
+          b.classList.toggle("meta-tab--active", i === 0)
+        );
+
+        // レア度ドット：先頭(すべて)をアクティブに
+        rarityDots.forEach((b, i) =>
+          b.classList.toggle("rarity-dot--active", i === 0)
+        );
+
+        if (classSelect) {
+          classSelect.value = "all";
+        }
+
+        applyFilters();
+      });
+
+      loadData();
+    })();
+  </script>
+</body>
+</html>
