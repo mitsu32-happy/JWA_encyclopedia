@@ -7,6 +7,60 @@
 
   <link rel="stylesheet" href="css/base.css" />
   <link rel="stylesheet" href="css/abilities.css" />
+  <style>
+    .filter-apply-btn{
+      height:34px;
+      padding:0 12px;
+      border-radius:10px;
+      border:1px solid rgba(255,255,255,0.25);
+      background:rgba(0,0,0,0.35);
+      color: var(--color-text-muted);
+      font-weight:700;
+      cursor:pointer;
+    }
+    .filter-apply-btn:active{transform:translateY(1px)}
+  
+/* v2.0: 文字・リンクの見た目を他ページに寄せる */
+a {
+  color: inherit;
+  text-decoration: none;
+}
+a:hover { text-decoration: underline; }
+.card-title, .ability-name, .creature-name {
+  letter-spacing: 0.2px;
+}
+.ability-name {
+  font-weight: 800;
+}
+.meta-item {
+  font-size: 12px;
+  opacity: 0.9;
+}
+
+
+
+/* --- v2.0 UI unify: links & titles (match creatures list feel) --- */
+.ability-card a, .ability-item a {
+  color: inherit;
+  text-decoration: none;
+}
+.ability-card a:hover, .ability-item a:hover {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+.ability-name {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 1.2;
+}
+.ability-trigger {
+  margin-top: 4px;
+  font-size: 12px;
+  opacity: 0.9;
+}
+
+</style>
 </head>
 <body>
   <div class="page page--inner">
@@ -46,7 +100,6 @@
             <button class="meta-tab" data-trigger-filter="Regular">通常攻撃</button>
             <button class="meta-tab" data-trigger-filter="Counter">カウンター</button>
             <button class="meta-tab" data-trigger-filter="On Escape">逃走関連</button>
- </button>
           </div>
         </section>
 
@@ -70,6 +123,7 @@
                   outline: none;
                 "
               />
+          <button id="filter-apply" class="filter-apply-btn" type="button">検索</button>
             </div>
 
             <button
@@ -104,180 +158,196 @@
   </div>
 
   <!-- ==== abilities_master_ja.json 読み込み & フィルター ==== -->
-  <script>
-    (function () {
-      const grid = document.getElementById("ability-grid");
-      const emptyMsg = document.getElementById("ability-empty-message");
+  
+<script>
+(function(){
+  const grid = document.getElementById("ability-grid");
+  const emptyMsg = document.getElementById("ability-empty-message");
 
-      const nameInput = document.getElementById("filter-name");
-      const resetBtn  = document.getElementById("filter-reset");
-      const tabsWrap  = document.getElementById("trigger-tabs");
-      const tabs      = Array.from(tabsWrap.querySelectorAll(".meta-tab"));
+  const nameInput = document.getElementById("filter-name");
+  const resetBtn  = document.getElementById("filter-reset");
+  const applyBtn  = document.getElementById("filter-apply");
 
-      let allAbilities = [];
-      let activeTriggerFilter = "all";
+  const tabsWrap  = document.getElementById("trigger-tabs");
+  const tabs      = tabsWrap ? Array.from(tabsWrap.querySelectorAll(".meta-tab")) : [];
 
-      /* ======================
-         説明文（英語 → 要約）
-      ====================== */
-      function summarizeDescription(raw) {
-        if (!raw) return "説明テキスト未登録。";
-        const lines = raw.split(/[\r\n]+/).map(l => l.trim()).filter(Boolean);
-        const slice = lines.slice(0, 4).join(" ");
-        return slice.length > 180 ? slice.slice(0, 180) + "…" : slice;
-      }
+  let allAbilities = [];
+  let filteredAbilities = [];
+  let activeTriggerFilter = "all";
 
-      /* ======================
-         説明文（日本語 raw → 1行要約）
-      ====================== */
-      function summarizeDescriptionJa(rawJa) {
-        if (!rawJa) return "";
-        // 改行や余計なスペースを潰して1文っぽく
-        let text = rawJa.replace(/[\r\n]+/g, " ");
-        text = text.replace(/\s+/g, " ").trim();
-        return text.length > 180 ? text.slice(0, 180) + "…" : text;
-      }
+  // 簡易バーチャルスクロール（遅延描画）
+  const BATCH_SIZE = 80;
+  let renderIndex = 0;
+  let isLoadingMore = false;
 
-      /* ======================
-         カード生成（☆ 日本語説明優先）
-      ====================== */
-      function renderAbilityCard(ability) {
-        const id        = ability.id;
-        const nameJa    = ability.name_ja || "";
-        const nameEn    = ability.name    || "";
-        const trigger   = ability.trigger || "";
-        const triggerJa = ability.trigger_ja || "";
-        const iconPath  = ability.icon_file
-          ? ability.icon_file.replace(/\\\\/g, "/").replace(/\\/g, "/")
-          : "images/abilities/ability_placeholder.png";
+  function safeText(v){ return (v ?? "").toString(); }
 
-        /* ⭐ 日本語の description_ja_raw → 無ければ英語 description_raw */
-        let desc = "";
-        if (ability.description_ja_raw) {
-          desc = summarizeDescriptionJa(ability.description_ja_raw);
-        } else {
-          desc = summarizeDescription(ability.description_raw || "");
-        }
+  function getAbilityName(ab){
+    return safeText(ab.name_ja || ab.name || ab.id);
+  }
 
-        const triggerClass =
-          trigger === "Counter"   ? "chip--trigger-counter" :
-          trigger === "On Escape" ? "chip--trigger-escape" :
-          trigger === "Passive"   ? "chip--trigger-passive" :
-                                    "chip--trigger-regular";
+  function getTrigger(ab){
+    return safeText(ab.trigger || "");
+  }
 
-        const displayName = nameJa || nameEn || id;
-        const subName = (nameJa && nameEn) ? nameEn : (!nameJa && nameEn ? "" : nameEn);
+  function makeBackParam(){
+    // 一覧状態をURLに保存しているので、それ自体を back として渡す
+    return encodeURIComponent(location.pathname + location.search);
+  }
 
-        return `
-<article class="card card--ability">
-  <a href="ability_detail.html?id=${encodeURIComponent(id)}" style="text-decoration:none;color:inherit;">
-    <div class="card-main">
-      <div class="ability-icon">
-        <img src="${iconPath}" alt="${displayName}">
-      </div>
-      <div class="ability-info">
-        <div class="ability-name-row">
-          <h2 class="ability-name">${displayName}</h2>
-          <span class="chip ${triggerClass}">${triggerJa || trigger}</span>
-        </div>
-        ${subName ? `<p class="ability-name-sub">${subName}</p>` : ``}
-        <p class="ability-desc">${desc}</p>
-      </div>
-    </div>
-  </a>
-</article>`;
-      }
+  function renderAbilityCard(ab){
+    const a = document.createElement("a");
+    a.className = "card ability-card";
+    a.href = `ability_detail.html?id=${encodeURIComponent(ab.id)}&back=${makeBackParam()}`;
 
-      /* ======================
-         一覧の描画
-      ====================== */
-      function renderList(filtered) {
-        if (!filtered.length) {
-          grid.innerHTML = "";
-          emptyMsg.style.display = "block";
-          return;
-        }
-        emptyMsg.style.display = "none";
-        grid.innerHTML = filtered.map(renderAbilityCard).join("\n");
-      }
+    const icon = document.createElement("img");
+    icon.className = "ability-icon";
+    icon.alt = getAbilityName(ab);
+    icon.src = ab.icon_file || "";
+    a.appendChild(icon);
 
-      /* ======================
-         フィルター処理
-      ====================== */
-      function applyFilters() {
-        const nameVal = (nameInput.value || "").trim().toLowerCase();
-        const trigVal = activeTriggerFilter;
+    const info = document.createElement("div");
+    info.className = "ability-info";
 
-        const filtered = allAbilities.filter(ab => {
-          const nameJa = (ab.name_ja || "").toLowerCase();
-          const nameEn = (ab.name    || "").toLowerCase();
-          const trig   = ab.trigger  || "";
+    const name = document.createElement("div");
+    name.className = "ability-name";
+    name.textContent = getAbilityName(ab);
 
-          let ok = true;
+    const meta = document.createElement("div");
+    meta.className = "ability-meta";
+    const trig = getTrigger(ab);
+    meta.textContent = trig ? `トリガー: ${trig}` : "";
 
-          if (nameVal) {
-            if (!nameJa.includes(nameVal) && !nameEn.includes(nameVal)) ok = false;
-          }
+    info.appendChild(name);
+    info.appendChild(meta);
+    a.appendChild(info);
 
-          if (trigVal !== "all" && trig !== trigVal) ok = false;
+    return a;
+  }
 
-          return ok;
-        });
+  function clearGrid(){
+    grid.innerHTML = "";
+    renderIndex = 0;
+  }
 
-        renderList(filtered);
-      }
+  function renderNextBatch(){
+    if (isLoadingMore) return;
+    isLoadingMore = true;
 
-      /* ======================
-         JSON 読み込み
-      ====================== */
-      async function loadAbilities() {
-        try {
-          const res = await fetch("data/abilities_master_ja.json");
-          if (!res.ok) throw new Error("HTTP status " + res.status);
-          const json = await res.json();
+    const slice = filteredAbilities.slice(renderIndex, renderIndex + BATCH_SIZE);
+    renderIndex += slice.length;
 
-          allAbilities = Object.values(json);
+    const frag = document.createDocumentFragment();
+    for (const ab of slice) frag.appendChild(renderAbilityCard(ab));
+    grid.appendChild(frag);
 
-          allAbilities.sort((a, b) => {
-            const na = (a.name_ja || a.name || a.id || "").toLowerCase();
-            const nb = (b.name_ja || b.name || b.id || "").toLowerCase();
-            return na < nb ? -1 : na > nb ? 1 : 0;
-          });
+    emptyMsg.style.display = filteredAbilities.length ? "none" : "block";
+    isLoadingMore = false;
+  }
 
-          applyFilters();
-        } catch (e) {
-          console.error(e);
-          grid.innerHTML =
-            "<p>アビリティデータの読み込みに失敗しました。<br>data/abilities_master_ja.json のパスを確認してください。</p>";
-        }
-      }
+  function updateQueryParams(){
+    const params = new URLSearchParams();
+    const q = (nameInput.value || "").trim();
+    if (q) params.set("name", q);
+    if (activeTriggerFilter !== "all") params.set("trigger", activeTriggerFilter);
+    history.replaceState(null, "", `${location.pathname}?${params.toString()}`);
+  }
 
-      /* イベント登録 */
-      nameInput.addEventListener("input", applyFilters);
+  function loadQueryParamsIntoUI(){
+    const params = new URLSearchParams(location.search);
+    nameInput.value = params.get("name") || "";
+    activeTriggerFilter = params.get("trigger") || "all";
 
-      resetBtn.addEventListener("click", () => {
-        nameInput.value = "";
+    // タブの見た目を合わせる
+    if (tabs.length){
+      tabs.forEach(t => t.classList.toggle("meta-tab--active", (t.dataset.triggerFilter || "all") === activeTriggerFilter));
+      // もし一致が無い場合は「すべて」をON
+      if (!tabs.some(t => t.classList.contains("meta-tab--active"))) {
+        tabs.forEach((t,i) => t.classList.toggle("meta-tab--active", i===0));
         activeTriggerFilter = "all";
+      }
+    }
+  }
 
-        tabs.forEach(t => t.classList.remove("meta-tab--active"));
-        tabs[0].classList.add("meta-tab--active");
+  function computeFilteredList(){
+    const q = (nameInput.value || "").trim().toLowerCase();
+    return allAbilities.filter(ab => {
+      if (activeTriggerFilter !== "all" && safeText(ab.trigger) !== activeTriggerFilter) return false;
+      if (q){
+        const ja = safeText(ab.name_ja).toLowerCase();
+        const en = safeText(ab.name).toLowerCase();
+        const id = safeText(ab.id).toLowerCase();
+        if (!ja.includes(q) && !en.includes(q) && !id.includes(q)) return false;
+      }
+      return true;
+    });
+  }
 
-        applyFilters();
+  function applyFilters(){
+    filteredAbilities = computeFilteredList();
+    clearGrid();
+    updateQueryParams();
+    renderNextBatch();
+  }
+
+  function onScrollLoadMore(){
+    if (renderIndex >= filteredAbilities.length) return;
+    const threshold = 700;
+    const nearBottom = (window.innerHeight + window.scrollY) >= (document.body.offsetHeight - threshold);
+    if (nearBottom) renderNextBatch();
+  }
+
+  async function loadAbilities(){
+    try{
+      const res = await fetch("data/abilities_master_ja.json");
+      if (!res.ok) throw new Error("HTTP status " + res.status);
+      const json = await res.json();
+      allAbilities = Object.values(json);
+
+      allAbilities.sort((a,b)=>{
+        const na = getAbilityName(a).toLowerCase();
+        const nb = getAbilityName(b).toLowerCase();
+        return na.localeCompare(nb);
       });
 
-      tabs.forEach(tab => {
-        tab.addEventListener("click", () => {
-          tabs.forEach(t => t.classList.remove("meta-tab--active"));
-          tab.classList.add("meta-tab--active");
+      loadQueryParamsIntoUI();
+      applyFilters();
+    }catch(e){
+      console.error(e);
+      grid.innerHTML = "<p>アビリティデータの読み込みに失敗しました。<br>data/abilities_master_ja.json のパスを確認してください。</p>";
+    }
+  }
 
-          activeTriggerFilter = tab.dataset.triggerFilter || "all";
-          applyFilters();
-        });
-      });
+  // イベント
+  // v2.0: リアルタイム検索は重いので停止（検索ボタンで実行）
+  // nameInput.addEventListener("input", applyFilters);
 
-      /* 初期ロード */
-      loadAbilities();
-    })();
-  </script>
+  applyBtn.addEventListener("click", applyFilters);
+  nameInput.addEventListener("keydown", (e)=>{ if (e.key === "Enter") applyFilters(); });
+
+  resetBtn.addEventListener("click", ()=>{
+    nameInput.value = "";
+    activeTriggerFilter = "all";
+    if (tabs.length){
+      tabs.forEach((t,i)=>t.classList.toggle("meta-tab--active", i===0));
+    }
+    applyFilters();
+  });
+
+  tabs.forEach(tab=>{
+    tab.addEventListener("click", ()=>{
+      tabs.forEach(t => t.classList.remove("meta-tab--active"));
+      tab.classList.add("meta-tab--active");
+      activeTriggerFilter = tab.dataset.triggerFilter || "all";
+      applyFilters();
+    });
+  });
+
+  window.addEventListener("scroll", onScrollLoadMore, { passive:true });
+
+  loadAbilities();
+})();
+</script>
+</script>
 </body>
 </html>
