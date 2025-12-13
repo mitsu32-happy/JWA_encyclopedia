@@ -9,6 +9,91 @@
 
   <!-- レア度ドット & クラスプルダウン用の軽いスタイル -->
   <style>
+    /* v2.0 追加UI */
+    .filter-apply-btn{
+      height:34px;
+      padding:0 12px;
+      border-radius:10px;
+      border:1px solid rgba(255,255,255,0.25);
+      background:rgba(0,0,0,0.35);
+      color: var(--color-text-muted);
+      font-weight:700;
+      cursor:pointer;
+    }
+    .filter-apply-btn:active{transform:translateY(1px)}
+    .fav-only{
+      display:inline-flex;
+      align-items:center;
+      gap:6px;
+      font-size:12px;
+      opacity:.9;
+      user-select:none;
+    }
+    .fav-only input{accent-color:#ffd54a;}
+    .fav-btn{
+      margin-right:6px;
+      width:26px;
+      height:26px;
+      border-radius:999px;
+      border:1px solid rgba(255,255,255,0.25);
+      background:rgba(0,0,0,0.25);
+      color:#ffd54a;
+      font-weight:900;
+      cursor:pointer;
+      line-height:1;
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+    }
+    .fav-btn:active{transform:translateY(1px)}
+
+    /* v2.0 レア度カラー上書き（CSSファイルがあっても最優先で反映） */
+    .rarity--common{
+      background:rgba(255,255,255,0.18)!important;
+      border-color:rgba(255,255,255,0.35)!important;
+      color:#fff!important;
+    }
+    .rarity--rare{
+      background:rgba(64,156,255,0.22)!important;
+      border-color:rgba(64,156,255,0.55)!important;
+      color:#cfe7ff!important;
+    }
+    .rarity--epic{
+      background:rgba(255,214,74,0.18)!important;
+      border-color:rgba(255,214,74,0.55)!important;
+      color:#ffeaa8!important;
+    }
+    .rarity--legendary{
+      background:rgba(255,77,77,0.18)!important;
+      border-color:rgba(255,77,77,0.55)!important;
+      color:#ffd1d1!important;
+    }
+    .rarity--unique{
+      background:rgba(82,214,120,0.18)!important;
+      border-color:rgba(82,214,120,0.55)!important;
+      color:#d6ffe2!important;
+    }
+    .rarity--apex{
+      background:rgba(0,0,0,0.35)!important;
+      border-color:rgba(255,214,74,0.55)!important;
+      color:#ffeaa8!important;
+    }
+    .rarity--omega{
+      background:linear-gradient(135deg, rgba(120,220,255,0.22), rgba(200,120,255,0.18))!important;
+      border-color:rgba(190,230,255,0.55)!important;
+      color:#eaf8ff!important;
+    }
+
+    /* レア度ドット */
+    .rarity-dot--Common{background:#ffffff!important;}
+    .rarity-dot--Rare{background:#409cff!important;}
+    .rarity-dot--Epic{background:#ffd64a!important;}
+    .rarity-dot--Legendary{background:#ff4d4d!important;}
+    .rarity-dot--Unique{background:#52d678!important;}
+    .rarity-dot--Apex{background:linear-gradient(135deg,#000,#ffd64a)!important;}
+    .rarity-dot--Omega{background:linear-gradient(135deg,#78dcff,#c878ff)!important;}
+    .rarity-dot.active{box-shadow:0 0 0 3px rgba(255,255,255,0.14), 0 0 0 6px rgba(255,214,74,0.12)!important;}
+
     /* スマホ向けにフィルターボタンを少しコンパクトにする（種別/映画） */
     @media (max-width: 600px) {
       .meta-tabs {
@@ -80,7 +165,43 @@
         padding: 3px 8px;
       }
     }
-  </style>
+  
+    /* DNAチップ */
+    .chip--dna{
+      border:1px solid rgba(160, 220, 255, 0.35);
+      color:#bfe9ff;
+      background: rgba(0, 60, 90, 0.35);
+    }
+    .chip--dna-none{
+      opacity:0.55;
+    }
+
+    /* v2.0 mobile fix: 検索ボタン/お気に入り/フィルターの崩れ対策 */
+    .search-actions{
+      display:flex;
+      align-items:center;
+      gap:10px;
+      flex-wrap:wrap;
+    }
+    #filter-apply{
+      min-width:84px;
+      white-space:nowrap;
+    }
+    .fav-only{
+      white-space:nowrap;
+      display:flex;
+      align-items:center;
+      gap:6px;
+    }
+    /* フィルター列をスマホで詰めすぎない */
+    @media (max-width: 560px){
+      .controls-row{ gap:10px; }
+      .meta-tabs{ flex-wrap:wrap; }
+      .class-select{ min-width:140px !important; }
+      #dna-select{ min-width:140px !important; }
+    }
+
+</style>
 </head>
 <body>
   <div class="page page--inner">
@@ -135,6 +256,13 @@
             <span style="font-size:0.75rem; opacity:0.8; margin:0 4px 0 10px;">クラス:</span>
             <select id="class-select" class="class-select"></select>
           </div>
+            <div style="margin-top:6px; display:flex; gap:6px; align-items:center; flex-wrap:wrap;">
+              <span style="font-size:0.75rem; opacity:0.85;">DNAソース:</span>
+              <select id="dna-select" class="class-select" style="flex:1; min-width:180px;">
+                <option value="all">すべて</option>
+              </select>
+            </div>
+
         </section>
 
         <!-- ==== フィルターUI ==== -->
@@ -156,7 +284,10 @@
                   outline: none;
                 "
               />
+          <button id="filter-apply" class="filter-apply-btn" type="button">検索</button>
+          <label class="fav-only"><input type="checkbox" id="filter-fav-only"> お気に入りのみ</label>
             </div>
+
 
             <button
               id="filter-reset"
@@ -195,25 +326,57 @@
       const grid = document.getElementById("creature-grid");
       const emptyMsg = document.getElementById("creature-empty-message");
 
+      function fatal(message, err){
+        try{
+          console.error(err || message);
+          if (grid) grid.innerHTML = "";
+          if (emptyMsg){
+            emptyMsg.style.display = "block";
+            emptyMsg.textContent = message;
+          }
+        }catch(e){}
+      }
+
+      window.addEventListener("error", (ev)=>{
+        fatal("スクリプト実行中にエラーが発生しました。コンソールも確認してください。", ev.error);
+      });
+      window.addEventListener("unhandledrejection", (ev)=>{
+        fatal("スクリプト実行中にエラーが発生しました。コンソールも確認してください。", ev.reason);
+      });
+
+
       const nameInput = document.getElementById("filter-name");
       const resetBtn  = document.getElementById("filter-reset");
+      const applyBtn  = document.getElementById("filter-apply");
+      const favOnlyCb = document.getElementById("filter-fav-only");
 
       const realTabs  = Array.from(document.querySelectorAll("[data-real-filter]"));
       const movieTabs = Array.from(document.querySelectorAll("[data-movie-filter]"));
 
       const rarityTabsContainer = document.getElementById("rarity-tabs");
       const classSelect         = document.getElementById("class-select");
+      const dnaSelect          = document.getElementById("dna-select");
 
       let rarityDots = [];
 
       let allCreatures = [];
+      let dnaSourcesById = {}; // id -> {sources_raw: []}
       let realFilter   = "all";   // all / real / original
       let movieFilter  = "all";   // all / with / without
       let rarityFilter = "all";   // all / rarity string
       let classFilter  = "all";   // all / class string
+      let dnaFilter    = "all";   // all / DNA source token
 
       const raritySet = new Set();
       const classSet  = new Set();
+
+      const FAV_KEY = "jwa_favorites_v2";
+      function loadFavSet(){
+        try{ return new Set(JSON.parse(localStorage.getItem(FAV_KEY) || "[]")); }catch(e){ return new Set(); }
+      }
+      function saveFavSet(set){
+        localStorage.setItem(FAV_KEY, JSON.stringify(Array.from(set)));
+      }
 
       const rarityColorMap = {
         Common:    "rarity--common",
@@ -224,6 +387,23 @@
         Apex:      "rarity--apex",
         Omega:     "rarity--omega",
       };
+
+      
+      function toggleFavorite(id) {
+        const set = loadFavSet();
+        if (set.has(id)) set.delete(id); else set.add(id);
+        saveFavSet(set);
+      }
+
+      grid.addEventListener("click", (e) => {
+        const btn = e.target.closest && e.target.closest("[data-fav-id]");
+        if (!btn) return;
+        e.preventDefault();
+        e.stopPropagation();
+        const id = btn.getAttribute("data-fav-id");
+        toggleFavorite(id);
+        btn.textContent = loadFavSet().has(id) ? "★" : "☆";
+      });
 
       function renderCreatureCard(entry) {
         const c = entry.creature;
@@ -244,7 +424,7 @@
           Epic:      "エピック",
           Legendary: "レジェンド",
           Unique:    "ユニーク",
-          Apex:      "アペックス",
+          Apex:      "エイペックス",
           Omega:     "オメガ",
         }[rarity] || rarity;
 
@@ -264,9 +444,10 @@
           ? '<span class="chip chip--real">実在</span>'
           : '<span class="chip chip--real">オリジナル</span>';
 
-        return `
+        const tpl = document.createElement('template');
+        tpl.innerHTML = `
 <article class="card card--creature">
-  <a href="creature_detail.html?id=${encodeURIComponent(c.id)}" style="text-decoration:none;color:inherit;">
+  <a href="creature_detail.html?id=${encodeURIComponent(c.id)}&back=${encodeURIComponent(location.pathname + location.search)}" style="text-decoration:none;color:inherit;">
     <div class="card-main">
       <div class="card-thumb">
         <img src="${iconPath}" alt="${nameJa}">
@@ -280,12 +461,14 @@
           ${classChip}
           ${realChip}
           ${movieChip}
+           
         </div>
       </div>
     </div>
   </a>
 </article>`;
-      }
+        return tpl.content.firstElementChild;
+}
 
       function renderList(list) {
         if (!list.length) {
@@ -298,41 +481,95 @@
         grid.innerHTML = list.map(renderCreatureCard).join("");
       }
 
-      function applyFilters() {
+      
+      // v2.0: 簡易バーチャルスクロール（遅延描画 / 追加読み込み）
+      let filteredCreatures = [];
+      let renderIndex = 0;
+      const BATCH_SIZE = 60;
+      let isLoadingMore = false;
+
+      function updateQueryParams() {
+        const params = new URLSearchParams();
+        const name = (nameInput.value || "").trim();
+        if (name) params.set("name", name);
+        if (realFilter !== "all") params.set("real", realFilter);
+        if (movieFilter !== "all") params.set("movie", movieFilter);
+        if (rarityFilter !== "all") params.set("rarity", rarityFilter);
+        if (classFilter !== "all") params.set("class", classFilter);
+        if (dnaFilter !== "all") params.set("dna", dnaFilter);
+        if (favOnlyCb && favOnlyCb.checked) params.set("fav", "1");
+        const qs = params.toString();
+        history.replaceState(null, "", `${location.pathname}${qs ? "?" + qs : ""}`);
+      }
+
+      function matchesName(entry, q) {
+        if (!q) return true;
+        const c = entry.creature;
+        const ja = (c.name_ja || "").toLowerCase();
+        const en = (c.name || "").toLowerCase();
+        const id = (c.id || "").toLowerCase();
+        return ja.includes(q) || en.includes(q) || id.includes(q);
+      }
+
+      function computeFilteredList() {
         const q = (nameInput.value || "").trim().toLowerCase();
+        const favSet = loadFavSet();
+        const favOnly = favOnlyCb && favOnlyCb.checked;
 
-        const filtered = allCreatures.filter(entry => {
+        return allCreatures.filter(entry => {
           const c = entry.creature;
-          const classification = c.classification || {};
-          const rarity = classification.rarity || c.rarity || "";
-          const classVal = classification.class || "";
-
-          // 名前検索
-          if (q) {
-            const nj = (c.name_ja || "").toLowerCase();
-            const ne = (c.name    || "").toLowerCase();
-            if (!nj.includes(q) && !ne.includes(q)) return false;
-          }
-
-          // 実在／オリジナル
-          if (realFilter === "real" && !entry.isReal) return false;
-          if (realFilter === "original" && entry.isReal) return false;
-
-          // 映画登場
+          if (realFilter !== "all" && ((realFilter === "real") !== entry.isReal)) return false;
           if (movieFilter === "with" && !entry.hasMovies) return false;
           if (movieFilter === "without" && entry.hasMovies) return false;
-
-          // レア度
-          if (rarityFilter !== "all" && rarity !== rarityFilter) return false;
-
-          // クラス
-          if (classFilter !== "all" && classVal !== classFilter) return false;
-
+          if (rarityFilter !== "all" && (c.classification?.rarity || "") !== rarityFilter) return false;
+          if (classFilter !== "all" && (c.classification?.class || "") !== classFilter) return false;
+          if (favOnly && !favSet.has(c.id)) return false;
+          if (dnaFilter !== "all") {
+            const arr = (dnaSourcesById && dnaSourcesById[c.id] && dnaSourcesById[c.id].sources_raw) ? dnaSourcesById[c.id].sources_raw : [];
+            if (!Array.isArray(arr) || !arr.some(s => String(s).includes(dnaFilter))) return false;
+          }
+          if (!matchesName(entry, q)) return false;
           return true;
         });
-
-        renderList(filtered);
       }
+
+      function clearGrid() {
+        grid.innerHTML = "";
+        renderIndex = 0;
+      }
+
+      function renderNextBatch() {
+        if (isLoadingMore) return;
+        isLoadingMore = true;
+
+        const slice = filteredCreatures.slice(renderIndex, renderIndex + BATCH_SIZE);
+        renderIndex += slice.length;
+
+        const frag = document.createDocumentFragment();
+        for (const entry of slice) {
+          frag.appendChild(renderCreatureCard(entry));
+        }
+        grid.appendChild(frag);
+
+        emptyMsg.style.display = filteredCreatures.length ? "none" : "block";
+
+        isLoadingMore = false;
+      }
+
+      function applyFilters() {
+        filteredCreatures = computeFilteredList();
+        clearGrid();
+        updateQueryParams();
+        renderNextBatch();
+      }
+
+      function onScrollLoadMore() {
+        if (renderIndex >= filteredCreatures.length) return;
+        const threshold = 700;
+        const nearBottom = (window.innerHeight + window.scrollY) >= (document.body.offsetHeight - threshold);
+        if (nearBottom) renderNextBatch();
+      }
+
 
       function setupRarityDotsAndClassSelect() {
         if (!rarityTabsContainer || !classSelect) return;
@@ -348,7 +585,7 @@
           Epic:      "エピック",
           Legendary: "レジェンド",
           Unique:    "ユニーク",
-          Apex:      "アペックス",
+          Apex:      "エイペックス",
           Omega:     "オメガ",
         };
 
@@ -408,27 +645,64 @@
           classFilter = classSelect.value || "all";
           applyFilters();
         });
+
+        // DNAソースプルダウン
+        if (dnaSelect) {
+          dnaSelect.innerHTML = "";
+          const optAllD = document.createElement("option");
+          optAllD.value = "all";
+          optAllD.textContent = "すべて";
+          dnaSelect.appendChild(optAllD);
+
+          const tokenSet = new Set();
+          for (const [cid, obj] of Object.entries(dnaSourcesById || {})) {
+            const arr = (obj && obj.sources_raw) ? obj.sources_raw : [];
+            arr.forEach(line => {
+              String(line).split(/[、,]/).forEach(part => {
+                const t = part.split("|")[0].trim();
+                if (t) tokenSet.add(t);
+              });
+            });
+          }
+          const tokens = Array.from(tokenSet).sort((a,b)=>a.localeCompare(b, "ja"));
+          tokens.forEach(t => {
+            const opt = document.createElement("option");
+            opt.value = t;
+            opt.textContent = t;
+            dnaSelect.appendChild(opt);
+          });
+
+          dnaSelect.value = dnaFilter || "all";
+          dnaSelect.addEventListener("change", () => {
+            dnaFilter = dnaSelect.value || "all";
+            applyFilters();
+          });
+        }
       }
 
       async function loadData() {
         try {
-          const [creRes, realRes, movieRes] = await Promise.all([
-            fetch("data/creatures_master_ja.json"),
-            fetch("data/creatures_real_world.json"),
-            fetch("data/movies_master.json"),
+          const [creRes, realRes, movieRes, dnaRes] = await Promise.all([
+            fetch("data/creatures_master_ja.json", {cache:"no-store"}),
+            fetch("data/creatures_real_world.json", {cache:"no-store"}),
+            fetch("data/movies_master.json", {cache:"no-store"}),
+            fetch("data/dna_sources_master.json", {cache:"no-store"}),
           ]);
 
           if (!creRes.ok)  throw new Error("creatures_master_ja.json 読み込み失敗");
           if (!realRes.ok) throw new Error("creatures_real_world.json 読み込み失敗");
           if (!movieRes.ok) throw new Error("movies_master.json 読み込み失敗");
+          if (!dnaRes.ok)  throw new Error("dna_sources_master.json 読み込み失敗");
 
-          const [creJson, realJson, movieJson] = await Promise.all([
+          const [creJson, realJson, movieJson, dnaJson] = await Promise.all([
             creRes.json(),
             realRes.json(),
             movieRes.json(),
+            dnaRes.json(),
           ]);
 
           const list = Object.values(creJson);
+          dnaSourcesById = dnaJson || {};
 
           raritySet.clear();
           classSet.clear();
@@ -455,16 +729,21 @@
           });
 
           setupRarityDotsAndClassSelect();
+          // URL由来の値が未知だった場合は all に戻す
+          if (rarityFilter !== "all" && !raritySet.has(rarityFilter)) rarityFilter = "all";
+          if (classFilter !== "all" && !classSet.has(classFilter)) classFilter = "all";
           applyFilters();
         } catch (e) {
           console.error(e);
           grid.innerHTML = "";
           emptyMsg.style.display = "block";
-          emptyMsg.textContent = "データの読み込みに失敗しました。";
+          emptyMsg.textContent = "データの読み込みに失敗しました： " + (e && e.message ? e.message : e);
         }
       }
 
-      nameInput.addEventListener("input", applyFilters);
+      // v2.0: リアルタイム検索は重いので停止（検索ボタンで実行）
+      // nameInput.addEventListener("input", applyFilters);
+
 
       realTabs.forEach(btn => {
         btn.addEventListener("click", () => {
@@ -481,6 +760,10 @@
           applyFilters();
         });
       });
+
+      applyBtn.addEventListener("click", applyFilters);
+      nameInput.addEventListener("keydown", (e) => { if (e.key === "Enter") applyFilters(); });
+      if (favOnlyCb) favOnlyCb.addEventListener("change", applyFilters);
 
       resetBtn.addEventListener("click", () => {
         nameInput.value = "";
@@ -507,6 +790,99 @@
 
         applyFilters();
       });
+
+      
+      // --- v2.0: 自動読み込み（無限スクロール）を確実に動かす ---
+      // スクロールしている要素が window とは限らないため、スクロール親を自動検出します。
+      function findScrollParent(el) {
+        let cur = el;
+        while (cur && cur !== document.body && cur !== document.documentElement) {
+          const st = getComputedStyle(cur);
+          const oy = st.overflowY;
+          if ((oy === "auto" || oy === "scroll") && cur.scrollHeight > cur.clientHeight + 5) return cur;
+          cur = cur.parentElement;
+        }
+        return null;
+      }
+
+      const sentinel = document.createElement("div");
+      sentinel.id = "scroll-sentinel";
+      sentinel.style.height = "1px";
+      sentinel.style.width = "1px";
+      sentinel.style.opacity = "0";
+      sentinel.style.pointerEvents = "none";
+      // grid の末尾に監視用要素を置く（gridが空でもOK）
+      grid.parentElement.appendChild(sentinel);
+
+      let scrollTarget = null;
+      function bindAutoLoad() {
+        // 一度解除
+        if (scrollTarget && scrollTarget !== window) {
+          scrollTarget.removeEventListener("scroll", onScrollLoadMore);
+        } else if (scrollTarget === window) {
+          window.removeEventListener("scroll", onScrollLoadMore);
+        }
+
+        scrollTarget = findScrollParent(grid) || window;
+
+        // IntersectionObserver（推奨）
+        try {
+          const rootEl = (scrollTarget === window) ? null : scrollTarget;
+          const io = new IntersectionObserver((entries) => {
+            if (entries.some(e => e.isIntersecting)) {
+              renderNextBatch();
+            }
+          }, { root: rootEl, rootMargin: "1200px 0px 1200px 0px", threshold: 0 });
+
+          io.observe(sentinel);
+
+          // 念のためのフォールバック（古い環境 / 監視が効かないケース）
+          const handler = () => requestAnimationFrame(onScrollLoadMore);
+          if (scrollTarget === window) {
+            window.addEventListener("scroll", handler, { passive: true });
+            window.addEventListener("resize", handler, { passive: true });
+          } else {
+            scrollTarget.addEventListener("scroll", handler, { passive: true });
+          }
+        } catch (e) {
+          // IntersectionObserverが無い場合：スクロール判定だけで動かす
+          const handler = () => requestAnimationFrame(onScrollLoadMore);
+          if (scrollTarget === window) {
+            window.addEventListener("scroll", handler, { passive: true });
+            window.addEventListener("resize", handler, { passive: true });
+          } else {
+            scrollTarget.addEventListener("scroll", handler, { passive: true });
+          }
+        }
+      }
+
+      // applyFilters のたびに末尾に sentinel が来るように再配置し、
+      // 画面が埋まってない場合は追加描画してスクロール可能状態を作る
+      const _applyFiltersOriginal = applyFilters;
+      applyFilters = function() {
+        _applyFiltersOriginal();
+        // sentinelを必ず末尾へ
+        grid.parentElement.appendChild(sentinel);
+
+        // 画面がまだ埋まってない場合に追加描画（特にPCの大画面で起きやすい）
+        // 最大10回まで（暴走防止）
+        let guard = 0;
+        const fill = () => {
+          const rootEl = (scrollTarget === window) ? document.scrollingElement : scrollTarget;
+          if (!rootEl) return;
+          const bottomGap = (rootEl.scrollHeight - (rootEl.scrollTop + rootEl.clientHeight));
+          if (bottomGap < 800 && renderIndex < filteredCreatures.length && guard < 10) {
+            guard++;
+            renderNextBatch();
+            requestAnimationFrame(fill);
+          }
+        };
+        requestAnimationFrame(fill);
+      };
+
+      // 初回バインド
+      bindAutoLoad();
+      // --- /自動読み込み ---
 
       loadData();
     })();
