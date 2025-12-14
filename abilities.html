@@ -20,7 +20,7 @@
     }
     .filter-apply-btn:active{transform:translateY(1px)}
   
-/* v2.0: 文字・リンクの見た目を他ページに寄せる */
+/* v2.2: 文字・リンクの見た目を他ページに寄せる */
 a {
   color: inherit;
   text-decoration: none;
@@ -39,7 +39,7 @@ a:hover { text-decoration: underline; }
 
 
 
-/* --- v2.0 UI unify: links & titles (match creatures list feel) --- */
+/* --- v2.2 UI unify: links & titles (match creatures list feel) --- */
 .ability-card a, .ability-item a {
   color: inherit;
   text-decoration: none;
@@ -319,7 +319,7 @@ a:hover { text-decoration: underline; }
   }
 
   // イベント
-  // v2.0: リアルタイム検索は重いので停止（検索ボタンで実行）
+  // v2.2: リアルタイム検索は重いので停止（検索ボタンで実行）
   // nameInput.addEventListener("input", applyFilters);
 
   applyBtn.addEventListener("click", applyFilters);
