@@ -163,7 +163,7 @@
           <div class="page-top-nav">
             <h1 class="page-title" id="ability-title-ja">アビリティ名</h1>
             <div style="display:flex; gap:6px;">
-              <a href="abilities.html" class="btn btn--outline btn--sm">アビリティ一覧へ</a>
+              <a href="abilities.html" id="back-to-abilities" class="btn btn--outline btn--sm">アビリティ一覧へ</a>
               <a href="index.html" class="btn btn--outline btn--sm">トップに戻る</a>
             </div>
           </div>
@@ -240,7 +240,17 @@
       const params = new URLSearchParams(window.location.search);
       const abilityId = params.get("id");
 
-      const titleJaEl   = document.getElementById("ability-title-ja");
+      
+      const backParam = params.get("back");
+      const backLink = document.getElementById("back-to-abilities");
+      if (backLink) {
+        try {
+          backLink.href = backParam ? decodeURIComponent(backParam) : "abilities.html";
+        } catch(e) {
+          backLink.href = "abilities.html";
+        }
+      }
+const titleJaEl   = document.getElementById("ability-title-ja");
       const titleEnEl   = document.getElementById("ability-title-en");
       const nameJaEl    = document.getElementById("ability-name-ja");
       const nameEnSubEl = document.getElementById("ability-name-en-sub");
