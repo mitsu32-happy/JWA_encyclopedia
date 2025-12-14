@@ -201,6 +201,40 @@
       #dna-select{ min-width:140px !important; }
     }
 
+
+    /* --- v2.2: フィルターUIをよりコンパクトに＆折り返し防止（横スクロール） --- */
+    .meta-tabs{
+      flex-wrap: nowrap !important;
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+      scrollbar-width: thin;
+      gap: 3px !important;
+    }
+    .meta-tabs > span{ flex: 0 0 auto; }
+    .meta-tab{
+      flex: 0 0 auto;
+      padding: 3px 8px;
+      font-size: 0.74rem;
+      line-height: 1.1;
+    }
+    @media (min-width: 601px){
+      .meta-tab{ padding: 4px 10px; font-size: 0.78rem; }
+    }
+
+    .rarity-dots{
+      flex-wrap: nowrap;
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+      scrollbar-width: thin;
+      gap: 4px;
+    }
+
+    .class-select{
+      min-width: 110px !important;
+      padding: 3px 8px;
+      font-size: 0.74rem;
+    }
+
 </style>
 </head>
 <body>
@@ -367,7 +401,49 @@
       let classFilter  = "all";   // all / class string
       let dnaFilter    = "all";   // all / DNA source token
 
-      const raritySet = new Set();
+      
+      function initFromQueryParams() {
+        try {
+          const params = new URLSearchParams(location.search);
+
+          const name = params.get("name");
+          if (name && nameInput) nameInput.value = name;
+
+          const real = params.get("real");
+          if (real) realFilter = real;
+
+          const movie = params.get("movie");
+          if (movie) movieFilter = movie;
+
+          const rarity = params.get("rarity");
+          if (rarity) rarityFilter = rarity;
+
+          const cls = params.get("class");
+          if (cls) classFilter = cls;
+
+          const dna = params.get("dna");
+          if (dna) dnaFilter = dna;
+
+          const fav = params.get("fav");
+          if (favOnlyCb) favOnlyCb.checked = (fav === "1");
+
+          // 先にタブの見た目だけ反映（データ依存なし）
+          realTabs.forEach(b => b.classList.toggle(
+            "meta-tab--active",
+            (b.dataset.realFilter || "all") === realFilter
+          ));
+          movieTabs.forEach(b => b.classList.toggle(
+            "meta-tab--active",
+            (b.dataset.movieFilter || "all") === movieFilter
+          ));
+        } catch (e) {
+          console.warn("query params parse failed", e);
+        }
+      }
+
+      initFromQueryParams();
+
+const raritySet = new Set();
       const classSet  = new Set();
 
       const FAV_KEY = "jwa_favorites_v2";
@@ -609,11 +685,11 @@
           rarityDots.push(btn);
         }
 
-        createDot("all", "レア度：すべて", "rarity-dot--all", true);
+        createDot("all", "レア度：すべて", "rarity-dot--all", rarityFilter === "all");
 
         rarities.forEach(r => {
           const label = "レア度：" + (rarityLabelMap[r] || r);
-          createDot(r, label, "rarity-dot--" + r, false);
+          createDot(r, label, "rarity-dot--" + r, rarityFilter === r);
         });
 
         rarityDots.forEach(btn => {
@@ -640,7 +716,8 @@
           classSelect.appendChild(opt);
         });
 
-        classSelect.value = "all";
+        classSelect.value = classFilter || "all";
+        if (!classSet.has(classSelect.value)) classSelect.value = "all";
         classSelect.addEventListener("change", () => {
           classFilter = classSelect.value || "all";
           applyFilters();
@@ -728,10 +805,10 @@
             return na.localeCompare(nb);
           });
 
-          setupRarityDotsAndClassSelect();
           // URL由来の値が未知だった場合は all に戻す
           if (rarityFilter !== "all" && !raritySet.has(rarityFilter)) rarityFilter = "all";
           if (classFilter !== "all" && !classSet.has(classFilter)) classFilter = "all";
+          setupRarityDotsAndClassSelect();
           applyFilters();
         } catch (e) {
           console.error(e);
@@ -785,9 +862,17 @@
         );
 
         if (classSelect) {
-          classSelect.value = "all";
+          classSelect.value = classFilter || "all";
         }
 
+
+        dnaFilter    = "all";
+        if (dnaSelect) {
+          dnaSelect.value = "all";
+        }
+        if (favOnlyCb) {
+          favOnlyCb.checked = false;
+        }
         applyFilters();
       });
 
