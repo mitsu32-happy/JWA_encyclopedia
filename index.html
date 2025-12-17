@@ -15,9 +15,7 @@
       --text-sub: #d0d7e2;
     }
 
-    * {
-      box-sizing: border-box;
-    }
+    * { box-sizing: border-box; }
 
     html, body {
       margin: 0;
@@ -28,32 +26,25 @@
       color: var(--text-main);
     }
 
-    /* ▼ 背景動画（z-index: 0 に変更） */
+    /* 背景動画 */
     #bg-video {
       position: fixed;
-      top: 0;
-      left: 0;
+      inset: 0;
       width: 100vw;
       height: 100vh;
       object-fit: cover;
-      object-position: center;
       z-index: 0;
-      background: #000;
     }
 
-    /* ▼ 暗くするオーバーレイ（z-index: 1） */
+    /* 暗転オーバーレイ */
     .bg-overlay {
       position: fixed;
       inset: 0;
-      background: linear-gradient(
-        to bottom,
-        var(--overlay-top),
-        var(--overlay-bottom)
-      );
+      background: linear-gradient(to bottom, var(--overlay-top), var(--overlay-bottom));
       z-index: 1;
     }
 
-    /* ▼ コンテンツ（z-index: 2） */
+    /* コンテンツ */
     .page {
       position: relative;
       z-index: 2;
@@ -63,6 +54,7 @@
       padding: 14px 16px;
     }
 
+    /* ヘッダー */
     .site-header {
       display: flex;
       align-items: center;
@@ -88,7 +80,6 @@
     .site-title-main {
       font-size: 15px;
       font-weight: 700;
-      letter-spacing: 0.03em;
     }
 
     .site-title-sub {
@@ -105,30 +96,10 @@
       border: 1px solid rgba(255, 255, 255, 0.12);
     }
 
+    /* ヒーロー */
     .hero {
       margin-top: 10vh;
       max-width: 480px;
-      width: 100%;
-    }
-
-    .hero-badges {
-      display: flex;
-      gap: 6px;
-      flex-wrap: wrap;
-      margin-bottom: 14px;
-    }
-
-    .badge {
-      font-size: 11px;
-      padding: 4px 10px;
-      border-radius: 999px;
-      background: rgba(0, 0, 0, 0.45);
-      border: 1px solid rgba(255, 255, 255, 0.2);
-    }
-
-    .badge.accent {
-      background: var(--accent-soft);
-      border-color: var(--accent);
     }
 
     .hero-title {
@@ -149,6 +120,7 @@
       text-shadow: 0 3px 8px rgba(0, 0, 0, 0.85);
     }
 
+    /* ボタン */
     .hero-buttons {
       display: flex;
       flex-wrap: wrap;
@@ -157,8 +129,8 @@
 
     .btn {
       display: inline-flex;
-      justify-content: center;
       align-items: center;
+      justify-content: center;
       padding: 10px 18px;
       border-radius: 999px;
       font-size: 13px;
@@ -166,12 +138,12 @@
       border: 1px solid transparent;
       backdrop-filter: blur(4px);
       box-shadow: 0 6px 16px rgba(0, 0, 0, 0.6);
+      white-space: nowrap;
     }
 
     .btn-primary {
       background: var(--accent);
       color: #00222a;
-      border-color: rgba(0, 0, 0, 0.4);
       font-weight: 600;
     }
 
@@ -181,6 +153,28 @@
       border-color: rgba(255, 255, 255, 0.2);
     }
 
+    /* 更新履歴 */
+    .changelog-mini {
+      margin-top: 14px;
+      font-size: 12px;
+      opacity: 0.75;
+    }
+
+    .changelog-mini__title {
+      font-weight: 700;
+      margin-bottom: 4px;
+    }
+
+    .changelog-mini__list {
+      margin: 0;
+      padding-left: 18px;
+    }
+
+    .changelog-mini .ver {
+      font-weight: 700;
+    }
+
+    /* フッター */
     .footer {
       margin-top: auto;
       font-size: 10px;
@@ -190,32 +184,20 @@
     }
   </style>
 </head>
-  <style>
-    .changelog-mini{margin-top:14px;font-size:12px;opacity:.75}
-    .changelog-mini__title{font-weight:700;margin-bottom:4px}
-    .changelog-mini__list{margin:0;padding-left:18px}
-    .changelog-mini .ver{font-weight:700}
-  </style>
 
 <body>
 
-  <!-- ▼ 背景動画：index.html と同じ場所の bg_intro.mp4 を参照 -->
+  <!-- 背景動画 -->
   <video id="bg-video" autoplay loop muted playsinline>
     <source src="bg_intro.mp4" type="video/mp4" />
   </video>
 
-  <!-- ▼ 暗めオーバーレイ -->
   <div class="bg-overlay"></div>
 
-  <!-- ▼ コンテンツ -->
   <div class="page">
     <header class="site-header">
       <div class="logo-area">
-        <img
-          src="images/ui/logo_jwa_wiki.png"
-          alt="JWA非公式Wiki ロゴ"
-          class="site-logo"
-        />
+        <img src="images/ui/logo_jwa_wiki.png" class="site-logo" alt="JWA非公式Wiki">
         <div>
           <div class="site-title-main">JWA非公式Wiki</div>
           <div class="site-title-sub">〜ジュラ会監修〜</div>
@@ -225,31 +207,41 @@
     </header>
 
     <main class="hero">
-      <div class="hero-badges">
-      </div>
-
       <h1 class="hero-title">
-        <span>Jurassic World Alive の</span><br />
+        Jurassic World Alive の<br>
         <span class="highlight">恐竜＆アビリティ情報を一箇所に。</span>
       </h1>
 
       <p class="hero-sub">
-        ゲームデータ＋現実の恐竜情報＋映画登場情報をまとめた、<br />
+        ゲームデータ＋現実の恐竜情報＋映画登場情報をまとめた、<br>
         次世代型「複合図鑑プロジェクト」です。
       </p>
 
+      <!-- 主導線 -->
       <div class="hero-buttons">
-    <div class="changelog-mini" aria-label="更新履歴">
-      <div class="changelog-mini__title">更新履歴</div>
-      <ul class="changelog-mini__list">
-        <li><span class="ver">v2.2</span> フィルター保持（アビリティ）／DNAリセット修正／フィルターUI小型化</li>
-        <li><span class="ver">v2.1</span> フィルター保持（恐竜）／URL保存・復元</li>
-        <li><span class="ver">v2.0</span> 軽量化／機能追加（お気に入り・ＤＮＡソース）／表記修正</li>
-      </ul>
-    </div>
-    </div>
         <a href="creatures.html" class="btn btn-primary">恐竜図鑑を開く</a>
         <a href="abilities.html" class="btn btn-primary">アビリティ一覧を見る</a>
+      </div>
+
+      <!-- サブ導線（1行下） -->
+      <div class="hero-buttons" style="margin-top:8px;">
+        <a
+          href="https://www.notion.so/2cb0dcb22734802ba756ec3921864f26?v=2cb0dcb2273480cca9bd000c0a959656"
+          class="btn btn-ghost"
+          target="_blank"
+          rel="noopener noreferrer"
+        >🏆 ティア表（攻略・外部）</a>
+      </div>
+
+      <!-- 更新履歴 -->
+      <div class="changelog-mini">
+        <div class="changelog-mini__title">更新履歴</div>
+        <ul class="changelog-mini__list">
+          <li><span class="ver">v2.2</span> フィルター保持（アビリティ）／DNAリセット修正／UI調整</li>
+          <li><span class="ver">v2.1</span> フィルター保持（恐竜）／URL保存対応</li>
+          <li><span class="ver">v2.0</span> 軽量化／お気に入り機能追加</li>
+        </ul>
+      </div>
     </main>
 
     <footer class="footer">
